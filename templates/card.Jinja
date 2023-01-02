@@ -1,6 +1,6 @@
 {% macro card(projectData) %}
 	<div class="card">
-		<img src="{{ projectData.cardImage }}" class="card-img-top" alt="Pretty Instant website">
+		<img src="{{ projectData.cardImage }}" class="card-img-top" alt="{{ projectData.cardImageAltText }}">
 		<div class="card-body">
 			<a href="/projects/{{ projectData.slug }}" class="stretched-link">
 				<h2 class="card-title">{{ projectData.title }}</h2>

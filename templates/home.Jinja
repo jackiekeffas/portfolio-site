@@ -6,10 +6,10 @@
 
 <!DOCTYPE html>
 <html lang="en">
-	{{ head() }}
+	{{ head(title="Jackie Keffas", description="Designer &amp; Photographer", meta="Jackie Keffas is a designer and photographer based in NYC") }}
 
 	<body>
-    {{ navbar() }}
+    {{ navbar(home="active") }}
         
 		<main class="container-fluid">
 			<div class="row mb-5 justify-content-center">
@@ -18,6 +18,7 @@
 		      <p>With 8 years of experience as the sole marketing designer at various startups, I’ve been responsible for everything from landing pages to email campaigns to social posts and infographics, with even a little animation and web development sprinkled inbetween. I strive to create meaning and change and have collaborated with marketing teams, copywriters, developers, and CEOs to achieve these goals.</p>
 		    </div>
 		  </div>
+
 		  <div class="row">
 		    <div class="col-md mb-4">
           {{ card(projectData.project1) }}
@@ -26,6 +27,7 @@
           {{ card(projectData.project2) }}
 		    </div>
 		  </div>
+			
 		  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-md-center">
 		    <div class="col mb-4 mb-lg-0">
           {{ card(projectData.project3) }}

@@ -1,24 +1,18 @@
-{% macro projectOverview(projectData, columns) %}
+{% from "pageTitle.Jinja" import pageTitle %}
+
+{% macro projectOverview(projectData, columns="col-lg-6") %}
 	<div class="row mb-6">
 		<div class="col">
 			<div class="project-header text-center rounded">
-				<img class="img-fluid project-image" src="{{ projectData.overviewImage }}" alt="Desktop and mobile views of the Pretty Instant website">
+				<img class="img-fluid project-image" src="{{ projectData.overviewImage }}" alt="{{ projectData.overviewImageAltText }}">
 			</div>
 		</div>
 	</div>
 	<div class="row mb-3 justify-content-md-center">
 		<div class="col col-lg-10 col-xxl-8">
 			<div class="row">
-				<div class="{{ columns|default('col-lg-6') }} mb-2 mb-lg-0">
-					<div class="subheader">
-						<div class="d-flex">
-							<h4>{{ projectData.company }}</h4>
-							<div class="flex-grow-1 align-self-center">
-								<hr>
-							</div>
-						</div>
-						<h1 class="mb-0">{{ projectData.title }}<img class="stars" src="../static/images/stars.svg" alt="Three stars"></h1>
-					</div>
+				<div class="{{ columns }} mb-2 mb-lg-0">
+					{{ pageTitle(pageHeader=projectData.title, pageSubheader=projectData.company) }}
 				</div>
 				<div class="col align-self-end text-lg-end">
 					<span class="badge rounded-pill bg-purple mb-2">Web design + development</span><span class="badge rounded-pill bg-orange ms-2 mb-2">Marketing</span>

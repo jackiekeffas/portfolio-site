@@ -1,10 +1,10 @@
-{% macro head() %}
+{% macro head(projectData, title=projectData.title, description="Jackie Keffas", meta=projectData.meta) %}
   <head>
 		<!-- BASIC -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Jackie Keffas * Designer &amp; Photographer</title>
-		<meta name="description" content="Jackie Keffas is a designer and photographer based in NYC">
+		<title>{{ title }} * {{ description }}</title>
+		<meta name="description" content="{{ meta }}">
 
 		<!-- FAVICON-->
 		<link rel="icon" type="image/png" href="../static/images/favicon.png">

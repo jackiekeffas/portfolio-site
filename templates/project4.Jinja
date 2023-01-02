@@ -6,7 +6,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-	{{ head() }}
+	{{ head(projectData) }}
 
   <body>
     {{ navbar() }}
@@ -16,9 +16,10 @@
 
       <div class="row mb-6 justify-content-md-center">
         <div class="col col-lg-10 col-xxl-8">
-          <p>Pretty Instant was a national photography company that provided professional photographers on-demand. To promote their services, I was tasked with creating informational brochures for eight of the company's main verticals. The goal was to explain to potential clients the benefits of working with Pretty Instant by showing how they helped existing clients. Each brochure was to have a featured client and showcase four or five different of the shoot types that Pretty Instant offers.</p>
+          <p>{{ projectData.companyDescription }} To promote their services, I was tasked with creating informational brochures for eight of the company's main verticals. The goal was to explain to potential clients the benefits of working with Pretty Instant by showing how they helped existing clients. Each brochure was to have a featured client and showcase four or five different of the shoot types that Pretty Instant offers.</p>
         </div>
       </div>
+
       <div class="row mb-6 justify-content-md-center">
         <div class="col col-lg-10 col-xxl-8">
           <h2>Role and process</h2>
@@ -26,6 +27,7 @@
           <p>The first brochure was for food, drink, and restaurant services, featuring &pizza. Once it was completed, I created a template from it to use for the other verticals. This streamlined production, allowing me to simply switched out copy and photographs and make only minor adjustments to some layouts in order to best showcase the images.</p>
         </div>
       </div>
+
       <div class="row mb-6 justify-content-md-center">
         <div class="col col-lg-10 col-xxl-8">
           <figure class="figure">
@@ -64,6 +66,7 @@
           </figure>
         </div>
       </div>
+      
       <div class="row justify-content-md-center">
         <div class="col col-lg-12 col-xxl-10">
           <div class="row">

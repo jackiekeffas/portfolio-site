@@ -6,19 +6,20 @@
 
 <!DOCTYPE html>
 <html lang="en">
-	{{ head() }}
+	{{ head(projectData) }}
 
 	<body>
     {{ navbar() }}
 
     <main class="container-fluid">
-      {{ projectOverview(projectData, "col-lg-7") }}
+      {{ projectOverview(projectData, columns="col-lg-7") }}
 
       <div class="row mb-6 justify-content-md-center">
         <div class="col col-lg-10 col-xxl-8">
-          <p>Pretty Instant was a national photography company that provides professional photographers on-demand. All booking takes place through a web-based user dashboard, which also allows clients to easily keep track of their shoot details and photo galleries. Following Pretty Instant's <a href="../../work/prettyinstant/website.html">website redesign</a>, the user dashboard needed to be updated to keep branding consistent across both sites. This also provided an opportunity to revise the booking flow and create a streamlined process that would alleviate stress for Pretty Instant's account managers.</p>
+          <p>{{ projectData.companyDescription }} All booking takes place through a web-based user dashboard, which also allows clients to easily keep track of their shoot details and photo galleries. Following Pretty Instant's <a href="../../work/prettyinstant/website.html">website redesign</a>, the user dashboard needed to be updated to keep branding consistent across both sites. This also provided an opportunity to revise the booking flow and create a streamlined process that would alleviate stress for Pretty Instant's account managers.</p>
         </div>
       </div>
+
       <div class="row mb-6 justify-content-md-center">
         <div class="col col-lg-10 col-xxl-8">
           <h2>Role and process</h2>
@@ -26,6 +27,7 @@
           <p>I worked closely with both the CTO and Operations Director throughout, and once we all decided the site would meet the needs of both clients and the Pretty Instant team, I turned the wireframe into a high-fidelity design. The final designs were passed off to Pretty Instant's developers for production and I provided supplemental coding when needed.</p>
         </div>
       </div>
+
       <div class="row mb-6 justify-content-md-center">
         <div class="col col-lg-12 col-xxl-10">
           <div class="row">
@@ -44,6 +46,7 @@
           </figcaption>
         </div>
       </div>
+
       <div class="row mb-6 justify-content-md-center">
         <div class="col col-lg-10 col-xxl-8">
           <h2>Booking form</h2>
@@ -51,6 +54,7 @@
           <p>Another big issue the new form solves is user drop off. On the old form, a user would be prompted to sign up from the start, causing many potential clients to abandon the booking. With the new form, sign up is at the end and only required if a user wants to follow through on the shoot and confirm payment.</p>
         </div>
       </div>
+
       <div class="row mb-6 justify-content-sm-center">
         <div class="col col-sm-10">
           <figure class="figure">
@@ -61,6 +65,7 @@
           </figure>
         </div>
       </div>
+      
       <div class="row mb-6 justify-content-md-center">
         <div class="col col-lg-10 col-xxl-8">
           <h2>Shoot overview</h2>
@@ -68,6 +73,7 @@
           <p>Another new feature is the ability for clients to confirm information with a few clicks of a button. This reassures clients that Pretty Instant has all the relevant information, while also helping Pretty Instant's account managers. By allowing clients to initiate the process, account managers can confirm a shoot quicker, freeing them up to handle more business and help Pretty Instant grow.</p>
         </div>
       </div>
+
       <div class="row justify-content-md-center">
         <div class="col col-lg-12 col-xxl-10">
           <div class="row">

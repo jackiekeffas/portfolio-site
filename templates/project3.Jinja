@@ -6,7 +6,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-	{{ head() }}
+	{{ head(projectData) }}
 
   <body>
     {{ navbar() }}
@@ -16,9 +16,10 @@
 
       <div class="row mb-6 justify-content-md-center">
         <div class="col col-lg-10 col-xxl-8">
-          <p>Pretty Instant was a national photography company that provided professional photographers on-demand. As a young company, standardized colors and logos were used, but proper brand guidelines were never written up. During a period where multiple new hires joined the team, I decided to create a brand book to keep Pretty Instant's visual language consistent across departments. The book includes the company mission statements, fonts, colors, gradients, and instructions on how to use Pretty Instant's logos and icons.</p>
+          <p>{{ projectData.companyDescription }} As a young company, standardized colors and logos were used, but proper brand guidelines were never written up. During a period where multiple new hires joined the team, I decided to create a brand book to keep Pretty Instant's visual language consistent across departments. The book includes the company mission statements, fonts, colors, gradients, and instructions on how to use Pretty Instant's logos and icons.</p>
         </div>
       </div>
+
       <div class="row mb-6 justify-content-md-center">
         <div class="col col-lg-10 col-xxl-8">
           <figure class="figure">
@@ -26,6 +27,7 @@
           </figure>
         </div>
       </div>
+
       <div class="row mb-6 justify-content-md-center">
         <div class="col col-lg-10 col-xxl-8">
           <figure class="figure">
@@ -33,6 +35,7 @@
           </figure>
         </div>
       </div>
+
       <div class="row mb-6 justify-content-md-center">
         <div class="col col-lg-10 col-xxl-8">
           <figure class="figure">
@@ -40,6 +43,7 @@
           </figure>
         </div>
       </div>
+
       <div class="row mb-6 justify-content-md-center">
         <div class="col col-lg-10 col-xxl-8">
           <figure class="figure">
@@ -47,6 +51,7 @@
           </figure>
         </div>
       </div>
+      
       <div class="row justify-content-md-center">
         <div class="col col-lg-10 col-xxl-8">
           <figure class="figure">

@@ -3,24 +3,23 @@
 {% from "navbar.Jinja" import navbar %}
 {% from "footer.Jinja" import footer %}
 {% from "projectOverview.Jinja" import projectOverview %}
-{% from "pageTitle.Jinja" import pageTitle %}
 
 <!DOCTYPE html>
 <html lang="en">
-	{{ head() }}
+	{{ head(projectData) }}
 
   <body>
     {{ navbar() }}
 
     <main class="container-fluid">
-      {{ pageTitle(tit, sub) }}
       {{ projectOverview(projectData) }}
 
       <div class="row mb-6 justify-content-md-center">
         <div class="col col-lg-10 col-xxl-8">
-          <p>Pretty Instant was a national photography company that provided professional photographers on-demand. As the company grew and its services expanded, the website became outdated, both in style and usability, and with this came a need for change. The goal was to create a new site with individual pages for each service Pretty Instant offered. Supporting each service would be prominently featured photos to better attract clients. The layouts would be similar to the original site, but designed using lighter colors and a more minimal style. With a new structure and an emphasis on the product, potential customers were better able to understand Pretty Instant's services and book them for a shoot.</p>
+          <p>{{ projectData.companyDescription }} As the company grew and its services expanded, the website became outdated, both in style and usability, and with this came a need for change. The goal was to create a new site with individual pages for each service Pretty Instant offered. Supporting each service would be prominently featured photos to better attract clients. The layouts would be similar to the original site, but designed using lighter colors and a more minimal style. With a new structure and an emphasis on the product, potential customers were better able to understand Pretty Instant's services and book them for a shoot.</p>
         </div>
       </div>
+
       <div class="row mb-6 justify-content-md-center">
         <div class="col col-lg-10 col-xxl-8">
           <h2>Role and process</h2>
@@ -29,6 +28,7 @@
           <p>Because we were using the same sections across pages, I was able to begin coding once the home page was finalized. The site was coded with a combination of Ruby on Rails, HAML, and the Bourbon/Neat library of sass mixins. By using components and variables whenever possible, the new site would be lightweight and efficient to update.</p>
         </div>
       </div>
+
       <div class="row mb-6 justify-content-md-center">
         <div class="col col-lg-10 col-xxl-8">
           <h2>Page formats</h2>
@@ -36,6 +36,7 @@
           <p>The photo is replaced with a gradient or pattern background on pages that require additional functionality. This creates space for things such as explainer videos, a sidebar for easy navigation on pages with a lot of information, or simply a larger header box for pages with more copy up top.</p>
         </div>
       </div>
+
       <div class="row mb-6 justify-content-md-center">
         <div class="col col-lg-12 col-xxl-10">
           <div class="row">
@@ -54,6 +55,7 @@
           </figcaption>
         </div>
       </div>
+
       <div class="row mb-6 justify-content-md-center">
         <div class="col col-lg-12 col-xxl-10">
           <figure class="figure">
@@ -64,12 +66,14 @@
           </figure>
         </div>
       </div>
+
       <div class="row mb-6 justify-content-md-center">
         <div class="col col-lg-10 col-xxl-8">
           <h2>Home page</h2>
           <p>Features a slideshow header to highlight specific shoot types, an animated process bar to show the stages of booking, and a full list of services so clients know everything Pretty Instant offers immediately.</p>
         </div>
       </div>
+      
       <div class="row justify-content-sm-center">
         <div class="col col-sm-8 col-lg-6">
           <figure class="figure">
