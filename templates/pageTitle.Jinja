@@ -1,0 +1,11 @@
+{% macro pageTitle(header, subheader) %}
+  <div class="subheader">
+    <div class="d-flex">
+      <h4>{{ subheader }}</h4>
+      <div class="flex-grow-1 align-self-center">
+        <hr>
+      </div>
+    </div>
+    <h1 class="mb-0">{{ header }}<img class="stars" src="../static/images/stars.svg" alt="Three stars"></h1>
+  </div>  
+{% endmacro %}

@@ -3,6 +3,7 @@
 {% from "navbar.Jinja" import navbar %}
 {% from "footer.Jinja" import footer %}
 {% from "projectOverview.Jinja" import projectOverview %}
+{% from "pageTitle.Jinja" import pageTitle %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,6 +13,7 @@
     {{ navbar() }}
 
     <main class="container-fluid">
+      {{ pageTitle(tit, sub) }}
       {{ projectOverview(projectData) }}
 
       <div class="row mb-6 justify-content-md-center">

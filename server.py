@@ -20,9 +20,9 @@ def get_project(projectName: str):
     return render_template(f"{projectName}.jinja", projectData=data[projectName])
 
 
-@app.route("/ping")
-def ping():
-    return "<p>Hello world</p>"
+@app.route("/about")
+def get_about():
+    return render_template("about.jinja")
 
 
 @app.errorhandler(404)
