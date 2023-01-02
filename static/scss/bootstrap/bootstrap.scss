@@ -1,0 +1,300 @@
+@import "mixins/banner";
+@include bsBanner("");
+
+
+
+// scss-docs-start import-stack
+// Configuration
+@import "functions";
+
+
+
+// Variables
+// Colors
+$white:    #FFFFFF;
+$gray-100: #F3F2F2;
+$gray-200: #DAD8D9;
+$gray-300: #C1BDBE;
+$gray-400: #A8A3A5;
+$gray-500: #90898B;
+$gray-600: #766F71;
+$gray-700: #5C5758;
+$gray-800: #423E3F;
+$gray-900: #272526;
+$black:    #150409;
+
+$pink:    #BD2855;
+$red:     $pink;
+$purple:  #835EBA;
+$indigo:  $purple;
+$blue:    #455FA0;
+$cyan:    $blue;
+$orange:  #A54F0D;
+$yellow:  $orange;
+$green:   #3B7D36;
+$teal:    $green;
+
+$pink-100: #FBEAEF;
+$pink-200: #F2C0CF;
+$pink-300: #E996AF;
+$pink-400: #E06C8F;
+$pink-500: #D7426E;
+$pink-600: $pink;
+$pink-700: #952043;
+$pink-800: #69162F;
+$pink-900: #3F0D1C;
+
+$red-100: $pink-100;
+$red-200: $pink-200;
+$red-300: $pink-300;
+$red-400: $pink-400;
+$red-500: $pink-500;
+$red-600: $pink-600;
+$red-700: $pink-700;
+$red-800: $pink-800;
+$red-900: $pink-900;
+
+$purple-100: #F1EDF7;
+$purple-200: #D6C9E8;
+$purple-300: #BAA6D9;
+$purple-400: #9E82C9;
+$purple-500: $purple;
+$purple-600: #6945A1;
+$purple-700: #52367D;
+$purple-800: #3B2659;
+$purple-900: #231736;
+
+$indigo-100: $purple-100;
+$indigo-200: $purple-200;
+$indigo-300: $purple-300;
+$indigo-400: $purple-400;
+$indigo-500: $purple-500;
+$indigo-600: $purple-600;
+$indigo-700: $purple-700;
+$indigo-800: $purple-800;
+$indigo-900: $purple-900;
+
+$blue-100: #EDF0F7;
+$blue-200: #CAD2E8;
+$blue-300: #A6B4D8;
+$blue-400: #8296C9;
+$blue-500: #5F78BA;
+$blue-600: $blue;
+$blue-700: #364A7D;
+$blue-800: #273559;
+$blue-900: #172035;
+
+$cyan-100: $blue-100;
+$cyan-200: $blue-200;
+$cyan-300: $blue-300;
+$cyan-400: $blue-400;
+$cyan-500: $blue-500;
+$cyan-600: $blue-600;
+$cyan-700: $blue-700;
+$cyan-800: $blue-800;
+$cyan-900: $blue-900;
+
+$orange-100: #FDF1E7;
+$orange-200: #F9D5B8;
+$orange-300: #F5B889;
+$orange-400: #F29C5A;
+$orange-500: #EE802B;
+$orange-600: #D46611;
+$orange-700: $orange;
+$orange-800: #76390A;
+$orange-900: #472206;
+
+$yellow-100: $orange-100;
+$yellow-200: $orange-200;
+$yellow-300: $orange-300;
+$yellow-400: $orange-400;
+$yellow-500: $orange-500;
+$yellow-600: $orange-600;
+$yellow-700: $orange-700;
+$yellow-800: $orange-800;
+$yellow-900: $orange-900;
+
+$green-100: #EEF7ED;
+$green-200: #CCE8C9;
+$green-300: #AAD9A6;
+$green-400: #88C982;
+$green-500: #66BA5E;
+$green-600: #4CA145;
+$green-700: $green;
+$green-800: #2B5926;
+$green-900: #193617;
+
+$teal-100: $green-100;
+$teal-200: $green-200;
+$teal-300: $green-300;
+$teal-400: $green-400;
+$teal-500: $green-500;
+$teal-600: $green-600;
+$teal-700: $green-700;
+$teal-800: $green-800;
+$teal-900: $green-900;
+
+$primary:       $pink;
+$secondary:     $purple;
+$success:       $green;
+$info:          $blue;
+$warning:       $orange;
+$danger:        $pink;
+$light:         $gray-100;
+$dark:          $gray-900;
+
+// Sizing
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1200px
+);
+$spacer: 											1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 2,
+  6: $spacer * 2.5,
+  7: $spacer * 3,
+);
+
+// Type
+$font-family-sans-serif:      'Work Sans', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-serif:						'Forum', cursive;
+
+// $font-size-root affects the value of `rem`, which is used for as well font sizes, paddings, and margins
+// $font-size-base affects the font size of the body text
+$font-size-root:              null;
+$font-size-base:              1rem; // Assumes the browser default, typically `16px`
+$font-size-xs:                $font-size-base * .75;
+$font-size-sm:                $font-size-base * .875;
+$font-size-lg:                $font-size-base * 1.125;
+$lead-font-size:              $font-size-lg;
+$small-font-size:							$font-size-xs;
+
+$font-weight-normal:          400;
+$font-weight-semibold:        500;
+$font-weight-bold:            700;
+$font-weight-lighter:         $font-weight-normal;
+$font-weight-bolder:          $font-weight-bold;
+
+$font-weight-base:            $font-weight-normal;
+$lead-font-weight:            $font-weight-normal;
+$headings-font-weight:        $font-weight-normal;
+
+$line-height-base:            1.5;
+$line-height-sm:              1.3;
+$line-height-lg:              2;
+$headings-line-height:        $line-height-sm;
+
+$h1-font-size:                $font-size-base * 2;
+$h2-font-size:                $font-size-base * 1.5;
+$h3-font-size:                $font-size-base * 1.375;
+$h4-font-size:                $font-size-base * 0.75;
+
+$headings-margin-bottom:    	$spacer;
+$headings-font-family:        $font-family-serif;
+$headings-font-style:         null;
+$headings-color:              null;
+
+$list-inline-padding:					$spacer;
+
+$body-color:    							$black;
+$link-color:                  $pink-700;
+$link-decoration:             underline;
+$link-hover-color:            $pink-800;
+$link-hover-decoration:       null;
+$figure-caption-color:        $gray-700;
+
+// Shadow and Borders
+$box-shadow-sm:               0 .125rem .25rem rgba($pink-800, .1);
+$box-shadow:               		0 .25rem .5rem rgba($pink-900, .2);
+$border-radius:               .5rem;
+$border-color:								$gray-200;
+
+// Cards
+$card-border-color:						$border-color;
+$card-height: 								100%;
+$card-title-spacer-y:					$spacer * .25;
+
+// Hr
+$hr-margin-y:                 0;
+$hr-color:                    $pink-200;
+$hr-opacity:									1;
+
+// Navbar
+$nav-link-font-size: 					$font-size-sm;
+$navbar-nav-link-padding-x:   0;
+$navbar-padding-y: 						$spacer * .75;
+$navbar-brand-padding-y:    	$spacer * .5;
+$navbar-brand-margin-end:			0;
+
+$navbar-light-color:                $black;
+$navbar-light-hover-color:          $pink-700;
+$navbar-light-active-color:         $pink;
+$navbar-light-disabled-color:       rgba($black, .3) !default;
+$navbar-light-toggler-border-color: rgba($pink-900, .2);
+$navbar-light-brand-color:          $navbar-light-active-color !default;
+$navbar-light-brand-hover-color:    $navbar-light-active-color !default;
+
+// Badges
+$badge-font-size:             .75em;
+$badge-font-weight:						$font-weight-normal;
+$badge-color:									$black;
+$badge-padding-x:							$spacer * .75;
+$badge-padding-y:							$spacer * .5;
+
+
+
+@import "variables";
+
+// Configuration continued
+@import "maps";
+@import "mixins";
+@import "utilities";
+
+// Layout & components
+@import "root";
+@import "reboot";
+@import "type";
+@import "images";
+@import "containers";
+@import "grid";
+// @import "tables";
+// @import "forms";
+@import "buttons";
+@import "transitions";
+// @import "dropdown";
+// @import "button-group";
+@import "nav";
+@import "navbar";
+@import "card";
+// @import "accordion";
+// @import "breadcrumb";
+// @import "pagination";
+@import "badge";
+// @import "alert";
+// @import "progress";
+// @import "list-group";
+// @import "close";
+// @import "toasts";
+@import "modal";
+// @import "tooltip";
+// @import "popover";
+@import "carousel";
+// @import "spinners";
+// @import "offcanvas";
+// @import "placeholders";
+
+// Helpers
+@import "helpers";
+
+// Utilities
+@import "utilities/api";
+// scss-docs-end import-stack
