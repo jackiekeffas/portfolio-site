@@ -1,15 +1,21 @@
-{% macro card() %}
-<div class="card">
-    <img src="../static/images/home/prettyinstant/website.jpg" class="card-img-top" alt="Pretty Instant website">
-    <div class="card-body">
-    <a href="" class="stretched-link"><h2 class="card-title">Website redesign</h2></a>
-    <div class="d-flex">
-        <p class="card-subtitle">Web design + development</p>
-        <div class="flex-grow-1 align-self-center">
-            <hr>
-            </div>
-            <h4 class="card-text">Pretty Instant</h4>
-        </div>
-    </div>
-</div>
+{% macro card(projectData) %}
+	<div class="card">
+		<img src="{{ projectData.cardImage }}" class="card-img-top" alt="Pretty Instant website">
+		<div class="card-body">
+			<a href="" class="stretched-link">
+				<h2 class="card-title">{{ projectData.title }}</h2>
+			</a>
+			<div class="d-flex">
+				<p class="card-subtitle">
+					{{ projectData.skill }}
+				</p>
+				<div class="flex-grow-1 align-self-center">
+					<hr>
+				</div>
+				<h4 class="card-text">
+					{{ projectData.company }}
+				</h4>
+			</div>
+		</div>
+	</div>
 {% endmacro %}

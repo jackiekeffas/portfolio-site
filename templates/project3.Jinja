@@ -1,0 +1,66 @@
+{% from "head.Jinja" import head %}
+{% from "scripts.Jinja" import scripts %}
+{% from "navbar.Jinja" import navbar %}
+{% from "footer.Jinja" import footer %}
+{% from "projectOverview.Jinja" import projectOverview %}
+
+<!DOCTYPE html>
+<html lang="en">
+	{{ head() }}
+
+  <body>
+    {{ navbar() }}
+
+    <main class="container-fluid">
+      {{ projectOverview(projectData) }}
+
+      <div class="row mb-6 justify-content-md-center">
+        <div class="col col-lg-10 col-xxl-8">
+          <p>Pretty Instant was a national photography company that provided professional photographers on-demand. As a young company, standardized colors and logos were used, but proper brand guidelines were never written up. During a period where multiple new hires joined the team, I decided to create a brand book to keep Pretty Instant's visual language consistent across departments. The book includes the company mission statements, fonts, colors, gradients, and instructions on how to use Pretty Instant's logos and icons.</p>
+        </div>
+      </div>
+      <div class="row mb-6 justify-content-md-center">
+        <div class="col col-lg-10 col-xxl-8">
+          <figure class="figure">
+            <img src="../../images/work/prettyinstant/brand/introduction.png" class="figure-img img-fluid" alt="Intro of the Pretty Instant brand book">
+          </figure>
+        </div>
+      </div>
+      <div class="row mb-6 justify-content-md-center">
+        <div class="col col-lg-10 col-xxl-8">
+          <figure class="figure">
+            <img src="../static/images/work/prettyinstant/brand/logo.png" class="figure-img img-fluid" alt="Logo pages of the Pretty Instant brand book">
+          </figure>
+        </div>
+      </div>
+      <div class="row mb-6 justify-content-md-center">
+        <div class="col col-lg-10 col-xxl-8">
+          <figure class="figure">
+            <img src="../static/images/work/prettyinstant/brand/colors.png" class="figure-img img-fluid" alt="Color pages of the Pretty Instant brand book">
+          </figure>
+        </div>
+      </div>
+      <div class="row mb-6 justify-content-md-center">
+        <div class="col col-lg-10 col-xxl-8">
+          <figure class="figure">
+            <img src="../static/images/work/prettyinstant/brand/gradients.png" class="figure-img img-fluid" alt="Gradient pages of the Pretty Instant brand book">
+          </figure>
+        </div>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-10 col-xxl-8">
+          <figure class="figure">
+            <img src="../static/images/work/prettyinstant/brand/icons.png" class="figure-img img-fluid" alt="Icon pages of the Pretty Instant brand book">
+            <figcaption class="figure-caption text-center">
+              Excerpts from the brand book
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </main>
+
+    {{ footer() }}
+
+		{{ scripts() }}
+	</body>
+</html>

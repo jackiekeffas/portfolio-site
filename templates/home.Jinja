@@ -1,39 +1,15 @@
+{% from "head.Jinja" import head %}
+{% from "scripts.Jinja" import scripts %}
 {% from "navbar.Jinja" import navbar %}
 {% from "footer.Jinja" import footer %}
 {% from "card.Jinja" import card %}
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- BASIC
-		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Jackie Keffas * Designer &amp; Photographer</title>
-		<meta name="description" content="Jackie Keffas is a designer and photographer based in NYC">
-
-		<!-- FAVICON
-		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-		<link rel="icon" type="image/png" href="../static/images/favicon.png">
-
-		<!-- FONTS
-		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-		<style>
-			@import url('https://fonts.googleapis.com/css2?family=Forum&family=Work+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap');
-		</style>
-		<script src="https://kit.fontawesome.com/b3fb28131c.js" crossorigin="anonymous"></script>
-
-		<!-- CSS
-		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-		<link rel="stylesheet" href="../static/css/style.css">
-
-		<!-- JS
-		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-		<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
-	</head>
+	{{ head() }}
 
 	<body>
-        {{ navbar() }}
+    {{ navbar() }}
         
 		<main class="container-fluid">
 			<div class="row mb-5 justify-content-center">
@@ -44,121 +20,27 @@
 		  </div>
 		  <div class="row">
 		    <div class="col-md mb-4">
-                {{ card() }}
+          {{ card(projectData.project1) }}
 		    </div>
 		    <div class="col-md mb-4">
-					<div class="card">
-					  <img src="../static/images/home/prettyinstant/dashboard.jpg" class="card-img-top" alt="Pretty Instant user dashboard">
-					  <div class="card-body">
-					  	<a href="" class="stretched-link"><h2 class="card-title">User dashboard + booking form</h2></a>
-					    <div class="d-flex">
-					    	<p class="card-subtitle">Product design</p>
-					    	<div class="flex-grow-1 align-self-center">
-							  	<hr>
-							  </div>
-							  <h4 class="card-text">Pretty Instant</h4>
-							</div>
-					  </div>
-					</div>
+          {{ card(projectData.project2) }}
 		    </div>
 		  </div>
 		  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-md-center">
 		    <div class="col mb-4 mb-lg-0">
-		    	<div class="card">
-					  <img src="../static/images/home/prettyinstant/brand.jpg" class="card-img-top" alt="Pretty Instant brand book">
-					  <div class="card-body">
-					  	<a href="" class="stretched-link"><h2 class="card-title">Brand book</h2></a>
-					  	<div class="d-flex">
-					    	<p class="card-subtitle">Branding</p>
-					    	<div class="flex-grow-1 align-self-center">
-							  	<hr>
-							  </div>
-							  <h4 class="card-text">Pretty Instant</h4>
-							</div>
-					  </div>
-					</div>
+          {{ card(projectData.project3) }}
 		    </div>
 		    <div class="col mb-4 mb-lg-0">
-		    	<div class="card">
-					  <img src="../static/images/home/prettyinstant/brochures.jpg" class="card-img-top" alt="Pretty Instant brochure">
-					  <div class="card-body">
-					  	<a href="" class="stretched-link"><h2 class="card-title">Services brochures</h2></a>
-					    <div class="d-flex">
-					    	<p class="card-subtitle">Marketing</p>
-					    	<div class="flex-grow-1 align-self-center">
-							  	<hr>
-							  </div>
-							  <h4 class="card-text">Pretty Instant</h4>
-							</div>
-					  </div>
-					</div>
+          {{ card(projectData.project4) }}
 		    </div>
 		    <div class="col">
-		    	<div class="card">
-					  <img src="../static/images/home/icons.jpg" class="card-img-top" alt="Various icons">
-					  <div class="card-body">
-					  	<a href="" class="stretched-link"><h2 class="card-title">Icons + illustrations</h2></a>
-					  	<div class="d-flex">
-					    	<p class="card-subtitle">Asset creation</p>
-					    	<div class="flex-grow-1 align-self-center">
-							  	<hr>
-							  </div>
-							  <h4 class="card-text">Various</h4>
-							</div>
-					  </div>
-					</div>
+          {{ card(projectData.project5) }}
 		    </div>
-		    <!-- <div class="col mb-4 mb-md-0">
-		    	<div class="card">
-					  <img src="images/home/bigd.jpg" class="card-img-top" alt="Big D and the Kids Table album art">
-					  <div class="card-body">
-					  	<a href="#" class="stretched-link"><h2 class="card-title">Album art</h2></a>
-					    <h4 class="card-subtitle">Product design<img src="images/star.svg" class="star" alt="*">Wireframing<img src="images/star.svg" class="star" alt="*">UI/UX</h4>
-					    <div class="d-flex">
-							  <p class="card-text">Big D and the Kids Table</p>
-							  <div class="flex-grow-1 align-self-center">
-							  	<hr>
-							  </div>
-							</div>
-					  </div>
-					</div>
-		    </div>
-		    <div class="col mb-4 mb-md-0">
-		    	<div class="card">
-					  <img src="images/home/prettyinstant/website.jpg" class="card-img-top" alt="Pretty Instant website">
-					  <div class="card-body">
-					  	<a href="#" class="stretched-link"><h2 class="card-title">Website</h2></a>
-					    <h4 class="card-subtitle">Product design<img src="images/star.svg" class="star" style="width: 10px;" alt="*">Wireframing<img src="images/star.svg" class="star" style="width: 10px;" alt="*">UI/UX</h4>
-					    <div class="d-flex">
-							  <p class="card-text">Pretty Instant</p>
-							  <div class="flex-grow-1 align-self-center">
-							  	<hr>
-							  </div>
-							</div>
-					  </div>
-					</div>
-		    </div>
-		    <div class="col">
-		    	<div class="card">
-					  <img src="images/home/prettyinstant/dashboard.jpg"  class="card-img-top" alt="Pretty Instant user dashboard">
-					  <div class="card-body">
-					  	<a href="#" class="stretched-link"><h2 class="card-title">User dashboard and booking form</h2></a>
-					    <h4 class="card-subtitle">Product design<img src="images/star.svg" class="star" alt="*">Wireframing<img src="images/star.svg" class="star" alt="*">UI/UX</h4>
-					    <div class="d-flex">
-							  <p class="card-text">Pretty Instant</p>
-							  <div class="flex-grow-1 align-self-center">
-							  	<hr>
-							  </div>
-							</div>
-					  </div>
-					</div>
-		    </div> -->
 		  </div>
 		</main>
 
-        {{ footer() }}
+    {{ footer() }}
 
-		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+		{{ scripts() }}
 	</body>
 </html>

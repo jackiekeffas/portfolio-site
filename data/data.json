@@ -1,8 +1,37 @@
 {
     "project1": {
-        "title": "Work1"
+        "title": "Website redesign",
+        "company": "Pretty Instant",
+        "skill": "Web design + development",
+        "cardImage": "../static/images/home/prettyinstant/website.jpg",
+        "overviewImage": "../static/images/work/prettyinstant/website/header.png"
     },
     "project2": {
-        "title": "Work2"
+        "title": "User dashboard + booking form",
+        "company": "Pretty Instant",
+        "skill": "Product design",
+        "cardImage": "../static/images/home/prettyinstant/dashboard.jpg",
+        "overviewImage": "../static/images/work/prettyinstant/dashboard/header.png"
+    },
+    "project3": {
+        "title": "Brand book",
+        "company": "Pretty Instant",
+        "skill": "Branding",
+        "cardImage": "../static/images/home/prettyinstant/brand.jpg",
+        "overviewImage": "../static/images/work/prettyinstant/brand/header.png"
+    },
+    "project4": {
+        "title": "Services brochure",
+        "company": "Pretty Instant",
+        "skill": "Marketing",
+        "cardImage": "../static/images/home/prettyinstant/brochures.jpg",
+        "overviewImage": "../static/images/work/prettyinstant/brochure/header.png"
+    },
+    "project5": {
+        "title": "Icons + illustrations",
+        "company": "Various",
+        "skill": "Asset creation",
+        "cardImage": "../static/images/home/icons.jpg",
+        "overviewImage": "../static/images/work/icons/header.png"
     }
 }
