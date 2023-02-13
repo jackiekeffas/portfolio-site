@@ -14,29 +14,47 @@
 		<main class="container-fluid">
 			<div class="row mb-5 justify-content-center">
 		    <div class="col col-sm-10 col-md col-lg-10 col-xxl-8">
-		      <h1>Hey, I’m Jackie, a marketing designer based in New York City.<img class="stars" src="../static/images/stars.svg" alt="Three stars"></h1>
-		      <p>With 8 years of experience as the sole marketing designer at various startups, I’ve been responsible for everything from landing pages to email campaigns to social posts and infographics, with even a little animation and web development sprinkled inbetween. I strive to create meaning and change and have collaborated with marketing teams, copywriters, developers, and CEOs to achieve these goals.</p>
-		    </div>
+					<h1>Hi, I’m Jackie Keffas, a marketing + brand designer based in NYC.<img class="stars" src="../static/images/stars.svg" alt="Three stars"></h1>
+					<p>With 8 years of experience as the sole marketing designer at various startups, I’ve been responsible for everything from landing pages to email campaigns to social posts and infographics, with even a little animation and web development sprinkled inbetween. I strive to create meaning and change and have collaborated with marketing teams, copywriters, developers, and CEOs to achieve these goals.</p>
+				</div>
 		  </div>
 
 		  <div class="row">
 		    <div class="col-md mb-4">
-          {{ card(projectData.project1) }}
+          {{ card(projectData["k-health-brand"]) }}
 		    </div>
 		    <div class="col-md mb-4">
-          {{ card(projectData.project2) }}
+          {{ card(projectData["k-landing-pages"]) }}
 		    </div>
 		  </div>
 			
 		  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-md-center">
-		    <div class="col mb-4 mb-lg-0">
+		    <div class="col mb-4">
           {{ card(projectData.project3) }}
 		    </div>
-		    <div class="col mb-4 mb-lg-0">
+		    <div class="col mb-4">
           {{ card(projectData.project4) }}
 		    </div>
-		    <div class="col">
+		    <div class="col mb-4">
           {{ card(projectData.project5) }}
+		    </div>
+				<div class="col mb-4">
+          {{ card(projectData.project6) }}
+		    </div>
+		    <div class="col mb-4">
+          {{ card(projectData.project7) }}
+		    </div>
+		    <div class="col mb-4">
+          {{ card(projectData.project8) }}
+		    </div>
+				<div class="col mb-4 mb-lg-0">
+          {{ card(projectData.project9) }}
+		    </div>
+		    <div class="col mb-4 mb-lg-0">
+          {{ card(projectData.project10) }}
+		    </div>
+		    <div class="col">
+          {{ card(projectData.project11) }}
 		    </div>
 		  </div>
 		</main>

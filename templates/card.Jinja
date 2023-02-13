@@ -3,19 +3,11 @@
 		<img src="{{ projectData.cardImage }}" class="card-img-top" alt="{{ projectData.cardImageAltText }}">
 		<div class="card-body">
 			<a href="/projects/{{ projectData.slug }}" class="stretched-link">
-				<h2 class="card-title">{{ projectData.title }}</h2>
-			</a>
-			<div class="d-flex">
-				<p class="card-subtitle">
-					{{ projectData.skill }}
-				</p>
-				<div class="flex-grow-1 align-self-center">
-					<hr>
-				</div>
 				<h4 class="card-text">
 					{{ projectData.company }}
 				</h4>
-			</div>
+				<h2 class="card-title">{{ projectData.title }}</h2>
+			</a>
 		</div>
 	</div>
 {% endmacro %}

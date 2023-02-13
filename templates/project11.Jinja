@@ -1,0 +1,124 @@
+{% from "head.Jinja" import head %}
+{% from "scripts.Jinja" import scripts %}
+{% from "navbar.Jinja" import navbar %}
+{% from "footer.Jinja" import footer %}
+{% from "projectOverview.Jinja" import projectOverview %}
+
+<!DOCTYPE html>
+<html lang="en">
+	{{ head(projectData) }}
+
+  <body>
+    {{ navbar() }}
+
+    <main class="container-fluid">
+      {{ projectOverview(projectData) }}
+
+      <div class="row mb-6 justify-content-md-center">
+        <div class="col col-lg-10 col-xxl-8">
+          <p>A selection of assets made for Pretty Instant, a national photography company that provided professional photographers on-demand, and Presskit.to, which was an electronic press kit web app for artists and athletes.</p>
+        </div>
+      </div>
+
+      <div class="row mb-6 justify-content-md-center">
+        <div class="col col-lg-10 col-xxl-8">
+          <h2>Pretty Instant</h2>
+          <p>When I started working as a designer for Pretty Instant, icons were a big part of the branding. A set existed that outlined the booking process, but I often found myself needing more. I designed additional icons based off the black and white style to represent shoot types and help illustrate how Pretty Instant is better than its competitors.</p>
+          <p>Inspired by the icons and using some of them, I also created badges to showcase Pretty Instant's client commitments and high Net Promoter Score.</p>
+        </div>
+      </div>
+
+      <div class="row mb-6 justify-content-md-center">
+        <div class="col col-lg-10 col-xxl-8">
+          <figure class="figure">
+            <img src="../static/images/work/icons/prettyinstant/icons.jpg" class="figure-img img-fluid" alt="Icons of a wedding cake, bells, ring, champagne glasses, whistle, trophy, and jack-o-lantern">
+            <figcaption class="figure-caption text-center">
+              Examples of shoot types for weddings, parties, sports, and engagements
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="row mb-6 justify-content-md-center">
+        <div class="col col-lg-10 col-xxl-8">
+          <figure class="figure">
+            <img src="../static/images/work/icons/prettyinstant/icons2.jpg" class="figure-img img-fluid" alt="Icons of a stack of money, envelope, and calendar">
+            <figcaption class="figure-caption text-center">
+              Icons to represent competitor's high costs, excessive e-mailing, and long waits
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="row mb-6 justify-content-md-center">
+        <div class="col col-lg-10 col-xxl-8">
+          <div class="row">
+            <div class="col-sm">
+              <img src="../static/images/work/icons/prettyinstant/satisfaction.jpg" class="figure-img img-fluid" alt="Satisfaction guaranteedicon ">
+            </div>
+            <div class="col-sm">
+              <img src="../static/images/work/icons/prettyinstant/nps.jpg" class="figure-img img-fluid" alt="NPS score icon">
+            </div>
+          </div>
+          <figcaption class="figure-caption text-center">
+            Client success badges
+          </figcaption>
+        </div>
+      </div>
+
+      <div class="row mb-6 justify-content-md-center">
+        <div class="col col-lg-10 col-xxl-8">
+          <h2>Presskit.to</h2>
+          <p>During my time as an in-house designer for Presskit.to, I created a variety of icons and illustrations for things such as the user support Twitter, website, and store.</p>
+          <p>The Twitter profile image I made featured the Presskit.to logo placed inside a life saver with the company's signature blue coloring.</p>
+          <p>For the website, I designed icons for each of the three primary account types—personal, business, and education—to quickly highlight who benefited from using the platform.</p>
+          <p>Along with its app, Presskit.to offered press kit management and white label design services, purchasable through a web store. Since the services weren't tangible products, I created illustrations to represent them in the shop.</p>
+        </div>
+      </div>
+
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-10 col-xxl-8">
+          <figure class="figure">
+            <img src="../static/images/work/icons/presskit/support.jpg" class="figure-img img-fluid" alt="Support account icon">
+            <figcaption class="figure-caption text-center">
+              Support account profile image
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-10 col-xxl-8">
+          <figure class="figure">
+            <img src="../static/images/work/icons/presskit/website.jpg" class="figure-img img-fluid" alt="Icons of a group of people, buildings, and a school">
+            <figcaption class="figure-caption text-center">
+              Personal, business, and education account types for the website
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-10 col-xxl-8">
+          <figure class="figure">
+            <img src="../static/images/work/icons/presskit/store.jpg" class="figure-img img-fluid" alt="Icons of a laptop, journal, and clipboard">
+          </figure>
+        </div>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-10 col-xxl-8">
+          <figure class="figure">
+            <img src="../static/images/work/icons/presskit/store2.jpg" class="figure-img img-fluid" alt="Icons of posters, a press release, and a gift card">
+            <figcaption class="figure-caption text-center">
+              Services graphics for Presskit.to's web store
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </main>
+
+    {{ footer() }}
+
+		{{ scripts() }}
+	</body>
+</html>
