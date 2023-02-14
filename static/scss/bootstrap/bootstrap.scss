@@ -176,7 +176,7 @@ $font-size-xs:                $font-size-base * .75;
 $font-size-sm:                $font-size-base * .875;
 $font-size-lg:                $font-size-base * 1.125;
 $lead-font-size:              $font-size-lg;
-$small-font-size:							$font-size-xs;
+$small-font-size:							$font-size-sm;
 
 $font-weight-normal:          400;
 $font-weight-semibold:        500;
@@ -206,11 +206,12 @@ $headings-color:              null;
 $list-inline-padding:					$spacer;
 
 $body-color:    							$black;
+$body-subtle-color:           $gray-700;
 $link-color:                  $pink-700;
 $link-decoration:             underline;
 $link-hover-color:            $pink-800;
 $link-hover-decoration:       null;
-$figure-caption-color:        $gray-700;
+$figure-caption-color:        $body-subtle-color;
 
 // Shadow and Borders
 $box-shadow-sm:               0 .125rem .25rem rgba($pink-800, .1);

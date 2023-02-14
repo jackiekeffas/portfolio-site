@@ -211,7 +211,7 @@ strong {
 }
 
 small, .small {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 
 mark, .mark {
@@ -262,7 +262,7 @@ pre {
   margin-top: 0;
   margin-bottom: 1rem;
   overflow: auto;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 
 pre code {
@@ -272,7 +272,7 @@ pre code {
 }
 
 code {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   color: var(--bs-code-color);
   word-wrap: break-word;
 }
@@ -283,7 +283,7 @@ a > code {
 
 kbd {
   padding: 0.1875rem 0.375rem;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   color: var(--bs-body-bg);
   background-color: var(--bs-body-color);
   border-radius: 0.25rem;
@@ -581,7 +581,7 @@ progress {
 }
 
 .initialism {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   text-transform: uppercase;
 }
 
@@ -597,7 +597,7 @@ progress {
 .blockquote-footer {
   margin-top: -1rem;
   margin-bottom: 1rem;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   color: #766F71;
 }
 
@@ -629,7 +629,7 @@ progress {
 }
 
 .figure-caption {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   color: #5C5758;
 }
 
@@ -8477,6 +8477,40 @@ h4, .h4, .h4 {
   line-height: 1.5;
 }
 
+.subheader {
+  display: inline-block;
+}
+
+.subheader h4, .subheader .h4 {
+  margin-bottom: 0;
+}
+
+.subheader hr {
+  margin-left: 0.75rem;
+  margin-right: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .subheader hr {
+    margin-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .subheader hr {
+    margin-left: 1rem;
+    margin-right: 2rem;
+  }
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+.subtle {
+  color: #5C5758;
+}
+
 .stars {
   vertical-align: baseline;
   width: 20px;
@@ -8508,32 +8542,6 @@ h4, .h4, .h4 {
   width: 10px;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
-}
-
-.subheader {
-  display: inline-block;
-}
-
-.subheader h4, .subheader .h4 {
-  margin-bottom: 0;
-}
-
-.subheader hr {
-  margin-left: 0.75rem;
-  margin-right: 1.25rem;
-}
-
-@media (min-width: 768px) {
-  .subheader hr {
-    margin-right: 1.5rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .subheader hr {
-    margin-left: 1rem;
-    margin-right: 2rem;
-  }
 }
 
 
@@ -8605,10 +8613,6 @@ a {
   }
 }
 
-p:last-child {
-  margin-bottom: 0;
-}
-
 main {
   margin-top: 4.75rem;
 }
@@ -8664,6 +8668,8 @@ main .card:hover .stars {
 
 main .project-header {
   background-color: #FBEAEF;
+  border-radius: 0.5rem;
+  padding: 2rem;
 }
 
 main .project-image {
@@ -8730,284 +8736,4 @@ footer a:hover {
   footer ul {
     margin-bottom: 0px;
   }
-}
-
-#color figure {
-  margin-bottom: 0;
-}
-
-#color figure text {
-  fill: #FFFFFF;
-}
-
-#color .gray figure:nth-child(-n+6) text {
-  fill: #150409;
-}
-
-#color .gray figure:nth-child(2) svg {
-  border: 1px solid #DAD8D9;
-}
-
-#color .gray figure:nth-child(2) svg rect {
-  fill: #FFFFFF;
-}
-
-#color .gray figure:nth-child(3) svg rect {
-  fill: #F3F2F2;
-}
-
-#color .gray figure:nth-child(4) svg rect {
-  fill: #DAD8D9;
-}
-
-#color .gray figure:nth-child(5) svg rect {
-  fill: #C1BDBE;
-}
-
-#color .gray figure:nth-child(6) svg rect {
-  fill: #A8A3A5;
-}
-
-#color .gray figure:nth-child(7) svg rect {
-  fill: #90898B;
-}
-
-#color .gray figure:nth-child(8) svg rect {
-  fill: #766F71;
-}
-
-#color .gray figure:nth-child(9) svg rect {
-  fill: #5C5758;
-}
-
-#color .gray figure:nth-child(10) svg rect {
-  fill: #423E3F;
-}
-
-#color .gray figure:nth-child(11) svg rect {
-  fill: #272526;
-}
-
-#color .gray figure:nth-child(12) svg rect {
-  fill: #150409;
-}
-
-#color .capricorn figure:nth-child(-n+5) text {
-  fill: #150409;
-}
-
-#color .capricorn figure:nth-child(2) svg {
-  border: 1px solid #F2C0CF;
-}
-
-#color .capricorn figure:nth-child(2) svg rect {
-  fill: #FBEAEF;
-}
-
-#color .capricorn figure:nth-child(3) svg rect {
-  fill: #F2C0CF;
-}
-
-#color .capricorn figure:nth-child(4) svg rect {
-  fill: #E996AF;
-}
-
-#color .capricorn figure:nth-child(5) svg rect {
-  fill: #E06C8F;
-}
-
-#color .capricorn figure:nth-child(6) svg rect {
-  fill: #D7426E;
-}
-
-#color .capricorn figure:nth-child(7) svg rect {
-  fill: #BD2855;
-}
-
-#color .capricorn figure:nth-child(8) svg rect {
-  fill: #952043;
-}
-
-#color .capricorn figure:nth-child(9) svg rect {
-  fill: #69162F;
-}
-
-#color .capricorn figure:nth-child(10) svg rect {
-  fill: #3F0D1C;
-}
-
-#color .aquarius figure:nth-child(-n+5) text {
-  fill: #150409;
-}
-
-#color .aquarius figure:nth-child(2) svg {
-  border: 1px solid #D6C9E8;
-}
-
-#color .aquarius figure:nth-child(2) svg rect {
-  fill: #F1EDF7;
-}
-
-#color .aquarius figure:nth-child(3) svg rect {
-  fill: #D6C9E8;
-}
-
-#color .aquarius figure:nth-child(4) svg rect {
-  fill: #BAA6D9;
-}
-
-#color .aquarius figure:nth-child(5) svg rect {
-  fill: #9E82C9;
-}
-
-#color .aquarius figure:nth-child(6) svg rect {
-  fill: #835EBA;
-}
-
-#color .aquarius figure:nth-child(7) svg rect {
-  fill: #6945A1;
-}
-
-#color .aquarius figure:nth-child(8) svg rect {
-  fill: #52367D;
-}
-
-#color .aquarius figure:nth-child(9) svg rect {
-  fill: #3B2659;
-}
-
-#color .aquarius figure:nth-child(10) svg rect {
-  fill: #231736;
-}
-
-#color .virgo figure:nth-child(-n+6) text {
-  fill: #150409;
-}
-
-#color .virgo figure:nth-child(2) svg {
-  border: 1px solid #CAD2E8;
-}
-
-#color .virgo figure:nth-child(2) svg rect {
-  fill: #EDF0F7;
-}
-
-#color .virgo figure:nth-child(3) svg rect {
-  fill: #CAD2E8;
-}
-
-#color .virgo figure:nth-child(4) svg rect {
-  fill: #A6B4D8;
-}
-
-#color .virgo figure:nth-child(5) svg rect {
-  fill: #8296C9;
-}
-
-#color .virgo figure:nth-child(6) svg rect {
-  fill: #5F78BA;
-}
-
-#color .virgo figure:nth-child(7) svg rect {
-  fill: #455FA0;
-}
-
-#color .virgo figure:nth-child(8) svg rect {
-  fill: #364A7D;
-}
-
-#color .virgo figure:nth-child(9) svg rect {
-  fill: #273559;
-}
-
-#color .virgo figure:nth-child(10) svg rect {
-  fill: #172035;
-}
-
-#color .scorpio figure:nth-child(-n+7) text {
-  fill: #150409;
-}
-
-#color .scorpio figure:nth-child(2) svg {
-  border: 1px solid #F9D5B8;
-}
-
-#color .scorpio figure:nth-child(2) svg rect {
-  fill: #FDF1E7;
-}
-
-#color .scorpio figure:nth-child(3) svg rect {
-  fill: #F9D5B8;
-}
-
-#color .scorpio figure:nth-child(4) svg rect {
-  fill: #F5B889;
-}
-
-#color .scorpio figure:nth-child(5) svg rect {
-  fill: #F29C5A;
-}
-
-#color .scorpio figure:nth-child(6) svg rect {
-  fill: #EE802B;
-}
-
-#color .scorpio figure:nth-child(7) svg rect {
-  fill: #D46611;
-}
-
-#color .scorpio figure:nth-child(8) svg rect {
-  fill: #A54F0D;
-}
-
-#color .scorpio figure:nth-child(9) svg rect {
-  fill: #76390A;
-}
-
-#color .scorpio figure:nth-child(10) svg rect {
-  fill: #472206;
-}
-
-#color .taurus figure:nth-child(-n+6) text {
-  fill: #150409;
-}
-
-#color .taurus figure:nth-child(2) svg {
-  border: 1px solid #CCE8C9;
-}
-
-#color .taurus figure:nth-child(2) svg rect {
-  fill: #EEF7ED;
-}
-
-#color .taurus figure:nth-child(3) svg rect {
-  fill: #CCE8C9;
-}
-
-#color .taurus figure:nth-child(4) svg rect {
-  fill: #AAD9A6;
-}
-
-#color .taurus figure:nth-child(5) svg rect {
-  fill: #88C982;
-}
-
-#color .taurus figure:nth-child(6) svg rect {
-  fill: #66BA5E;
-}
-
-#color .taurus figure:nth-child(7) svg rect {
-  fill: #4CA145;
-}
-
-#color .taurus figure:nth-child(8) svg rect {
-  fill: #3B7D36;
-}
-
-#color .taurus figure:nth-child(9) svg rect {
-  fill: #2B5926;
-}
-
-#color .taurus figure:nth-child(10) svg rect {
-  fill: #193617;
 }

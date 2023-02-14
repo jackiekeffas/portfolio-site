@@ -44,6 +44,43 @@ h4, .h4 {
 	line-height: $line-height-base;
 }
 
+.subheader {
+	display: inline-block;
+
+	h1 {
+	}
+
+	h4 {
+		margin-bottom: 0;
+	}
+
+	hr {
+		margin-left: $spacer * .75;
+		margin-right: $spacer * 1.25;
+
+		@include media-breakpoint-up(md) {
+			margin-right: $spacer * 1.5;
+		}
+		@include media-breakpoint-up(xl) {
+			margin-left: $spacer;
+			margin-right: $spacer * 2;
+		}
+	}
+}
+
+// Body
+p:last-child {
+	margin-bottom: 0;
+}
+
+// Color
+.subtle {
+	color: $body-subtle-color;
+}
+
+
+
+// Images
 .stars {
 	vertical-align: baseline;
 
@@ -68,30 +105,6 @@ h4, .h4 {
 	width: 10px;
 	margin-left: $spacer * .5;
 	margin-right: $spacer * .5;
-}
-
-.subheader {
-	display: inline-block;
-
-	h1 {
-	}
-
-	h4 {
-		margin-bottom: 0;
-	}
-
-	hr {
-		margin-left: $spacer * .75;
-		margin-right: $spacer * 1.25;
-
-		@include media-breakpoint-up(md) {
-			margin-right: $spacer * 1.5;
-		}
-		@include media-breakpoint-up(xl) {
-			margin-left: $spacer;
-			margin-right: $spacer * 2;
-		}
-	}
 }
 
 
@@ -155,12 +168,6 @@ a {
 
 
 
-p:last-child {
-	margin-bottom: 0;
-}
-
-
-
 // Body
 main {
 	margin-top: $spacer * 4.75;
@@ -204,6 +211,8 @@ main {
 
 	.project-header {
 		background-color: $pink-100;
+		border-radius: $border-radius;
+		padding: $spacer * 2;
 	}
 
 	.project-image {
@@ -276,338 +285,3 @@ footer {
 		}
 	}
 }
-
-
-
-
-
-#color {
-	figure {
-		margin-bottom: 0;
-		& text{
-			fill: $white;
-		}
-	}
-	.gray {
-		figure {
-			&:nth-child(-n+6) text{
-				fill: $black;
-			}
-		}
-		figure:nth-child(2) svg {
-			border: 1px solid $gray-200;
-			rect {
-				fill: $white;
-			}
-		}
-		figure:nth-child(3) svg rect {
-			fill: $gray-100;
-		}
-		figure:nth-child(4) svg rect {
-			fill: $gray-200;
-		}
-		figure:nth-child(5) svg rect {
-			fill: $gray-300;
-		}
-		figure:nth-child(6) svg rect {
-			fill: $gray-400;
-		}
-		figure:nth-child(7) svg rect {
-			fill: $gray-500;
-		}
-		figure:nth-child(8) svg rect {
-			fill: $gray-600;
-		}
-		figure:nth-child(9) svg rect {
-			fill: $gray-700;
-		}
-		figure:nth-child(10) svg rect {
-			fill: $gray-800;
-		}
-		figure:nth-child(11) svg rect {
-			fill: $gray-900;
-		}
-		figure:nth-child(12) svg rect {
-			fill: $black;
-		}
-	}
-	.capricorn {
-		figure {
-			&:nth-child(-n+5) text{
-				fill: $black;
-			}
-		}
-		figure:nth-child(2) svg {
-			border: 1px solid $pink-200;
-			rect {
-				fill: $pink-100;
-			}
-		}
-		figure:nth-child(3) svg rect {
-			fill: $pink-200;
-		}
-		figure:nth-child(4) svg rect {
-			fill: $pink-300;
-		}
-		figure:nth-child(5) svg rect {
-			fill: $pink-400;
-		}
-		figure:nth-child(6) svg rect {
-			fill: $pink-500;
-		}
-		figure:nth-child(7) svg rect {
-			fill: $pink-600;
-		}
-		figure:nth-child(8) svg rect {
-			fill: $pink-700;
-		}
-		figure:nth-child(9) svg rect {
-			fill: $pink-800;
-		}
-		figure:nth-child(10) svg rect {
-			fill: $pink-900;
-		}
-	}
-	.aquarius {
-		figure {
-			&:nth-child(-n+5) text{
-				fill: $black;
-			}
-		}
-		figure:nth-child(2) svg {
-			border: 1px solid $purple-200;
-			rect {
-				fill: $purple-100;
-			}
-		}
-		figure:nth-child(3) svg rect {
-			fill: $purple-200;
-		}
-		figure:nth-child(4) svg rect {
-			fill: $purple-300;
-		}
-		figure:nth-child(5) svg rect {
-			fill: $purple-400;
-		}
-		figure:nth-child(6) svg rect {
-			fill: $purple-500;
-		}
-		figure:nth-child(7) svg rect {
-			fill: $purple-600;
-		}
-		figure:nth-child(8) svg rect {
-			fill: $purple-700;
-		}
-		figure:nth-child(9) svg rect {
-			fill: $purple-800;
-		}
-		figure:nth-child(10) svg rect {
-			fill: $purple-900;
-		}
-	}
-	.virgo {
-		figure {
-			&:nth-child(-n+6) text{
-				fill: $black;
-			}
-		}
-		figure:nth-child(2) svg {
-			border: 1px solid $blue-200;
-			rect {
-				fill: $blue-100;
-			}
-		}
-		figure:nth-child(3) svg rect {
-			fill: $blue-200;
-		}
-		figure:nth-child(4) svg rect {
-			fill: $blue-300;
-		}
-		figure:nth-child(5) svg rect {
-			fill: $blue-400;
-		}
-		figure:nth-child(6) svg rect {
-			fill: $blue-500;
-		}
-		figure:nth-child(7) svg rect {
-			fill: $blue-600;
-		}
-		figure:nth-child(8) svg rect {
-			fill: $blue-700;
-		}
-		figure:nth-child(9) svg rect {
-			fill: $blue-800;
-		}
-		figure:nth-child(10) svg rect {
-			fill: $blue-900;
-		}
-	}
-	.scorpio {
-		figure {
-			&:nth-child(-n+7) text{
-				fill: $black;
-			}
-		}
-		figure:nth-child(2) svg {
-			border: 1px solid $orange-200;
-			rect {
-				fill: $orange-100;
-			}
-		}
-		figure:nth-child(3) svg rect {
-			fill: $orange-200;
-		}
-		figure:nth-child(4) svg rect {
-			fill: $orange-300;
-		}
-		figure:nth-child(5) svg rect {
-			fill: $orange-400;
-		}
-		figure:nth-child(6) svg rect {
-			fill: $orange-500;
-		}
-		figure:nth-child(7) svg rect {
-			fill: $orange-600;
-		}
-		figure:nth-child(8) svg rect {
-			fill: $orange-700;
-		}
-		figure:nth-child(9) svg rect {
-			fill: $orange-800;
-		}
-		figure:nth-child(10) svg rect {
-			fill: $orange-900;
-		}
-	}
-	.taurus {
-		figure {
-			&:nth-child(-n+6) text{
-				fill: $black;
-			}
-		}
-		figure:nth-child(2) svg {
-			border: 1px solid $green-200;
-			rect {
-				fill: $green-100;
-			}
-		}
-		figure:nth-child(3) svg rect {
-			fill: $green-200;
-		}
-		figure:nth-child(4) svg rect {
-			fill: $green-300;
-		}
-		figure:nth-child(5) svg rect {
-			fill: $green-400;
-		}
-		figure:nth-child(6) svg rect {
-			fill: $green-500;
-		}
-		figure:nth-child(7) svg rect {
-			fill: $green-600;
-		}
-		figure:nth-child(8) svg rect {
-			fill: $green-700;
-		}
-		figure:nth-child(9) svg rect {
-			fill: $green-800;
-		}
-		figure:nth-child(10) svg rect {
-			fill: $green-900;
-		}
-	}
-}
-
-
-
-
-
-// body {
-//   font-family: 'Work Sans', sans-serif;
-//   font-size: 16px;
-//   line-height: 24px;
-// }
-
-// h1,
-// h2,
-// h3,
-// h4,
-// h5,
-// h6 {
-//   font-family: 'Work Sans', sans-serif;
-// }
-
-// .display-1,
-// .display-2,
-// .display-3,
-// .display-4,
-// .display-5,
-// .display-6 {
-//   font-family: 'Forum', cursive;
-// }
-
-// h1,
-// .display-1 {
-//   font-size: 32px;
-//   line-height: 36px;
-// }
-
-// h2,
-// .display-2 {
-//   font-size: 24px;
-//   line-height: 32px;
-// }
-
-// h3,
-// .display-3 {
-//   font-size: 22px;
-//   line-height: 28px;
-// }
-
-// h4,
-// .display-4 {
-//   font-size: 12px;
-//   line-height: 18px;
-//   text-transform: uppercase;
-//   font-weight: 600;
-// }
-
-// .display-4 {
-//   font-weight: 400;
-// }
-
-// h5,
-// .display-5 {
-//   font-size: 16px;
-//   line-height: 24px;
-// }
-
-// h6,
-// .display-6 {
-//   font-size: 14px;
-//   line-height: 20px;
-// }
-
-// .lead {
-//   font-size: 18px;
-//   line-height: 24px;
-// }
-
-// small {
-//   font-size: 14px;
-//   line-height: 20px;
-// }
-
-// strong {
-//   font-weight: 700;
-// }
-
-// .blockquote {
-//   font-size: 18px;
-//   line-height: 24px;
-// }
-
-// .blockquote-footer {
-//   font-size: 16px;
-//   line-height: 24px;
-// }
