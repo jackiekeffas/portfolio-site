@@ -46,7 +46,6 @@ h4, .h4 {
 
 .stars {
 	vertical-align: baseline;
-	margin-left: $spacer * 0.5;
 
 	width: 20px;
 	@include media-breakpoint-up(md) {
@@ -54,6 +53,13 @@ h4, .h4 {
 	}
 	@include media-breakpoint-up(xl) {
 		width: 32px;
+	}
+}
+
+.stars-header {
+	margin-left: $spacer * 0.5;
+
+	@include media-breakpoint-up(xl) {
 		margin-left: $spacer * 0.75;
 	}
 }
@@ -161,6 +167,7 @@ main {
 
 	.card {
 		@include transition($transition-base);
+		padding: $card-spacer-y $card-spacer-x;
 
 		a {
 			color: $black;
@@ -169,19 +176,29 @@ main {
 
 		.card-body {
 			font-size: $font-size-xs;
-			padding-top: $spacer * .75;
+			padding: $card-spacer-y 0 0;
 
-			.card-text {
+			.card-title {
+				margin-top: $card-title-spacer-y;
+				margin-bottom: 0;
+			}
+
+			.card-subtitle {
 				margin: 0;
 			}
 
-			hr {
-				margin: 0 $spacer * .5;
+			.stars {
+				@include transition($transition-base);
+				opacity: 0%;
 			}
 		}
 
 		&:hover {
-			border-color: $pink-400;
+			border-color: $pink-200;
+			
+			.stars {
+				opacity: 100%;
+			}
 		}
 	}
 

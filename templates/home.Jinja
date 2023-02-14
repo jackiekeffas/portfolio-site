@@ -2,6 +2,7 @@
 {% from "scripts.Jinja" import scripts %}
 {% from "navbar.Jinja" import navbar %}
 {% from "footer.Jinja" import footer %}
+{% from "cardFeatured.Jinja" import cardFeatured %}
 {% from "card.Jinja" import card %}
 
 <!DOCTYPE html>
@@ -14,47 +15,47 @@
 		<main class="container-fluid">
 			<div class="row mb-5 justify-content-center">
 		    <div class="col col-sm-10 col-md col-lg-10 col-xxl-8">
-					<h1>Hi, I’m Jackie Keffas, a marketing + brand designer based in NYC.<img class="stars" src="../static/images/stars.svg" alt="Three stars"></h1>
+					<h1>Hi, I’m Jackie Keffas, a marketing + brand designer based in NYC.</h1>
 					<p>With 8 years of experience as the sole marketing designer at various startups, I’ve been responsible for everything from landing pages to email campaigns to social posts and infographics, with even a little animation and web development sprinkled inbetween. I strive to create meaning and change and have collaborated with marketing teams, copywriters, developers, and CEOs to achieve these goals.</p>
 				</div>
 		  </div>
 
 		  <div class="row">
 		    <div class="col-md mb-4">
-          {{ card(projectData["k-health-brand"]) }}
+          {{ cardFeatured(projectData["k-health-brand"]) }}
 		    </div>
 		    <div class="col-md mb-4">
-          {{ card(projectData["k-landing-pages"]) }}
+          {{ cardFeatured(projectData["k-health-landing-pages"]) }}
 		    </div>
 		  </div>
 			
 		  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-md-center">
 		    <div class="col mb-4">
-          {{ card(projectData.project3) }}
+          {{ card(projectData["k-health-emails"]) }}
 		    </div>
 		    <div class="col mb-4">
-          {{ card(projectData.project4) }}
+          {{ card(projectData["k-health-infographics"]) }}
 		    </div>
 		    <div class="col mb-4">
-          {{ card(projectData.project5) }}
+          {{ card(projectData["k-health-social"]) }}
 		    </div>
 				<div class="col mb-4">
-          {{ card(projectData.project6) }}
+          {{ card(projectData["k-health-video"]) }}
 		    </div>
 		    <div class="col mb-4">
-          {{ card(projectData.project7) }}
+          {{ card(projectData["pretty-instant-website"]) }}
 		    </div>
 		    <div class="col mb-4">
-          {{ card(projectData.project8) }}
+          {{ card(projectData["pretty-instant-user"]) }}
 		    </div>
 				<div class="col mb-4 mb-lg-0">
-          {{ card(projectData.project9) }}
+          {{ card(projectData["pretty-instant-brand"]) }}
 		    </div>
 		    <div class="col mb-4 mb-lg-0">
-          {{ card(projectData.project10) }}
+          {{ card(projectData["pretty-instant-brochures"]) }}
 		    </div>
 		    <div class="col">
-          {{ card(projectData.project11) }}
+          {{ card(projectData["various-icons"]) }}
 		    </div>
 		  </div>
 		</main>

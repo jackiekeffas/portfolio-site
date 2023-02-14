@@ -219,9 +219,10 @@ $border-radius:               .5rem;
 $border-color:								$gray-200;
 
 // Cards
-$card-border-color:						$border-color;
+$card-border-color:						transparent;
 $card-height: 								100%;
 $card-title-spacer-y:					$spacer * .25;
+$card-border-radius:          .5rem;
 
 // Hr
 $hr-margin-y:                 0;

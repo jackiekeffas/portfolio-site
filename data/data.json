@@ -11,10 +11,10 @@
         "overviewImage": "../static/images/home/khealth/brand.jpg",
         "overviewImageAltText": "K Health brand book"
     },
-    "k-landing-pages": {
-        "slug": "k-landing-pages",
+    "k-health-landing-pages": {
+        "slug": "k-health-landing-pages",
         "meta": "Jackie Keffas is a designer and photographer based in NYC",
-        "title": "Paid landing pages",
+        "title": "Landing pages",
         "company": "K Health",
         "companyDescription": "",
         "skill": "Web design + development",
@@ -23,8 +23,8 @@
         "overviewImage": "../static/images/home/khealth/landingpages.jpg",
         "overviewImageAltText": "K Health landing pages"
     },
-    "project3": {
-        "slug": "project3",
+    "k-health-emails": {
+        "slug": "k-health-emails",
         "meta": "Jackie Keffas is a designer and photographer based in NYC",
         "title": "Emails",
         "company": "K Health",
@@ -35,8 +35,8 @@
         "overviewImage": "../static/images/home/khealth/emails.jpg",
         "overviewImageAltText": "K Health emails"
     },
-    "project4": {
-        "slug": "project4",
+    "k-health-infographics": {
+        "slug": "k-health-infographics",
         "meta": "Jackie Keffas is a designer and photographer based in NYC",
         "title": "Infographics",
         "company": "K Health",
@@ -47,8 +47,8 @@
         "overviewImage": "../static/images/home/khealth/infographics.jpg",
         "overviewImageAltText": "K Health infographics"
     },
-    "project5": {
-        "slug": "project5",
+    "k-health-social": {
+        "slug": "k-health-social",
         "meta": "Jackie Keffas is a designer and photographer based in NYC",
         "title": "Social",
         "company": "K Health",
@@ -59,8 +59,8 @@
         "overviewImage": "../static/images/home/khealth/social.jpg",
         "overviewImageAltText": "K Health social"
     },
-    "project6": {
-        "slug": "project6",
+    "k-health-video": {
+        "slug": "k-health-video",
         "meta": "Jackie Keffas is a designer and photographer based in NYC",
         "title": "Video titles",
         "company": "K Health",
@@ -71,8 +71,8 @@
         "overviewImage": "../static/images/home/khealth/videos.jpg",
         "overviewImageAltText": "K Health videos"
     },
-    "project7": {
-        "slug": "project7",
+    "pretty-instant-website": {
+        "slug": "pretty-instant-website",
         "meta": "Jackie Keffas is a designer and photographer based in NYC",
         "title": "Website redesign",
         "company": "Pretty Instant",
@@ -83,8 +83,8 @@
         "overviewImage": "../static/images/work/prettyinstant/website/header.png",
         "overviewImageAltText": "Desktop and mobile views of the Pretty Instant website"
     },
-    "project8": {
-        "slug": "project8",
+    "pretty-instant-user": {
+        "slug": "pretty-instant-user",
         "meta": "Jackie Keffas is a designer and photographer based in NYC",
         "title": "User dashboard + booking form",
         "company": "Pretty Instant",
@@ -95,8 +95,8 @@
         "overviewImage": "../static/images/work/prettyinstant/dashboard/header.png",
         "overviewImageAltText": "Desktop and mobile view of the Pretty Instant user dashboard"
     },
-    "project9": {
-        "slug": "project9",
+    "pretty-instant-brand": {
+        "slug": "pretty-instant-brand",
         "meta": "Jackie Keffas is a designer and photographer based in NYC",
         "title": "Brand book",
         "company": "Pretty Instant",
@@ -107,8 +107,8 @@
         "overviewImage": "../static/images/work/prettyinstant/brand/header.png",
         "overviewImageAltText": "Cover of the Pretty Instant brand guidelines"
     },
-    "project10": {
-        "slug": "project10",
+    "pretty-instant-brochures": {
+        "slug": "pretty-instant-brochures",
         "meta": "Jackie Keffas is a designer and photographer based in NYC",
         "title": "Services brochure",
         "company": "Pretty Instant",
@@ -119,8 +119,8 @@
         "overviewImage": "../static/images/work/prettyinstant/brochure/header.png",
         "overviewImageAltText": "Cover of the food, drink, and restaurant brochure"
     },
-    "project11": {
-        "slug": "project11",
+    "various-icons": {
+        "slug": "various-icons",
         "meta": "Jackie Keffas is a designer and photographer based in NYC",
         "title": "Icons + illustrations",
         "company": "Various",
