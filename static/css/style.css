@@ -640,7 +640,7 @@ progress {
 .container-lg,
 .container-xl,
 .container-xxl {
-  --bs-gutter-x: 1.5rem;
+  --bs-gutter-x: 1.75rem;
   --bs-gutter-y: 0;
   width: 100%;
   padding-right: calc(var(--bs-gutter-x) * .5);
@@ -8560,6 +8560,10 @@ p:last-child {
   margin-left: auto;
 }
 
+.container {
+  padding: 0 1.75rem;
+}
+
 .min-vh-100 {
   min-height: calc(100vh - 141px) !important;
 }
@@ -8669,13 +8673,11 @@ main .card:hover .stars {
 main .project-header {
   background-color: #FBEAEF;
   border-radius: 0.5rem;
-  padding: 2rem;
+  padding: 2rem 0;
 }
 
-main .project-image {
-  margin: 1rem 0;
-  padding: 0 1rem;
-  max-height: 336px;
+main .project-overview h4, main .project-overview .h4 {
+  margin-bottom: 0;
 }
 
 main .bg-pink {

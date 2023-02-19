@@ -1,0 +1,19 @@
+{% from "pageTitle.Jinja" import pageTitle %}
+
+{% macro projectHero(projectData) %}
+	<div class="project-header mb-6">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<img class="img-fluid" src="{{ projectData.overviewImage }}" alt="{{ projectData.overviewImageAltText }}">
+				</div>
+				<div class="col-12 col-md-5 col-xl-4 order-md-first align-self-center">
+					{{ pageTitle(pageHeader=projectData.title, pageSubheader=projectData.company) }}
+					<p class="lead pt-3">
+						Create a new site with individual pages for each service Pretty Instant offered.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endmacro %}

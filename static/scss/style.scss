@@ -113,6 +113,11 @@ p:last-child {
 .container-fluid {
 	@include make-container(3.5rem);
 }
+
+.container {
+	padding: 0 $container-padding-x;
+}
+
 .min-vh-100 {
 	min-height: calc(100vh - 141px) !important;
 }
@@ -212,13 +217,13 @@ main {
 	.project-header {
 		background-color: $pink-100;
 		border-radius: $border-radius;
-		padding: $spacer * 2;
+		padding: $spacer * 2 0;
 	}
 
-	.project-image {
-		margin: $spacer 0;
-		padding: 0 $spacer;
-		max-height: 336px;
+	.project-overview {
+		h4 {
+			margin-bottom: 0;
+		}
 	}
 
 	.bg-pink {

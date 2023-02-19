@@ -1,23 +1,13 @@
-{% from "pageTitle.Jinja" import pageTitle %}
-
-{% macro projectOverview(projectData, columns="col-lg-6") %}
-	<div class="row mb-6">
-		<div class="col">
-			<div class="project-header text-center rounded">
-				<img class="img-fluid project-image" src="{{ projectData.overviewImage }}" alt="{{ projectData.overviewImageAltText }}">
-			</div>
-		</div>
-	</div>
-	<div class="row mb-3 justify-content-md-center">
-		<div class="col col-lg-10 col-xxl-8">
-			<div class="row">
-				<div class="{{ columns }} mb-2 mb-lg-0">
-					{{ pageTitle(pageHeader=projectData.title, pageSubheader=projectData.company) }}
-				</div>
-				<div class="col align-self-end text-lg-end">
-					<span class="badge rounded-pill bg-purple mb-2">Web design + development</span><span class="badge rounded-pill bg-orange ms-2 mb-2">Marketing</span>
-				</div>
-			</div>
-		</div>
-	</div>
+{% macro projectOverview(projectData) %}
+  <div class="col-3 project-overview">
+    <h4>Role</h4>
+    <p class="small">{{ projectData.role }}</p>
+    <h4>Stakeholders</h4>
+    <p class="small">{{ projectData.stakeholders }}</p>
+    <h4>Tools</h4>
+    <p class="small">{{ projectData.tools }}</p>
+    <h4>Skills</h4>
+    <p class="small">{{ projectData.skills }}</p>
+    <!-- <p><span class="badge rounded-pill bg-purple me-2">UI/UX</span><span class="badge rounded-pill bg-blue me-2">Brand</span><span class="badge rounded-pill bg-orange">Marketing</span></p> -->
+  </div>
 {% endmacro %}
