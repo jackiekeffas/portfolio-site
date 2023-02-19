@@ -8676,8 +8676,81 @@ main .project-header {
   padding: 2rem 0;
 }
 
-main .project-overview h4, main .project-overview .h4 {
+main .project-overview.sidebar {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  margin-top: var(--bs-gutter-y);
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  main .project-overview.sidebar {
+    flex: 0 0 auto;
+    width: 33.33333%;
+  }
+}
+
+@media (min-width: 1200px) {
+  main .project-overview.sidebar {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+}
+
+main .project-overview.sidebar .sidebar-item {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  margin-top: var(--bs-gutter-y);
+  margin-bottom: 1rem;
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  main .project-overview.sidebar .sidebar-item {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  main .project-overview.sidebar .sidebar-item {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
+main .project-overview.sidebar h4, main .project-overview.sidebar .h4 {
   margin-bottom: 0;
+}
+
+main .project-overview.main-content {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  margin-top: var(--bs-gutter-y);
+  flex: 1 1 0;
+  max-width: 100%;
+}
+
+@media (min-width: 1200px) {
+  main .project-overview.main-content {
+    flex: 0 0 auto;
+    width: 58.33333%;
+  }
+}
+
+main .project-overview.main-content h2, main .project-overview.main-content .h2 {
+  margin-top: 2.5rem;
 }
 
 main .bg-pink {

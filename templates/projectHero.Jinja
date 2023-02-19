@@ -4,13 +4,13 @@
 	<div class="project-header mb-6">
 		<div class="container">
 			<div class="row">
-				<div class="col">
+				<div class="col mb-5 mb-lg-0">
 					<img class="img-fluid" src="{{ projectData.overviewImage }}" alt="{{ projectData.overviewImageAltText }}">
 				</div>
-				<div class="col-12 col-md-5 col-xl-4 order-md-first align-self-center">
+				<div class="col-12 col-lg-4 order-lg-first align-self-center">
 					{{ pageTitle(pageHeader=projectData.title, pageSubheader=projectData.company) }}
 					<p class="lead pt-3">
-						Create a new site with individual pages for each service Pretty Instant offered.
+						{{ projectData.description }}
 					</p>
 				</div>
 			</div>
