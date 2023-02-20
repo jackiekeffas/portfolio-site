@@ -47,9 +47,6 @@ h4, .h4 {
 .subheader {
 	display: inline-block;
 
-	h1 {
-	}
-
 	h4 {
 		margin-bottom: 0;
 	}
@@ -73,9 +70,12 @@ p:last-child {
 	margin-bottom: 0;
 }
 
-// Color
 .subtle {
 	color: $body-subtle-color;
+}
+
+.figure-caption {
+	text-align: center;
 }
 
 
@@ -110,12 +110,20 @@ p:last-child {
 
 
 // Grid
-.container-fluid {
+main, .container-fluid {
 	@include make-container(3.5rem);
 }
 
 .container {
 	padding: 0 $container-padding-x;
+}
+
+.container-xxl {
+	padding: 0;
+
+	@include media-breakpoint-up(xxl) {
+		padding: 0 $container-padding-x;
+	}
 }
 
 .min-vh-100 {
@@ -223,10 +231,8 @@ main {
 	.project-overview {
 		&.sidebar {
 			@include make-col-ready();
-		
-			@include media-breakpoint-up(xs) {
-				@include make-col(12);
-			}
+			@include make-col(12);
+
 			@include media-breakpoint-up(md) {
 				@include make-col(4);
 			}
@@ -236,11 +242,9 @@ main {
 
 			.sidebar-item {
 				@include make-col-ready();
+				@include make-col(12);
 				margin-bottom: $spacer;
-			
-				@include media-breakpoint-up(xs) {
-					@include make-col(12);
-				}
+
 				@include media-breakpoint-up(sm) {
 					@include make-col(6);
 				}
@@ -265,6 +269,33 @@ main {
 			h2 {
 				margin-top: $spacer * 2.5;
 			}
+		}
+	}
+
+	.project-text {
+		@include make-col-ready();
+		@include make-col();
+
+		@include media-breakpoint-up(md) {
+			@include make-col(8);
+		}
+
+		@include media-breakpoint-up(xl) {
+			@include make-col(7);
+			@include make-col-offset(1);
+		}
+	}
+
+	.project-images-3 {
+		@include make-col-ready();
+		@include make-col(12);
+
+		@include media-breakpoint-up(sm) {
+			@include make-col(6);
+		}
+
+		@include media-breakpoint-up(md) {
+			@include make-col();
 		}
 	}
 

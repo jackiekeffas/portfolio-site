@@ -630,7 +630,7 @@ progress {
 
 .figure-caption {
   font-size: 0.875rem;
-  color: #5C5758;
+  color: #766F71;
 }
 
 .container,
@@ -8508,7 +8508,11 @@ p:last-child {
 }
 
 .subtle {
-  color: #5C5758;
+  color: #766F71;
+}
+
+.figure-caption {
+  text-align: center;
 }
 
 .stars {
@@ -8544,7 +8548,7 @@ p:last-child {
   margin-right: 0.5rem;
 }
 
-
+main,
 .container-fluid,
 .container-sm,
 .container-md,
@@ -8562,6 +8566,16 @@ p:last-child {
 
 .container {
   padding: 0 1.75rem;
+}
+
+.container-xxl {
+  padding: 0;
+}
+
+@media (min-width: 1400px) {
+  .container-xxl {
+    padding: 0 1.75rem;
+  }
 }
 
 .min-vh-100 {
@@ -8708,9 +8722,9 @@ main .project-overview.sidebar .sidebar-item {
   padding-right: calc(var(--bs-gutter-x) * .5);
   padding-left: calc(var(--bs-gutter-x) * .5);
   margin-top: var(--bs-gutter-y);
-  margin-bottom: 1rem;
   flex: 0 0 auto;
   width: 100%;
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 576px) {
@@ -8751,6 +8765,57 @@ main .project-overview.main-content {
 
 main .project-overview.main-content h2, main .project-overview.main-content .h2 {
   margin-top: 2.5rem;
+}
+
+main .project-text {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  margin-top: var(--bs-gutter-y);
+  flex: 1 1 0;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  main .project-text {
+    flex: 0 0 auto;
+    width: 66.66667%;
+  }
+}
+
+@media (min-width: 1200px) {
+  main .project-text {
+    flex: 0 0 auto;
+    width: 58.33333%;
+    margin-left: 8.33333%;
+  }
+}
+
+main .project-images-3 {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  margin-top: var(--bs-gutter-y);
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  main .project-images-3 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  main .project-images-3 {
+    flex: 1 1 0;
+    max-width: 100%;
+  }
 }
 
 main .bg-pink {
