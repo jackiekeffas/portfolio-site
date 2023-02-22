@@ -4,6 +4,7 @@
 {% from "footer.Jinja" import footer %}
 {% from "projectHero.Jinja" import projectHero %}
 {% from "projectOverview.Jinja" import projectOverview %}
+{% from "projectPagination.Jinja" import projectPagination %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -85,6 +86,8 @@
         </div>   
       </div>
       
+      {{ projectPagination(projectData, previousSlug="k-health-emails", previousTitle="Emails", previousCompany="K Health", nextSlug="k-health-social", nextTitle="Social", nextCompany="K Health") }}
+
     </main>
 
     {{ footer() }}

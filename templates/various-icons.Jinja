@@ -4,6 +4,7 @@
 {% from "footer.Jinja" import footer %}
 {% from "projectHero.Jinja" import projectHero %}
 {% from "projectOverview.Jinja" import projectOverview %}
+{% from "projectPagination.Jinja" import projectPagination %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -16,7 +17,7 @@
       {{ projectHero(projectData) }}
 
       <div class="container">
-        <div class="row mb-6">
+        <div class="row">
           <div class="project-text">
             <h2>Pretty Instant</h2>
             <p class="small subtle">A national photography company that provided professional photographers on-demand</p>
@@ -27,7 +28,7 @@
       </div>
 
       <div class="container-xxl">
-        <div class="row mb-6">
+        <div class="row">
           <div class="col">
             <figure class="figure">
               <img src="../static/images/work/icons/prettyinstant/icons.jpg" class="figure-img img-fluid" alt="Icons of a wedding cake, bells, ring, champagne glasses, whistle, trophy, and jack-o-lantern">
@@ -38,7 +39,7 @@
           </div>
         </div>
 
-        <div class="row mb-6">
+        <div class="row">
           <div class="col">
             <figure class="figure">
               <img src="../static/images/work/icons/prettyinstant/icons2.jpg" class="figure-img img-fluid" alt="Icons of a stack of money, envelope, and calendar">
@@ -49,9 +50,9 @@
           </div>
         </div>
 
-        <div class="row mb-6">
+        <div class="row">
           <div class="col">
-            <div class="row">
+            <div class="row mb-0">
               <div class="col-12 col-md">
                 <img src="../static/images/work/icons/prettyinstant/satisfaction.jpg" class="figure-img img-fluid" alt="Satisfaction guaranteedicon ">
               </div>
@@ -67,7 +68,7 @@
       </div>
 
       <div class="container">
-        <div class="row mb-6">
+        <div class="row">
           <div class="project-text">
             <h2>Presskit.to</h2>
             <p class="small subtle">An electronic press kit web app for artists and athletes</p>
@@ -80,7 +81,7 @@
       </div>
 
       <div class="container-xxl">
-        <div class="row mb-6">
+        <div class="row">
           <div class="col text-center">
             <figure class="figure">
               <img src="../static/images/work/icons/presskit/support.jpg" class="figure-img img-fluid" alt="Support account icon">
@@ -91,7 +92,7 @@
           </div>
         </div>
 
-        <div class="row mb-6">
+        <div class="row">
           <div class="col text-center">
             <figure class="figure">
               <img src="../static/images/work/icons/presskit/website.jpg" class="figure-img img-fluid" alt="Icons of a group of people, buildings, and a school">
@@ -102,7 +103,7 @@
           </div>
         </div>
         
-        <div class="row">
+        <div class="row mb-0">
           <div class="col text-center">
             <figure class="figure">
               <img src="../static/images/work/icons/presskit/store.jpg" class="figure-img img-fluid" alt="Icons of a laptop, journal, and clipboard">
@@ -116,6 +117,9 @@
           </div>
         </div>
       </div>
+
+      {{ projectPagination(projectData, previousSlug="pretty-instant-brochures", previousTitle="Services brochures", previousCompany="Pretty Instant", nextSlug="k-health-brand", nextTitle="Brand book", nextCompany="K Health") }}
+
     </main>
 
     {{ footer() }}

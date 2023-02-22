@@ -160,7 +160,7 @@ $spacers: (
   4: $spacer * 1.5,
   5: $spacer * 2,
   6: $spacer * 2.5,
-  7: $spacer * 3,
+  7: $spacer * 3
 );
 $container-padding-x: $spacer * 1.75;
 
@@ -218,7 +218,7 @@ $figure-caption-color:        $body-subtle-color;
 $box-shadow-sm:               0 .125rem .25rem rgba($pink-800, .1);
 $box-shadow:               		0 .25rem .5rem rgba($pink-900, .2);
 $border-radius:               .5rem;
-$border-color:								$gray-200;
+$border-color:								$pink-200;
 
 // Cards
 $card-border-color:						transparent;

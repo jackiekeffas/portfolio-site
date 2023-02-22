@@ -4,6 +4,7 @@
 {% from "footer.Jinja" import footer %}
 {% from "projectHero.Jinja" import projectHero %}
 {% from "projectOverview.Jinja" import projectOverview %}
+{% from "projectPagination.Jinja" import projectPagination %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -16,7 +17,7 @@
       {{ projectHero(projectData) }}
 
       <div class="container">
-        <div class="row pt-6 mb-6 justify-content-md-center">
+        <div class="row justify-content-md-center">
           {{ projectOverview(projectData) }}
           <div class="project-overview main-content">
             <p class="small subtle">{{ projectData.companyDescription }}</p>
@@ -27,7 +28,7 @@
       </div>
 
       <div class="container-xxl">
-        <div class="row">
+        <div class="row mb-0">
           <div class="col">
             <figure class="figure">
               <img src="../static/images/work/prettyinstant/brand/introduction.png" class="figure-img img-fluid" alt="Intro of the Pretty Instant brand book">
@@ -47,6 +48,8 @@
           </div>
         </div>
       </div>
+
+      {{ projectPagination(projectData, previousSlug="pretty-instant-user", previousTitle="User account + booking form", previousCompany="Pretty Instant", nextSlug="pretty-instant-brochures", nextTitle="Services brochures", nextCompany="Pretty Instant") }}
 
     </main>
 

@@ -107,6 +107,10 @@ p:last-child {
 	margin-right: $spacer * .5;
 }
 
+.figure {
+	margin-bottom: 0;
+}
+
 
 
 // Grid
@@ -128,6 +132,10 @@ main, .container-fluid {
 
 .min-vh-100 {
 	min-height: calc(100vh - 141px) !important;
+}
+
+.row {
+	margin-bottom: $spacer * 5;
 }
 
 
@@ -214,7 +222,7 @@ main {
 		}
 
 		&:hover {
-			border-color: $pink-200;
+			border-color: $border-color;
 			
 			.stars {
 				opacity: 100%;
@@ -226,6 +234,7 @@ main {
 		background-color: $pink-100;
 		border-radius: $border-radius;
 		padding: $spacer * 2 0;
+		margin-bottom: $spacer * 5;
 	}
 
 	.project-overview {
@@ -297,6 +306,50 @@ main {
 		@include media-breakpoint-up(md) {
 			@include make-col();
 		}
+	}
+
+	.pagination {
+		margin-top: $spacer * 4;
+		margin-bottom: $spacer * 4;
+
+		.row {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+
+		i {
+			@include transition($transition-base);
+		}
+
+		h4 {
+			margin-bottom: 0;
+		}
+
+		a {
+			text-decoration: none;
+			color: $body-color;
+		}
+
+		.pagination-left,
+		.pagination-right {
+			@include transition($transition-base);
+			padding: $spacer;
+			border-radius: $border-radius;
+			border: $border-style $border-width transparent;
+		}
+
+		.pagination-right {
+			text-align: right;
+		}
+	}
+
+	.pagination-left:hover,
+	.pagination-right:hover {
+			border-color: $border-color;
+
+			i {
+				color: $pink;
+			}
 	}
 
 	.bg-pink {

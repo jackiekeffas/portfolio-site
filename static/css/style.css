@@ -59,7 +59,7 @@
   --bs-body-bg: #FFFFFF;
   --bs-border-width: 1px;
   --bs-border-style: solid;
-  --bs-border-color: #DAD8D9;
+  --bs-border-color: #F2C0CF;
   --bs-border-color-translucent: rgba(21, 4, 9, 0.175);
   --bs-border-radius: 0.5rem;
   --bs-border-radius-sm: 0.25rem;
@@ -8548,6 +8548,10 @@ p:last-child {
   margin-right: 0.5rem;
 }
 
+.figure {
+  margin-bottom: 0;
+}
+
 main,
 .container-fluid,
 .container-sm,
@@ -8580,6 +8584,10 @@ main,
 
 .min-vh-100 {
   min-height: calc(100vh - 141px) !important;
+}
+
+.row {
+  margin-bottom: 5rem;
 }
 
 .navbar {
@@ -8688,6 +8696,7 @@ main .project-header {
   background-color: #FBEAEF;
   border-radius: 0.5rem;
   padding: 2rem 0;
+  margin-bottom: 5rem;
 }
 
 main .project-overview.sidebar {
@@ -8816,6 +8825,64 @@ main .project-images-3 {
     flex: 1 1 0;
     max-width: 100%;
   }
+}
+
+main .pagination {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+main .pagination .row {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+main .pagination i {
+  transition: all 0.2s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  main .pagination i {
+    transition: none;
+  }
+}
+
+main .pagination h4, main .pagination .h4 {
+  margin-bottom: 0;
+}
+
+main .pagination a {
+  text-decoration: none;
+  color: #150409;
+}
+
+main .pagination .pagination-left,
+main .pagination .pagination-right {
+  transition: all 0.2s ease-in-out;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: solid 1px transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  main .pagination .pagination-left,
+  main .pagination .pagination-right {
+    transition: none;
+  }
+}
+
+main .pagination .pagination-right {
+  text-align: right;
+}
+
+main .pagination-left:hover,
+main .pagination-right:hover {
+  border-color: #F2C0CF;
+}
+
+main .pagination-left:hover i,
+main .pagination-right:hover i {
+  color: #BD2855;
 }
 
 main .bg-pink {

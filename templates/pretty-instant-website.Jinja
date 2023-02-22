@@ -4,6 +4,7 @@
 {% from "footer.Jinja" import footer %}
 {% from "projectHero.Jinja" import projectHero %}
 {% from "projectOverview.Jinja" import projectOverview %}
+{% from "projectPagination.Jinja" import projectPagination %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -16,7 +17,7 @@
       {{ projectHero(projectData) }}
 
       <div class="container">
-        <div class="row pt-6 mb-6 justify-content-md-center">
+        <div class="row justify-content-md-center">
           {{ projectOverview(projectData) }}
           <div class="project-overview main-content">
             <p class="small subtle">{{ projectData.companyDescription }}</p>
@@ -32,9 +33,9 @@
       </div>
 
       <div class="container-xxl">
-        <div class="row mb-6">
+        <div class="row">
           <div class="col">
-            <div class="row justify-content-center">
+            <div class="row mb-0 justify-content-center">
               <div class="project-images-3">
                 <img src="../static/images/work/prettyinstant/website/interactive.png" class="figure-img img-fluid" alt="Interactive services page">
               </div>
@@ -51,7 +52,7 @@
           </div>
         </div>
 
-        <div class="row mb-6">
+        <div class="row">
           <div class="col">
             <figure class="figure">
               <img src="../static/images/work/prettyinstant/website/process.gif" class="figure-img img-fluid" alt="Animation of the steps of Pretty Instant's interactive service">
@@ -64,7 +65,7 @@
       </div>
 
       <div class="container">
-        <div class="row">
+        <div class="row mb-0">
           <div class="col-12 col-md-5 col-lg-4">
             <h2>Home page</h2>
             <p>Features a slideshow header to highlight specific shoot types, an animated process bar to show the stages of booking, and a full list of services so clients know everything Pretty Instant offers immediately.</p>
@@ -79,6 +80,8 @@
           </div>
         </div>
       </div>
+
+      {{ projectPagination(projectData, previousSlug="k-health-video", previousTitle="Paid ads", previousCompany="K Health", nextSlug="pretty-instant-user", nextTitle="User account + booking form", nextCompany="Pretty Instant") }}
 
     </main>
 

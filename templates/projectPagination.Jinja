@@ -1,0 +1,32 @@
+{% macro projectPagination(projectData, previousSlug="", previousTitle="", previousCompany="", nextSlug="", nextTitle="", nextCompany="") %}
+  <div class="container-xxl pagination">
+    <div class="row row-cols-auto justify-content-between">
+      <div class="col-6 col-sm-auto">
+        <div class="pagination-left d-sm-flex position-relative">
+          <div class="row mt-0 mb-0 row-cols-auto">
+            <div class="col-12 col-sm-auto">
+              <i class="fa-solid fa-arrow-left-long"></i>
+            </div>
+            <div class="col-12 col-sm-auto">
+              <a href="/projects/{{ previousSlug }}" class="stretched-link">{{ previousTitle }}</a>
+              <h4>{{ previousCompany }}</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-auto">
+        <div class="pagination-right d-sm-flex position-relative">
+          <div class="row mt-0 mb-0 row-cols-auto">
+            <div class="col-12 col-sm-auto order-sm-last">
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </div>
+            <div class="col-12 col-sm-auto">
+              <a href="/projects/{{ nextSlug }}" class="stretched-link">{{ nextTitle }}</a>
+              <h4>{{ nextCompany }}</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endmacro %}
