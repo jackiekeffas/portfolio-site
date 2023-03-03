@@ -8,7 +8,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-	{{ head(projectData) }}
+  {{ head(projectData) }}
 
   <body>
     {{ navbar() }}
@@ -17,81 +17,107 @@
       {{ projectHero(projectData) }}
 
       <div class="container">
-        <div class="row pt-6 mb-6 justify-content-md-center">
+        <div class="row justify-content-md-center">
           {{ projectOverview(projectData) }}
-          <div class="col-7">
-            <p class="small mb-6 subtle">{{ projectData.companyDescription }}</p>
-            <h2>Process</h2>
-            <p>As the company grew and its services expanded, the website became outdated, both in style and usability, and with this came a need for change. The goal was to create a new site with individual pages for each service Pretty Instant offered. Supporting each service would be prominently featured photos to better attract clients. The layouts would be similar to the original site, but designed using lighter colors and a more minimal style. With a new structure and an emphasis on the product, potential customers were better able to understand Pretty Instant's services and book them for a shoot.</p>
-            <p>I was the lead designer and developer for this project, proposing the website redesign to Pretty Instant's CEO and CTO and working closely with them throughout for feedback and final approval. Together we created a list of necessary pages and then I got to work designing.</p>
+          <div class="project-overview main-content">
+            <p class="small subtle">{{ projectData.companyDescription }}</p>
+            <!-- <h2>Process</h2>
+            <p>I proposed the website redesign to Pretty Instant's CEO and CTO and worked closely with them throughout for feedback and final approval. Together we created a list of necessary pages and then I got to work designing.</p>
             <p>With an existing site to work from, I determined which pages and section layouts were worth keeping. I then created new iterations of these by mixing Pretty Instant's existing brand colors and typography with new design elements, such as lines and patterned backgrounds. We decided which ones were our favorites and put them together to create the home page.</p>
-            <p>Because we were using the same sections across pages, I was able to begin coding once the home page was finalized. The site was coded with a combination of Ruby on Rails, HAML, and the Bourbon/Neat library of sass mixins. By using components and variables whenever possible, the new site would be lightweight and efficient to update.</p>
+            <p>Because we were using the same sections across pages, I was able to begin coding once the home page was finalized. The site was coded with a combination of Ruby on Rails, HAML, and the Bourbon/Neat library of sass mixins. By using components and variables whenever possible, the new site would be lightweight and efficient to update.</p> -->
+            <h2>Newsletter</h2>
+            <p>Sent out bi-weekly emails, sometimes polling users and used the data for articles, social posts, and the following newsletter.</p>
           </div>
         </div>
+      </div>
 
-        <div class="row mb-6 justify-content-md-center">
-          <div class="col col-lg-8 col-xxl-6">
-            <h2>Page formats</h2>
-            <p>As a result of using components and variables, every page is based off one main format, designed to feature a photograph as the first thing your eye sees. This main format is utilized as is across the home and standard service pages.</p>
-            <p>The photo is replaced with a gradient or pattern background on pages that require additional functionality. This creates space for things such as explainer videos, a sidebar for easy navigation on pages with a lot of information, or simply a larger header box for pages with more copy up top.</p>
-          </div>
-        </div>
-
-        <div class="row mb-6 justify-content-md-center">
-          <div class="col col-lg-12 col-xxl-10">
-            <div class="row">
-              <div class="col-sm">
-                <img src="../static/images/work/prettyinstant/website/interactive.png" class="figure-img img-fluid" alt="Interactive services page">
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col">
+            <div class="row mb-0 justify-content-center">
+              <div class="col">
+                <img src="../static/images/work/khealth/infographics/newsletter-sex-survey.png" class="figure-img img-fluid" alt="Interactive services page">
               </div>
-              <div class="col-sm">
-                <img src="../static/images/work/prettyinstant/website/portraits.png" class="figure-img img-fluid" alt="Portrait services page">
+              <div class="col-6">
+                <img src="../static/images/work/khealth/infographics/typeform-sex-survey.png" class="figure-img img-fluid" alt="Portrait services page">
               </div>
-              <div class="col-sm">
-                <img src="../static/images/work/prettyinstant/website/services.png" class="figure-img img-fluid" alt="List of services page">
+              <div class="col">
+                <img src="../static/images/work/khealth/infographics/newsletter-sex-results.png" class="figure-img img-fluid" alt="List of services page">
               </div>
             </div>
-            <figcaption class="figure-caption">
-              An example of the main format and video and sidebar variations
-            </figcaption>
+            <!-- <figcaption class="figure-caption">
+            </figcaption> -->
           </div>
         </div>
-
-        <div class="row mb-6 justify-content-md-center">
-          <div class="col col-lg-12 col-xxl-10">
-            <figure class="figure">
-              <img src="../static/images/work/prettyinstant/website/process.gif" class="figure-img img-fluid" alt="Animation of the steps of Pretty Instant's interactive service">
-              <figcaption class="figure-caption">
-                Close up of custom SVG animation
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-
-        <div class="row mb-6 justify-content-md-center">
-          <div class="col col-lg-8 col-xxl-6">
-            <h2>Home page</h2>
-            <p>Features a slideshow header to highlight specific shoot types, an animated process bar to show the stages of booking, and a full list of services so clients know everything Pretty Instant offers immediately.</p>
-          </div>
-        </div>
-        
-        <div class="row justify-content-sm-center">
-          <div class="col col-sm-8 col-lg-6">
-            <figure class="figure">
-              <img src="../static/images/work/prettyinstant/website/home.png" class="figure-img img-fluid" alt="Home page">
-              <figcaption class="figure-caption">
-                Full view of the home page
-              </figcaption>
-            </figure>
-          </div>
-        </div>   
       </div>
-      
-      {{ projectPagination(projectData, previousSlug="k-health-emails", previousTitle="Emails", previousCompany="K Health", nextSlug="k-health-social", nextTitle="Social", nextCompany="K Health") }}
+
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col">
+            <figure class="figure">
+              <img src="../static/images/work/khealth/infographics/social-sex-survey.png" class="figure-img img-fluid" alt="Intro of the Pretty Instant brand book">
+            </figure>
+            <!-- <figcaption class="figure-caption">
+            </figcaption> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col">
+            <div class="row mb-0 justify-content-center">
+              <div class="col">
+                <img src="../static/images/work/khealth/infographics/newsletter-insomnia.png" class="figure-img img-fluid" alt="Interactive services page">
+              </div>
+              <div class="col">
+                <img src="../static/images/work/khealth/infographics/blog-insomnia-heatmap.png" class="figure-img img-fluid" alt="Interactive services page">
+              </div>
+              <div class="col">
+                <img src="../static/images/work/khealth/infographics/blog-insomnia-timeline.png" class="figure-img img-fluid" alt="Portrait services page">
+              </div>
+              <div class="col">
+                <img src="../static/images/work/khealth/infographics/blog-insomnia-conditions.png" class="figure-img img-fluid" alt="List of services page">
+              </div>
+            </div>
+            <!-- <figcaption class="figure-caption">
+            </figcaption> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="project-text">
+            <h2>One offs</h2>
+            <p>Social media posts</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-xxl">
+        <div class="row mb-0">
+          <div class="col">
+            <div class="row mb-0 justify-content-center">
+              <div class="col-8">
+                <img src="../static/images/work/khealth/infographics/social-urgent-care.png" class="figure-img img-fluid" alt="Portrait services page">
+              </div>
+              <div class="col">
+                <img src="../static/images/work/khealth/infographics/social-symptoms.png" class="figure-img img-fluid" alt="List of services page">
+              </div>
+            </div>
+            <!-- <figcaption class="figure-caption">
+            </figcaption> -->
+          </div>
+        </div>
+      </div>
+
+      {{ projectPagination(projectData, previousSlug="k-health-video", previousTitle="Paid ads", previousCompany="K Health", nextSlug="pretty-instant-user", nextTitle="User account + booking form", nextCompany="Pretty Instant") }}
 
     </main>
 
     {{ footer() }}
 
-		{{ scripts() }}
-	</body>
+    {{ scripts() }}
+  </body>
 </html>
