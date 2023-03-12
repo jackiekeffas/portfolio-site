@@ -28,8 +28,3 @@ def get_about():
 @app.errorhandler(404)
 def get_error_page(error):
     return render_template("404.jinja"), 404
-
-
-if __name__ == '__main__':
-    os.system('flask --app server.py --debug run')
-    
