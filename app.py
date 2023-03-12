@@ -30,4 +30,4 @@ def get_error_page(error):
     return render_template("404.jinja"), 404
 
 if __name__=="__main__":
-    app.run(debug=True)
+    app.run(debug=False)
