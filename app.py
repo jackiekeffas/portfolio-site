@@ -4,7 +4,7 @@ import os
 from flask import Flask, render_template
 
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder="/templates")
 data = json.load(
     open("./data/data.json")
 )
@@ -28,3 +28,6 @@ def get_about():
 @app.errorhandler(404)
 def get_error_page(error):
     return render_template("404.jinja"), 404
+
+if __name__=="__main__":
+    app.run(debug=False)
