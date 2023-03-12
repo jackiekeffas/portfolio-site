@@ -1,1 +1,1 @@
-web: flask --app --host=0.0.0.0 run
+web: gunicorn app:app
