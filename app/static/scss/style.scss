@@ -2,8 +2,7 @@
 
 
 
-// Typography
-// Headings
+// Typography Headings
 h1, .h1 {
 	font-size: $h1-font-size * .6875;
 
@@ -53,19 +52,19 @@ h4, .h4 {
 
 	hr {
 		margin-left: $spacer * .75;
-		margin-right: $spacer * 1.25;
+		margin-right: $spacer * .75;
 
 		@include media-breakpoint-up(md) {
 			margin-right: $spacer * 1.5;
 		}
 		@include media-breakpoint-up(xl) {
 			margin-left: $spacer;
-			margin-right: $spacer * 2;
+			margin-right: $spacer;
 		}
 	}
 }
 
-// Body
+// Typography Body
 p:last-child {
 	margin-bottom: 0;
 }
@@ -81,31 +80,31 @@ p:last-child {
 
 
 // Images
-.stars {
-	vertical-align: baseline;
+// .stars {
+// 	vertical-align: baseline;
 
-	width: 20px;
-	@include media-breakpoint-up(md) {
-		width: 24px;
-	}
-	@include media-breakpoint-up(xl) {
-		width: 32px;
-	}
-}
+// 	width: 20px;
+// 	@include media-breakpoint-up(md) {
+// 		width: 24px;
+// 	}
+// 	@include media-breakpoint-up(xl) {
+// 		width: 32px;
+// 	}
+// }
 
-.stars-header {
-	margin-left: $spacer * 0.5;
+// .stars-header {
+// 	margin-left: $spacer * 0.5;
 
-	@include media-breakpoint-up(xl) {
-		margin-left: $spacer * 0.75;
-	}
-}
+// 	@include media-breakpoint-up(xl) {
+// 		margin-left: $spacer * 0.75;
+// 	}
+// }
 
-.star {
-	width: 10px;
-	margin-left: $spacer * .5;
-	margin-right: $spacer * .5;
-}
+// .star {
+// 	width: 10px;
+// 	margin-left: $spacer * .5;
+// 	margin-right: $spacer * .5;
+// }
 
 .figure {
 	margin-bottom: 0;
@@ -114,7 +113,7 @@ p:last-child {
 
 
 // Grid
-main, .container-fluid {
+.container-fluid {
 	@include make-container(3.5rem);
 }
 
@@ -143,11 +142,16 @@ main, .container-fluid {
 // Nav
 .navbar {
 	backdrop-filter: blur(16px);
-	background-color: rgba($white, .8);
+	background-color: rgba($dark, .8);
 
 	.nav-link {
 		padding-left: 0;
 		padding-right: 0;
+		color: $white;
+
+		&:hover {
+			color: $navbar-light-hover-color;
+		}
 	}
 
 	.navbar-collapse {
@@ -190,206 +194,220 @@ a {
 
 
 // Body
+body {
+	background-color: $light;
+}
+
+.bg-dark, .bg-eggplant {
+	color: $body-color-light;
+}
+
 main {
 	margin-top: $spacer * 4.75;
+}
 
-	.card {
-		@include transition($transition-base);
-		padding: $card-spacer-y $card-spacer-x;
+.bg-eggplant {
+	background-color: $eggplant;
 
-		a {
-			color: $black;
-			text-decoration: none;
-		}
-
-		.card-body {
-			font-size: $font-size-xs;
-			padding: $card-spacer-y 0 0;
-
-			.card-title {
-				margin-top: $card-title-spacer-y;
-				margin-bottom: 0;
-			}
-
-			.card-subtitle {
-				margin: 0;
-			}
-
-			.stars {
-				@include transition($transition-base);
-				opacity: 0%;
-			}
-		}
-
-		&:hover {
-			border-color: $border-color;
-			
-			.stars {
-				opacity: 100%;
-			}
-		}
+	.navbar {
+		backdrop-filter: blur(16px);
+		background-color: rgba($eggplant, .8);
 	}
 
-	.project-header {
-		background-color: $pink-100;
+	a {
+		color: $mauve;
+	}
+}
+
+.card {
+	@include transition($transition-base);
+	background-color: transparent;
+	border-radius: 0;
+
+	a {
+		color: $white;
+		text-decoration: none;
+	}
+
+	.card-body {
+		font-size: $font-size-xs;
+		padding: $card-spacer-y 0;
+	}
+
+	i {
+		font-size: $h2-font-size;
+		opacity: 0;
+		padding-right: $spacer;
+		@include transition($transition-slow);
+	}
+
+	.card-title {
+		margin-top: $card-title-spacer-y;
+		margin-bottom: 0;
+	}
+
+	.card-subtitle {
+		margin: 0;
+	}
+
+	.card-img {
 		border-radius: $border-radius;
-		padding: $spacer * 2 0;
-		margin-bottom: $spacer * 5;
 	}
 
-	.project-overview {
-		&.sidebar {
-			@include make-col-ready();
-			@include make-col(12);
-
-			@include media-breakpoint-up(md) {
-				@include make-col(4);
-			}
-			@include media-breakpoint-up(xl) {
-				@include make-col(3);
-			}
-
-			.sidebar-item {
-				@include make-col-ready();
-				@include make-col(12);
-				margin-bottom: $spacer;
-
-				@include media-breakpoint-up(sm) {
-					@include make-col(6);
-				}
-				@include media-breakpoint-up(md) {
-					@include make-col(12);
-				}
-			}
-
-			h4 {
-				margin-bottom: 0;
-			}
-		}
-
-		&.main-content {
-			@include make-col-ready();
-			@include make-col();
-			
-			@include media-breakpoint-up(xl) {
-				@include make-col(7);
-			}
-
-			h2 {
-				margin-top: $spacer * 2.5;
-			}
-		}
+	.card-line {
+		height: 1px;
+		width: 0;
+		background-color: $ochre;
+		@include transition($transition-slow);
 	}
 
-	.project-text {
-		@include make-col-ready();
-		@include make-col();
-
-		@include media-breakpoint-up(md) {
-			@include make-col(8);
+	&:hover {
+		i {
+			opacity: 1;
+			padding-right: 0;
 		}
-
-		@include media-breakpoint-up(xl) {
-			@include make-col(7);
-			@include make-col-offset(1);
+		.card-line {
+			width: 100%;
 		}
 	}
+}
 
-	.project-images-3 {
+.project-header {
+	background-color: $pink-100;
+	border-radius: $border-radius;
+	padding: $spacer * 2 0;
+	margin-bottom: $spacer * 5;
+}
+
+.project-overview {
+	&.sidebar {
 		@include make-col-ready();
 		@include make-col(12);
 
-		@include media-breakpoint-up(sm) {
-			@include make-col(6);
-		}
-
 		@include media-breakpoint-up(md) {
-			@include make-col();
+			@include make-col(4);
 		}
-	}
-
-	.pagination {
-		margin-top: $spacer * 4;
-		margin-bottom: $spacer * 4;
-
-		.row {
-			margin-top: 0;
-			margin-bottom: 0;
+		@include media-breakpoint-up(xl) {
+			@include make-col(3);
 		}
 
-		i {
-			@include transition($transition-base);
+		.sidebar-item {
+			@include make-col-ready();
+			@include make-col(12);
+			margin-bottom: $spacer;
+
+			@include media-breakpoint-up(sm) {
+				@include make-col(6);
+			}
+			@include media-breakpoint-up(md) {
+				@include make-col(12);
+			}
 		}
 
 		h4 {
 			margin-bottom: 0;
 		}
-
-		a {
-			text-decoration: none;
-			color: $body-color;
-		}
-
-		.pagination-left,
-		.pagination-right {
-			@include transition($transition-base);
-			padding: $spacer;
-			border-radius: $border-radius;
-			border: $border-style $border-width transparent;
-		}
-
-		.pagination-right {
-			text-align: right;
-		}
 	}
 
-	.pagination-left:hover,
-	.pagination-right:hover {
-			border-color: $border-color;
+	&.main-content {
+		@include make-col-ready();
+		@include make-col();
+		
+		@include media-breakpoint-up(xl) {
+			@include make-col(7);
+		}
 
-			i {
-				color: $pink;
-			}
-	}
-
-	.bg-pink {
-		background-color: $pink-100;
-
-		&.badge {
-			border: 1px solid $pink-200;
+		h2 {
+			margin-top: $spacer * 2.5;
 		}
 	}
+}
 
-	.bg-purple {
-		background-color: $purple-100;
+.project-text {
+	@include make-col-ready();
+	@include make-col();
 
-		&.badge {
-			border: 1px solid $purple-200;
-		}
+	@include media-breakpoint-up(md) {
+		@include make-col(8);
 	}
 
-	.bg-blue {
-		background-color: $blue-100;
+	@include media-breakpoint-up(xl) {
+		@include make-col(7);
+		@include make-col-offset(1);
+	}
+}
 
-		&.badge {
-			border: 1px solid $blue-200;
-		}
+.project-images-3 {
+	@include make-col-ready();
+	@include make-col(12);
+
+	@include media-breakpoint-up(sm) {
+		@include make-col(6);
 	}
 
-	.bg-orange {
-		background-color: $orange-100;
+	@include media-breakpoint-up(md) {
+		@include make-col();
+	}
+}
 
-		&.badge {
-			border: 1px solid $orange-200;
-		}
+.pagination {
+	margin-top: $spacer * 4;
+	margin-bottom: $spacer * 4;
+
+	.row {
+		margin-top: 0;
+		margin-bottom: 0;
 	}
 
-	.bg-green {
-		background-color: $green-100;
+	i {
+		@include transition($transition-base);
+		font-size: $h3-font-size;
+	}
 
-		&.badge {
-			border: 1px solid $green-200;
-		}
+	h4 {
+		margin-bottom: 0;
+	}
+
+	a {
+		text-decoration: none;
+		color: $body-color;
+	}
+
+	.pagination-left,
+	.pagination-right {
+		@include transition($transition-base);
+	}
+
+	.pagination-right {
+		text-align: right;
+	}
+}
+
+.pagination-left:hover,
+.pagination-right:hover {
+	color: $navbar-dark-hover-color;
+	a, i {
+		color: $navbar-dark-hover-color;
+	}
+}
+
+.pagination-left:hover {
+	a, h4 {
+		margin-left: $spacer;
+	}
+
+	i {
+		margin-left: -16px;
+	}
+}
+
+.pagination-right:hover {
+	a, h4 {
+		margin-right: $spacer;
+	}
+
+	i {
+		margin-right: -16px;
 	}
 }
 
@@ -403,16 +421,27 @@ footer {
 	margin-bottom: $spacer * 1.5;
 	
 	a {
-		color: $black;
+		color: $eggplant;
+		font-size: $font-size-base;
 
 		&:hover {
-			color: $navbar-light-hover-color;
+			color: $navbar-dark-hover-color;
 		}
 	}
 
 	@include media-breakpoint-up(sm) {
 		ul {
 			margin-bottom: 0px;
+		}
+	}
+}
+
+.bg-dark, .bg-eggplant {
+	footer a {
+		color: $body-color-light;
+
+		&:hover {
+			color: $navbar-light-hover-color;
 		}
 	}
 }

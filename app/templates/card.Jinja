@@ -4,15 +4,16 @@
 		<div class="card-body">
 			<a href="/projects/{{ projectData.slug }}" class="stretched-link">
 				<div class="d-flex">
-					<div class="flex-grow-1">
+					<div class="flex-grow-1 pe-3">
 						<h4 class="card-subtitle">{{ projectData.company }}</h4>
 						<h2 class="card-title">{{ projectData.title }}</h2>
 					</div>
 					<div class="align-self-end text-end">
-						<img class="stars" src="../static/images/stars.svg" alt="Three stars">
+						<i class="bi bi-arrow-right"></i>
 					</div>
 				</div>
 			</a>
 		</div>
+		<div class="card-line"></div>
 	</div>
 {% endmacro %}
