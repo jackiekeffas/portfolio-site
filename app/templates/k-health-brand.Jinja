@@ -3,7 +3,7 @@
 {% from "navbar.Jinja" import navbar %}
 {% from "footer.Jinja" import footer %}
 {% from "projectHero.Jinja" import projectHero %}
-{% from "projectOverview.Jinja" import projectOverview %}
+{% from "projectOverviewAlt.Jinja" import projectOverviewAlt %}
 {% from "projectPagination.Jinja" import projectPagination %}
 
 <!DOCTYPE html>
@@ -16,18 +16,7 @@
     <main>
       {{ projectHero(projectData) }}
 
-      <div class="container">
-        <div class="row pt-6 mb-6 justify-content-md-center">
-          {{ projectOverview(projectData) }}
-          <div class="col-7">
-            <p class="small mb-6 subtle">{{ projectData.companyDescription }}</p>
-            <h2>Process</h2>
-            <p>As the company grew and its services expanded, the website became outdated, both in style and usability, and with this came a need for change. The goal was to create a new site with individual pages for each service Pretty Instant offered. Supporting each service would be prominently featured photos to better attract clients. The layouts would be similar to the original site, but designed using lighter colors and a more minimal style. With a new structure and an emphasis on the product, potential customers were better able to understand Pretty Instant's services and book them for a shoot.</p>
-            <p>I was the lead designer and developer for this project, proposing the website redesign to Pretty Instant's CEO and CTO and working closely with them throughout for feedback and final approval. Together we created a list of necessary pages and then I got to work designing.</p>
-            <p>With an existing site to work from, I determined which pages and section layouts were worth keeping. I then created new iterations of these by mixing Pretty Instant's existing brand colors and typography with new design elements, such as lines and patterned backgrounds. We decided which ones were our favorites and put them together to create the home page.</p>
-            <p>Because we were using the same sections across pages, I was able to begin coding once the home page was finalized. The site was coded with a combination of Ruby on Rails, HAML, and the Bourbon/Neat library of sass mixins. By using components and variables whenever possible, the new site would be lightweight and efficient to update.</p>
-          </div>
-        </div>
+      {{ projectOverviewAlt(projectData) }}
 
         <div class="row mb-6 justify-content-md-center">
           <div class="col col-lg-8 col-xxl-6">
@@ -86,7 +75,7 @@
         </div>
       </div>
 
-      {{ projectPagination(projectData, previousSlug="various-icons", previousTitle="Icons + illustraitons", previousCompany="Various", nextSlug="k-health-landing-pages", nextTitle="Landing pages", nextCompany="K Health") }}
+      {{ projectPagination(projectData, previousSlug="various-icons", previousTitle="Icons & illustraitons", previousCompany="Various", nextSlug="k-health-landing-pages", nextTitle="Landing pages", nextCompany="K Health") }}
 
     </main>
 

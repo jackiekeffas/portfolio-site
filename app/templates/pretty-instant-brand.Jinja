@@ -19,8 +19,7 @@
       <div class="container">
         <div class="row justify-content-md-center">
           {{ projectOverview(projectData) }}
-          <div class="project-overview main-content">
-            <p class="small subtle">{{ projectData.companyDescription }}</p>
+          <div class="project-overview-main">
             <h2>Process</h2>
             <p>As a young company, standardized colors and logos were used, but proper brand guidelines were never written up. During a period where multiple new hires joined the team, I decided to create a brand book to keep Pretty Instant's visual language consistent across departments. The book includes the company mission statements, fonts, colors, gradients, and instructions on how to use Pretty Instant's logos and icons.</p>
           </div>
@@ -49,7 +48,7 @@
         </div>
       </div>
 
-      {{ projectPagination(projectData, previousSlug="pretty-instant-user", previousTitle="User account + booking form", previousCompany="Pretty Instant", nextSlug="pretty-instant-brochures", nextTitle="Services brochures", nextCompany="Pretty Instant") }}
+      {{ projectPagination(projectData, previousSlug="pretty-instant-user", previousTitle="User account & booking form", previousCompany="Pretty Instant", nextSlug="pretty-instant-brochures", nextTitle="Services brochures", nextCompany="Pretty Instant") }}
 
     </main>
 

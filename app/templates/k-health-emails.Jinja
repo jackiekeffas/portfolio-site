@@ -3,7 +3,7 @@
 {% from "navbar.Jinja" import navbar %}
 {% from "footer.Jinja" import footer %}
 {% from "projectHero.Jinja" import projectHero %}
-{% from "projectOverview.Jinja" import projectOverview %}
+{% from "projectOverviewAlt.Jinja" import projectOverviewAlt %}
 {% from "projectPagination.Jinja" import projectPagination %}
 
 <!DOCTYPE html>
@@ -16,16 +16,7 @@
     <main>
       {{ projectHero(projectData) }}
 
-      <div class="container">
-        <div class="row justify-content-md-center">
-          {{ projectOverview(projectData) }}
-          <div class="project-overview main-content">
-            <p class="small subtle">{{ projectData.companyDescription }}</p>
-            <h2>Series</h2>
-            <!-- <p>Sent out bi-weekly emails, sometimes polling users and used the data for articles, social posts, and the following newsletter.</p> -->
-          </div>
-        </div>
-      </div>
+      {{ projectOverviewAlt(projectData) }}
 
       <div class="container-xxl">
         <div class="row">

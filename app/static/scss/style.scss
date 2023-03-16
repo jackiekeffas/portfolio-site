@@ -39,8 +39,16 @@ h3, .h3 {
 h4, .h4 {
 	font-family: $font-family-sans-serif;
 	text-transform: uppercase;
-	font-weight: $font-weight-semibold;
+	font-weight: $font-weight-bold;
 	line-height: $line-height-base;
+}
+
+.orpheus-1 {
+	font-feature-settings: "ss01";
+}
+
+.orpheus-8 {
+	font-feature-settings: "ss08";
 }
 
 .subheader {
@@ -71,41 +79,17 @@ p:last-child {
 
 .subtle {
 	color: $body-subtle-color;
+	font-style: italic;
 }
 
 .figure-caption {
 	text-align: center;
+	font-style: italic;
 }
 
 
 
 // Images
-// .stars {
-// 	vertical-align: baseline;
-
-// 	width: 20px;
-// 	@include media-breakpoint-up(md) {
-// 		width: 24px;
-// 	}
-// 	@include media-breakpoint-up(xl) {
-// 		width: 32px;
-// 	}
-// }
-
-// .stars-header {
-// 	margin-left: $spacer * 0.5;
-
-// 	@include media-breakpoint-up(xl) {
-// 		margin-left: $spacer * 0.75;
-// 	}
-// }
-
-// .star {
-// 	width: 10px;
-// 	margin-left: $spacer * .5;
-// 	margin-right: $spacer * .5;
-// }
-
 .figure {
 	margin-bottom: 0;
 }
@@ -122,7 +106,7 @@ p:last-child {
 }
 
 .container-xxl {
-	padding: 0;
+	padding: 0 $spacer * 1.75;
 
 	@include media-breakpoint-up(xxl) {
 		padding: 0 $container-padding-x;
@@ -159,27 +143,19 @@ p:last-child {
 	}
 
 	img.nav-item {
-		width: 10px;
+		width: 16px;
 		margin-left: $spacer;
 		margin-right: $spacer;
 	}
 
 	.logo {
-		width: 38px;
 		@include transition($transition-base);
-
-		path {
-			fill: $black;
-		}
+		fill: $white;
 	}
 
-	a.navbar-brand {
-		&:hover {
-			.logo {
-				path {
-					fill: $navbar-light-hover-color;
-				}
-			}
+	a.navbar-brand:hover {
+		.logo {
+			fill: $navbar-light-hover-color;
 		}
 	}
 }
@@ -202,8 +178,8 @@ body {
 	color: $body-color-light;
 }
 
-main {
-	margin-top: $spacer * 4.75;
+body.bg-dark main, body.bg-eggplant main {
+	margin-top: $page-top-spacer;
 }
 
 .bg-eggplant {
@@ -272,53 +248,80 @@ main {
 	}
 }
 
-.project-header {
-	background-color: $pink-100;
-	border-radius: $border-radius;
-	padding: $spacer * 2 0;
+.project-hero {
+	padding-top: $page-top-spacer;
+	padding-bottom: $spacer * 2;
 	margin-bottom: $spacer * 5;
 }
 
-.project-overview {
-	&.sidebar {
-		@include make-col-ready();
-		@include make-col(12);
-
-		@include media-breakpoint-up(md) {
-			@include make-col(4);
-		}
-		@include media-breakpoint-up(xl) {
-			@include make-col(3);
-		}
-
-		.sidebar-item {
-			@include make-col-ready();
-			@include make-col(12);
-			margin-bottom: $spacer;
-
-			@include media-breakpoint-up(sm) {
-				@include make-col(6);
-			}
-			@include media-breakpoint-up(md) {
-				@include make-col(12);
-			}
-		}
-
-		h4 {
-			margin-bottom: 0;
-		}
+.project-overview-main {
+	@include make-col-ready();
+	@include make-col();
+	
+	@include media-breakpoint-up(xl) {
+		@include make-col(7);
 	}
 
-	&.main-content {
-		@include make-col-ready();
-		@include make-col();
-		
-		@include media-breakpoint-up(xl) {
-			@include make-col(7);
-		}
+	h2 {
+		margin-top: $spacer * 2.5;
+	}
 
-		h2 {
-			margin-top: $spacer * 2.5;
+	:first-child {
+		margin-top: 0;
+	}
+}
+
+.project-overview-sidebar {
+	@include make-col-ready();
+	@include make-col(12);
+
+	@include media-breakpoint-up(md) {
+		@include make-col(4);
+	}
+	@include media-breakpoint-up(xl) {
+		@include make-col(3);
+	}
+
+	h4 {
+		margin-bottom: 0;
+	}
+
+	.sidebar-item {
+		@include make-col-ready();
+		@include make-col(12);
+		margin-bottom: $spacer;
+
+		@include media-breakpoint-up(sm) {
+			@include make-col(6);
+		}
+		@include media-breakpoint-up(md) {
+			@include make-col(12);
+		}
+	}
+}
+
+.project-overview-alt {
+	@include make-col-ready();
+	@include make-col(12);
+
+	h4 {
+		margin-bottom: 0;
+	}
+
+	@include media-breakpoint-up(xl) {
+		@include make-col(10);
+	}
+
+	.sidebar-item {
+		@include make-col-ready();
+		@include make-col(12);
+		margin-bottom: $spacer;
+	
+		@include media-breakpoint-up(sm) {
+			@include make-col(6);
+		}
+		@include media-breakpoint-up(md) {
+			@include make-col();
 		}
 	}
 }
@@ -362,6 +365,7 @@ main {
 	i {
 		@include transition($transition-base);
 		font-size: $h3-font-size;
+		position: relative;
 	}
 
 	h4 {
@@ -378,8 +382,18 @@ main {
 		@include transition($transition-base);
 	}
 
+	.pagination-left {
+		i {
+			right: 0;
+		}
+	}
+
 	.pagination-right {
 		text-align: right;
+
+		i {
+			left: 0;
+		}
 	}
 }
 
@@ -392,22 +406,14 @@ main {
 }
 
 .pagination-left:hover {
-	a, h4 {
-		margin-left: $spacer;
-	}
-
 	i {
-		margin-left: -16px;
+		right: 16px;
 	}
 }
 
 .pagination-right:hover {
-	a, h4 {
-		margin-right: $spacer;
-	}
-
 	i {
-		margin-right: -16px;
+		left: 16px;
 	}
 }
 

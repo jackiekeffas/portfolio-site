@@ -19,8 +19,7 @@
       <div class="container">
         <div class="row justify-content-md-center">
           {{ projectOverview(projectData) }}
-          <div class="project-overview main-content">
-            <p class="small subtle">{{ projectData.companyDescription }}</p>
+          <div class="project-overview-main">
             <h2>Process</h2>
             <p>I proposed the website redesign to Pretty Instant's CEO and CTO and worked closely with them throughout for feedback and final approval. Together we created a list of necessary pages and then I got to work designing.</p>
             <p>With an existing site to work from, I determined which pages and section layouts were worth keeping. I then created new iterations of these by mixing Pretty Instant's existing brand colors and typography with new design elements, such as lines and patterned backgrounds. We decided which ones were our favorites and put them together to create the home page.</p>
@@ -81,7 +80,7 @@
         </div>
       </div>
 
-      {{ projectPagination(projectData, previousSlug="k-health-video", previousTitle="Paid ads", previousCompany="K Health", nextSlug="pretty-instant-user", nextTitle="User account + booking form", nextCompany="Pretty Instant") }}
+      {{ projectPagination(projectData, previousSlug="k-health-video", previousTitle="Paid ads", previousCompany="K Health", nextSlug="pretty-instant-user", nextTitle="User account & booking form", nextCompany="Pretty Instant") }}
 
     </main>
 

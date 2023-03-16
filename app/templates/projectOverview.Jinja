@@ -1,6 +1,6 @@
 {% macro projectOverview(projectData) %}
-  <div class="project-overview sidebar">
-    <div class="row mb-0">
+  <div class="project-overview-sidebar">
+    <div class="row">
       <div class="sidebar-item">
         <h4>Role</h4>
         <p class="small">{{ projectData.role }}</p>
@@ -9,12 +9,10 @@
         <h4>Stakeholders</h4>
         <p class="small">{{ projectData.stakeholders }}</p>
       </div>
-      <!-- <div class="sidebar-item">
+      <div class="sidebar-item">
         <h4>Team</h4>
         <p class="small">{{ projectData.team }}</p>
-      </div> -->
-    </div>
-    <div class="row">
+      </div>
       <div class="sidebar-item">
         <h4>Tools</h4>
         <p class="small">{{ projectData.tools }}</p>
@@ -23,7 +21,10 @@
         <h4>Skills</h4>
         <p class="small">{{ projectData.skills }}</p>
       </div>
+      <div class="sidebar-item mb-0">
+        <h4>Company</h4>
+        <p class="small">{{ projectData.companyDescription }}</p>
+      </div>
     </div>
-    <!-- <p><span class="badge rounded-pill bg-purple me-2">UI/UX</span><span class="badge rounded-pill bg-blue me-2">Brand</span><span class="badge rounded-pill bg-orange">Marketing</span></p> -->
   </div>
 {% endmacro %}
