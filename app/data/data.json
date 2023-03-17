@@ -12,7 +12,7 @@
         "skills": "",
         "cardImage": "../static/images/home/khealth/brand.jpg",
         "cardImageAltText": "K Health brand book",
-        "overviewImage": "../static/images/home/khealth/brand.jpg",
+        "overviewImage": "../static/images/hero/khealth/brand.jpg",
         "overviewImageAltText": "K Health brand book"
     },
     "k-health-landing-pages": {
@@ -28,7 +28,7 @@
         "skills": "Web design, Web production",
         "cardImage": "../static/images/home/khealth/landingpages.jpg",
         "cardImageAltText": "K Health landing pages",
-        "overviewImage": "../static/images/home/khealth/landingpages.jpg",
+        "overviewImage": "../static/images/hero/khealth/landingpages.jpg",
         "overviewImageAltText": "K Health landing pages"
     },
     "k-health-emails": {
@@ -44,7 +44,7 @@
         "skills": "Email design & development",
         "cardImage": "../static/images/home/khealth/emails.jpg",
         "cardImageAltText": "K Health emails",
-        "overviewImage": "../static/images/home/khealth/emails.jpg",
+        "overviewImage": "../static/images/hero/khealth/emails.jpg",
         "overviewImageAltText": "K Health emails"
     },
     "k-health-infographics": {
@@ -60,7 +60,7 @@
         "skills": "Infographic design, email design & development",
         "cardImage": "../static/images/home/khealth/infographics.jpg",
         "cardImageAltText": "K Health infographics",
-        "overviewImage": "../static/images/home/khealth/infographics.jpg",
+        "overviewImage": "../static/images/hero/khealth/infographics.jpg",
         "overviewImageAltText": "K Health infographics"
     },
     "k-health-social": {
@@ -76,7 +76,7 @@
         "skills": "Design, video editing",
         "cardImage": "../static/images/home/khealth/social.jpg",
         "cardImageAltText": "K Health social",
-        "overviewImage": "../static/images/home/khealth/social.jpg",
+        "overviewImage": "../static/images/hero/khealth/social.jpg",
         "overviewImageAltText": "K Health social"
     },
     "k-health-video": {
@@ -92,7 +92,7 @@
         "skills": "Design, art directing",
         "cardImage": "../static/images/home/khealth/videos.jpg",
         "cardImageAltText": "K Health videos",
-        "overviewImage": "../static/images/home/khealth/videos.jpg",
+        "overviewImage": "../static/images/hero/khealth/videos.jpg",
         "overviewImageAltText": "K Health videos"
     },
     "pretty-instant-website": {
@@ -108,7 +108,7 @@
         "skills": "Web design & development, UI & UX, branding, marketing",
         "cardImage": "../static/images/home/prettyinstant/website.jpg",
         "cardImageAltText": "Pretty Instant website",
-        "overviewImage": "../static/images/work/prettyinstant/website/header.png",
+        "overviewImage": "../static/images/hero/prettyinstant/website.jpg",
         "overviewImageAltText": "Desktop and mobile views of the Pretty Instant website"
     },
     "pretty-instant-user": {
@@ -124,7 +124,7 @@
         "skills": "Product design, wireframing, UI + UX",
         "cardImage": "../static/images/home/prettyinstant/dashboard.jpg",
         "cardImageAltText": "Pretty Instant user dashboard",
-        "overviewImage": "../static/images/work/prettyinstant/dashboard/header.png",
+        "overviewImage": "../static/images/hero/prettyinstant/dashboard.jpg",
         "overviewImageAltText": "Desktop and mobile view of the Pretty Instant user dashboard"
     },
     "pretty-instant-brand": {
@@ -140,7 +140,7 @@
         "skills": "Branding, layout design",
         "cardImage": "../static/images/home/prettyinstant/brand.jpg",
         "cardImageAltText": "Pretty Instant brand book",
-        "overviewImage": "../static/images/work/prettyinstant/brand/header.png",
+        "overviewImage": "../static/images/hero/prettyinstant/brand.jpg",
         "overviewImageAltText": "Cover of the Pretty Instant brand guidelines"
     },
     "pretty-instant-brochures": {
@@ -156,7 +156,7 @@
         "skills": "Marketing, layout design, photo retouching",
         "cardImage": "../static/images/home/prettyinstant/brochures.jpg",
         "cardImageAltText": "Pretty Instant brochure",
-        "overviewImage": "../static/images/work/prettyinstant/brochure/header.png",
+        "overviewImage": "../static/images/hero/prettyinstant/brochures.jpg",
         "overviewImageAltText": "Cover of the food, drink, and restaurant brochure"
     },
     "various-icons": {
@@ -167,7 +167,7 @@
         "description": "A selection of assets made for various jobs across the years.",
         "cardImage": "../static/images/home/icons.jpg",
         "cardImageAltText": "Various icons",
-        "overviewImage": "../static/images/work/icons/header.png",
+        "overviewImage": "../static/images/hero/icons.jpg",
         "overviewImageAltText": "Satisfaction guaranteed and support icons"
     }
 }
