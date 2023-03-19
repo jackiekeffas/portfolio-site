@@ -3,7 +3,7 @@
 {% from "navbar.Jinja" import navbar %}
 {% from "footer.Jinja" import footer %}
 {% from "projectHero.Jinja" import projectHero %}
-{% from "projectOverviewAlt.Jinja" import projectOverviewAlt %}
+{% from "projectOverview.Jinja" import projectOverview %}
 {% from "projectPagination.Jinja" import projectPagination %}
 
 <!DOCTYPE html>
@@ -16,15 +16,15 @@
     <main>
       {{ projectHero(projectData) }}
 
-      {{ projectOverviewAlt(projectData) }}
-
       <div class="container">
-        <div class="row">
-          <div class="project-text">
+        <div class="row justify-content-md-center">
+          {{ projectOverview(projectData) }}
+          <div class="project-overview-main">
             <h2>Process</h2>
             <p>To promote their services, I was tasked with creating informational brochures for eight of the company's main verticals. The goal was to explain to potential clients the benefits of working with Pretty Instant by showing how they helped existing clients. Each brochure was to have a featured client and showcase four or five different of the shoot types that Pretty Instant offers.</p>
             <p>I handled all of the design for this project, working alongside one of Pretty Instant's account managers to accurately capture the company's relationships with the selected clients. Since the assets were text and image heavy, I decided to take a more editorial approach with the design. The quality of Pretty Instant's work needed to be the hightlight, so I kept the photographs as large as possible and based text placement off their shape.</p>
             <p>The first brochure was for food, drink, and restaurant services, featuring &pizza. Once it was completed, I created a template from it to use for the other verticals. This streamlined production, allowing me to simply switched out copy and photographs and make only minor adjustments to some layouts in order to best showcase the images.</p>
+          </div>
         </div>
       </div>
 

@@ -73,6 +73,8 @@ h4, .h4 {
 	}
 }
 
+
+
 // Typography Body
 p:last-child {
 	margin-bottom: 0;
@@ -80,12 +82,10 @@ p:last-child {
 
 .subtle {
 	color: $body-subtle-color;
-	font-style: italic;
 }
 
 .figure-caption {
 	text-align: center;
-	font-style: italic;
 }
 
 
@@ -309,20 +309,28 @@ body.bg-dark main, body.bg-eggplant main {
 		margin-bottom: 0;
 	}
 
-	@include media-breakpoint-up(xl) {
-		@include make-col(10);
-	}
-
-	.sidebar-item {
+	.sidebar-item,
+	.sidebar-item-wider {
 		@include make-col-ready();
 		@include make-col(12);
 		margin-bottom: $spacer;
-	
+	}
+
+	.sidebar-item {
 		@include media-breakpoint-up(sm) {
 			@include make-col(6);
 		}
 		@include media-breakpoint-up(md) {
 			@include make-col();
+		}
+	}
+
+	.sidebar-item-wider {
+		@include media-breakpoint-up(sm) {
+			@include make-col(12);
+		}
+		@include media-breakpoint-up(lg) {
+			@include make-col(4);
 		}
 	}
 }
@@ -451,4 +459,11 @@ footer {
 			color: $navbar-light-hover-color;
 		}
 	}
+}
+
+
+
+// Utilities
+.hidden {
+  display: none !important;
 }

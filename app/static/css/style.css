@@ -8518,12 +8518,10 @@ p:last-child {
 
 .subtle {
   color: #A26422;
-  font-style: italic;
 }
 
 .figure-caption {
   text-align: center;
-  font-style: italic;
 }
 
 .figure {
@@ -8815,14 +8813,8 @@ body.bg-dark main, body.bg-eggplant main {
   margin-bottom: 0;
 }
 
-@media (min-width: 1200px) {
-  .project-overview-alt {
-    flex: 0 0 auto;
-    width: 83.33333%;
-  }
-}
-
-.project-overview-alt .sidebar-item {
+.project-overview-alt .sidebar-item,
+.project-overview-alt .sidebar-item-wider {
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
@@ -8845,6 +8837,20 @@ body.bg-dark main, body.bg-eggplant main {
   .project-overview-alt .sidebar-item {
     flex: 1 1 0;
     max-width: 100%;
+  }
+}
+
+@media (min-width: 576px) {
+  .project-overview-alt .sidebar-item-wider {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .project-overview-alt .sidebar-item-wider {
+    flex: 0 0 auto;
+    width: 33.33333%;
   }
 }
 
@@ -9000,4 +9006,8 @@ footer a:hover {
 
 .bg-dark footer a:hover, .bg-eggplant footer a:hover {
   color: #EEB475;
+}
+
+.hidden {
+  display: none !important;
 }
