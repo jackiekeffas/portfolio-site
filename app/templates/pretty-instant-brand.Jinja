@@ -3,7 +3,7 @@
 {% from "navbar.Jinja" import navbar %}
 {% from "footer.Jinja" import footer %}
 {% from "projectHero.Jinja" import projectHero %}
-{% from "projectOverview.Jinja" import projectOverview %}
+{% from "projectOverviewAlt.Jinja" import projectOverviewAlt %}
 {% from "projectPagination.Jinja" import projectPagination %}
 
 <!DOCTYPE html>
@@ -16,13 +16,13 @@
     <main>
       {{ projectHero(projectData) }}
 
+      {{ projectOverviewAlt(projectData) }}
+
       <div class="container">
-        <div class="row justify-content-md-center">
-          {{ projectOverview(projectData) }}
-          <div class="project-overview-main">
+        <div class="row">
+          <div class="project-text">
             <h2>Process</h2>
-            <p>As a young company, standardized colors and logos were used, but proper brand guidelines were never written up. During a period where multiple new hires joined the team, I decided to create a brand book to keep Pretty Instant's visual language consistent across departments. The book includes the company mission statements, fonts, colors, gradients, and instructions on how to use Pretty Instant's logos and icons.</p>
-          </div>
+            <p>As a young company, standardized colors and logos were used, but proper brand guidelines were never written up. During a period where multiple new hires joined the team, I decided to create a brand book to keep Pretty Instant's visual language consistent across departments. The book includes the company mission statements, fonts, colors, gradients, and instructions on how to use Pretty Instant's logos and icons.</p>          </div>
         </div>
       </div>
 

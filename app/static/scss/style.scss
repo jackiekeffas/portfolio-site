@@ -5,6 +5,7 @@
 // Typography Headings
 h1, .h1 {
 	font-size: $h1-font-size * .6875;
+	margin-bottom: 0;
 
 	@include media-breakpoint-up(md) {
 		font-size: $h1-font-size * .875;
