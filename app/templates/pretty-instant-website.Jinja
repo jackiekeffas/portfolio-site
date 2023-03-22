@@ -5,6 +5,7 @@
 {% from "projectHero.Jinja" import projectHero %}
 {% from "projectOverview.Jinja" import projectOverview %}
 {% from "projectPagination.Jinja" import projectPagination %}
+{% from "prettyInstantTimeline.Jinja" import prettyInstantTimeline %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -51,14 +52,17 @@
           </div>
         </div>
 
+        <div class="row mb-2">
+          <div class="col">
+            {{ prettyInstantTimeline() }}
+          </div>
+        </div>
+
         <div class="row">
           <div class="col">
-            <figure class="figure">
-              <img src="../static/images/work/prettyinstant/website/process.gif" class="figure-img img-fluid" alt="Animation of the steps of Pretty Instant's interactive service">
-              <figcaption class="figure-caption">
-                Close up of custom SVG animation
-              </figcaption>
-            </figure>
+            <p class="small subtle text-center">
+              Close up of custom SVG animation
+            </p>
           </div>
         </div>
       </div>

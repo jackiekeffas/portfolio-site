@@ -284,6 +284,21 @@ $badge-padding-y:							$spacer * .5;
 $transition-slow:             all .5s ease-in-out !default;
 $transition-base:             all .3s ease-in-out !default;
 
+// Pretty Instant
+$pretty-instant-pink:       	  #d51b80;
+$pretty-instant-orange:     	  #ffa60f;
+$pretty-instant-yellow:     	  #e6cf00;
+$pretty-instant-green:        	#a3ce00;
+$pretty-instant-blue:       	  #68bdd5;
+$pretty-instant-navy:         	#32465a;
+$pretty-instant-gray-darker:		#545556;
+$pretty-instant-darker-pink:     darken($pretty-instant-pink, 7%);
+$pretty-instant-darker-orange:   darken($pretty-instant-orange, 10%);
+$pretty-instant-darker-yellow:   darken($pretty-instant-yellow, 6%);
+$pretty-instant-darker-green:    darken($pretty-instant-green, 7%);
+$pretty-instant-darker-blue:     darken($pretty-instant-blue, 14%);
+$pretty-instant-darker-navy:     darken($pretty-instant-navy, 12%);
+
 
 
 @import "variables";
