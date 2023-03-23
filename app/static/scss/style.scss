@@ -545,60 +545,47 @@ footer {
 		}
 	}
 
-	@include media-breakpoint-up(xs) {
-		margin-top: 20px;
-	}
+	height: 615px;
+
 	@include media-breakpoint-up(sm) {
-		margin-top: 45px;
-		margin-left: 15px;
-		padding-top: 0;
-	}
-	@include media-breakpoint-up(md) {
-		margin-top: 0;
-	}
-	@include media-breakpoint-up(lg) {
-		margin-top: 45px;
-		margin-left: 8%;
-		margin-right: 8%;
+		margin-top: 50px;
+		height: auto;
+		display: flex;
 	}
 
 	.progress-bar {
-		height: 5px;
-		width: 100%;
+		margin: 0 auto;
+		width: 5px;
 
-		@include media-breakpoint-up(xs) {
-			display: none;
-		}
 		@include media-breakpoint-up(sm) {
-			display: block;
+			height: 5px;
+			display: contents;
+			width: auto;
 		}
 
 		svg {
 			position: absolute;
-			width: 80%;
-			height: 100%;
+			width: 5px;
+			height: 615px;
 
 			@include media-breakpoint-up(sm) {
-				margin-top: 5px;
-				margin-left: 27px;
+				width: 90%;
+				height: 5px;
 			}
-			@include media-breakpoint-up(lg) {
-				margin-top: 0;
-				margin-left: 0;
+			@include media-breakpoint-up(xxl) {
+				width: 80%;
 			}
 			.horizontal-progress-bar {
-				@include media-breakpoint-up(xs) {
-					display: none;
-				}
-				@include media-breakpoint-up(lg) {
+				display: none;
+
+				@include media-breakpoint-up(sm) {
 					display: block;
 				}
 			}
 			.vertical-progress-bar {
-				@include media-breakpoint-up(xs) {
-					display: block;
-				}
-				@include media-breakpoint-up(lg) {
+				display: block;
+
+				@include media-breakpoint-up(sm) {
 					display: none;
 				}
 			}
@@ -610,251 +597,26 @@ footer {
     z-index: 5;
 
     @include media-breakpoint-up(sm) {
-      margin-left: -20px;
-    }
-    @include media-breakpoint-up(lg) {
       float: left;
-      width: 25%;
-      margin-left: 0;
-      margin-top: -55px;
+      margin-top: -50px;
+			display: flex;
     }
   }
-
   .step1,
   .step2,
   .step3 {
-    @include media-breakpoint-up(xs) {
-      padding-bottom: 72px;
-    }
-    @include media-breakpoint-up(mdg) {
-      padding-bottom: 72px;
-    }
-    @include media-breakpoint-up(lg) {
-      padding-bottom: 0;
-    }
-  }
-  .step2,
-  .step3,
-  .step4 {
-    @include media-breakpoint-up(lg) {
-      margin-left: 8%;
-    }
-  }
-  .step1 {
-    @include media-breakpoint-up(lg) {
-      margin-left: -12.5%;
-    }
-  }
-  .step4 {
-    @include media-breakpoint-up(xs) {
-      margin-bottom: 0;
-    }
+    padding-bottom: 72px;
+
     @include media-breakpoint-up(sm) {
-      margin-bottom: -100%;
-    }
-    @include media-breakpoint-up(lg) {
-      margin-bottom: 0;
-      margin-right: -12.5%;
+      padding-bottom: 0;
     }
   }
 
   .icon {
-    display: block;
     border-radius: 50%;
 		background-color: $light;
-
-    @include media-breakpoint-up(xs) {
-      width: 80px;
-      height: 80px;
-      margin: 0 auto;
-    }
-    @include media-breakpoint-up(sm) {
-      float: left;
-      margin-right: 20px;
-      width: 100px;
-      height: 100px;
-    }
-    @include media-breakpoint-up(lg) {
-      float: none;
-      margin: auto;
-    }
+		margin: 0 auto;
+		width: 100px;
+		height: 100px;
   }
 }
-
-// section.process-timeline {
-//   .body {
-//     @include grid-media($base-grid) {
-//       @include grid-shift(0);
-//       @include grid-column(12);
-//     }
-//     @include grid-media($xs-grid) {
-//       @include grid-shift(1);
-//       @include grid-column(10);
-//     }
-//     @include grid-media($sm-grid) {
-//       @include grid-shift(2);
-//       @include grid-column(8);
-//     }
-//     @include grid-media($md-grid) {
-//       @include grid-shift(0);
-//       @include grid-column(12);
-//     }
-//   }
-//   #timeline {
-//     @include grid-media($base-grid) {
-//       margin-top: 20px;
-//     }
-//     @include grid-media($xs-grid) {
-//       margin-top: 45px;
-//       margin-left: 15px;
-//       padding-top: 0;
-//     }
-//     @include grid-media($sm-grid) {
-//       margin-top: 0;
-//     }
-//     @include grid-media($md-grid) {
-//       margin-top: 45px;
-//       margin-left: 8%;
-//       margin-right: 8%;
-//     }
-//     &:after {
-//       content: "";
-//       display: table;
-//       clear: both;
-//     }
-//     .border {
-//       height: 5px;
-//       width: 100%;
-//       @include grid-media($base-grid) {
-//         display: none;
-//       }
-//       @include grid-media($xs-grid) {
-//         display: block;
-//       }
-//       svg {
-//         position: absolute;
-//         width: 80%;
-//         height: 100%;
-//         @include grid-media($xs-grid) {
-//           margin-top: 5px;
-//           margin-left: 27px;
-//         }
-//         @include grid-media($md-grid) {
-//           margin-top: 0;
-//           margin-left: 0;
-//         }
-//         .horizontalBorder {
-//           @include grid-media($base-grid) {
-//             display: none;
-//           }
-//           @include grid-media($md-grid) {
-//             display: block;
-//           }
-//         }
-//         .verticalBorder {
-//           @include grid-media($base-grid) {
-//             display: block;
-//           }
-//           @include grid-media($md-grid) {
-//             display: none;
-//           }
-//         }
-//       }
-//     }
-//   }
-//   .step {
-//     position: relative;
-//     z-index: 5;
-//     @include grid-media($xs-grid) {
-//       margin-left: -20px;
-//     }
-//     @include grid-media($md-grid) {
-//       float: left;
-//       width: 25%;
-//       margin-left: 0;
-//       margin-top: -55px;
-//     }
-//   }
-//   .step1,
-//   .step2,
-//   .step3 {
-//     @include grid-media($base-grid) {
-//       padding-bottom: $large-spacing;
-//     }
-//     @include grid-media($sm-grid) {
-//       padding-bottom: $large-spacing;
-//     }
-//     @include grid-media($md-grid) {
-//       padding-bottom: 0;
-//     }
-//   }
-//   .step2,
-//   .step3,
-//   .step4 {
-//     @include grid-media($md-grid) {
-//       margin-left: 8%;
-//     }
-//   }
-//   .step1 {
-//     @include grid-media($md-grid) {
-//       margin-left: -12.5%;
-//     }
-//   }
-//   .step4 {
-//     @include grid-media($base-grid) {
-//       margin-bottom: 0;
-//     }
-//     @include grid-media($xs-grid) {
-//       margin-bottom: -100%;
-//     }
-//     @include grid-media($md-grid) {
-//       margin-bottom: 0;
-//       margin-right: -12.5%;
-//     }
-//   }
-//   .icon {
-//     display: block;
-//     border-radius: 50%;
-//     @include grid-media($base-grid) {
-//       width: 80px;
-//       height: 80px;
-//       margin: 0 auto;
-//     }
-//     @include grid-media($xs-grid) {
-//       float: left;
-//       margin-right: 20px;
-//       width: 100px;
-//       height: 100px;
-//     }
-//     @include grid-media($md-grid) {
-//       float: none;
-//       margin: auto;
-//     }
-//   }
-//   h4,
-//   p.large {
-//     margin-bottom: 0;
-//     @include grid-media($base-grid) {
-//       text-align: center;
-//     }
-//     @include grid-media($xs-grid) {
-//       text-align: left;
-//     }
-//     @include grid-media($md-grid) {
-//       text-align: center;
-//     }
-//   }
-//   h4 {
-//     @include grid-media($xs-grid) {
-//       margin-top: 0;
-//       padding-top: 25px;
-//     }
-//     @include grid-media($md-grid) {
-//       margin-top: $small-spacing;
-//       padding-top: 0;
-//     }
-//   }
-//   p.large {
-//     overflow: hidden;
-//   }
-// }
