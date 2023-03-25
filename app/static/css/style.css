@@ -8495,20 +8495,13 @@ h4, .h4, .h4 {
 }
 
 .subheader hr {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
-}
-
-@media (min-width: 768px) {
-  .subheader hr {
-    margin-right: 1.5rem;
-  }
+  margin-left: 0.5rem;
+  margin-right: 0.2rem;
 }
 
 @media (min-width: 1200px) {
   .subheader hr {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-right: 0.25rem;
   }
 }
 
@@ -9143,7 +9136,7 @@ footer a:hover {
 
 @media (min-width: 1400px) {
   .pretty-instant-timeline .progress-bar svg {
-    width: 80%;
+    max-width: 1144px;
   }
 }
 

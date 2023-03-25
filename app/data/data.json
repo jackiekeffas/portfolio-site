@@ -1,10 +1,11 @@
 {
     "k-health-brand": {
         "slug": "k-health-brand",
-        "meta": "Jackie Keffas is a designer and photographer based in NYC",
+        "metaTitle": "Brand guidelines ⬩ K Health",
+        "metaDescription": "Jackie Keffas is a designer and photographer based in NYC",
         "company": "K Health",
         "companyDescription": "K Health is a healthcare platform that offers an AI-powered symptom checker and 24/7 access to doctors.",
-        "title": "Brand book",
+        "title": "Brand guidelines",
         "description": "",
         "role": "Lead designer",
         "stakeholders": "Director of Brand Design, Copywriter, Product Design team",
@@ -17,7 +18,8 @@
     },
     "k-health-landing-pages": {
         "slug": "k-health-landing-pages",
-        "meta": "Jackie Keffas is a designer and photographer based in NYC",
+        "metaTitle": "Landing pages ⬩ K Health",
+        "metaDescription": "Jackie Keffas is a designer and photographer based in NYC",
         "company": "K Health",
         "companyDescription": "K Health is a healthcare platform that offers an AI-powered symptom checker and 24/7 access to doctors.",
         "title": "Landing pages",
@@ -33,7 +35,8 @@
     },
     "k-health-emails": {
         "slug": "k-health-emails",
-        "meta": "Jackie Keffas is a designer and photographer based in NYC",
+        "metaTitle": "Emails ⬩ K Health",
+        "metaDescription": "Jackie Keffas is a designer and photographer based in NYC",
         "company": "K Health",
         "companyDescription": "K Health is a healthcare platform that offers an AI-powered symptom checker and 24/7 access to doctors.",
         "title": "Emails",
@@ -49,7 +52,8 @@
     },
     "k-health-infographics": {
         "slug": "k-health-infographics",
-        "meta": "Jackie Keffas is a designer and photographer based in NYC",
+        "metaTitle": "Infographics ⬩ K Health",
+        "metaDescription": "Jackie Keffas is a designer and photographer based in NYC",
         "company": "K Health",
         "companyDescription": "K Health is a healthcare platform that offers an AI-powered symptom checker and 24/7 access to doctors.",
         "title": "Infographics",
@@ -65,10 +69,11 @@
     },
     "k-health-social": {
         "slug": "k-health-social",
-        "meta": "Jackie Keffas is a designer and photographer based in NYC",
+        "metaTitle": "Social media ⬩ K Health",
+        "metaDescription": "Jackie Keffas is a designer and photographer based in NYC",
         "company": "K Health",
         "companyDescription": "K Health is a healthcare platform that offers an AI-powered symptom checker and 24/7 access to doctors.",
-        "title": "Social",
+        "title": "Social media",
         "description": "",
         "role": "Lead designer and video editor",
         "stakeholders": "Director of Brand Design, Senior Manager of Content (Content Team Lead), Content Manager",
@@ -81,7 +86,8 @@
     },
     "k-health-video": {
         "slug": "k-health-video",
-        "meta": "Jackie Keffas is a designer and photographer based in NYC",
+        "metaTitle": "Video titles ⬩ K Health",
+        "metaDescription": "Jackie Keffas is a designer and photographer based in NYC",
         "company": "K Health",
         "companyDescription": "K Health is a healthcare platform that offers an AI-powered symptom checker and 24/7 access to doctors.",
         "title": "Video titles",
@@ -97,7 +103,8 @@
     },
     "pretty-instant-website": {
         "slug": "pretty-instant-website",
-        "meta": "Jackie Keffas is a designer and photographer based in NYC",
+        "metaTitle": "Website redesign ⬩ Pretty Instant",
+        "metaDescription": "Jackie Keffas is a designer and photographer based in NYC",
         "company": "Pretty Instant",
         "companyDescription": "Pretty Instant was a national photography company that provided professional photographers on-demand.",
         "title": "Website redesign",
@@ -113,7 +120,8 @@
     },
     "pretty-instant-user": {
         "slug": "pretty-instant-user",
-        "meta": "Jackie Keffas is a designer and photographer based in NYC",
+        "metaTitle": "User account & booking form ⬩ Pretty Instant",
+        "metaDescription": "Jackie Keffas is a designer and photographer based in NYC",
         "company": "Pretty Instant",
         "companyDescription": "Pretty Instant was a national photography company that provided professional photographers on-demand.",
         "title": "User account <span class='orpheus-1'>&</span> booking form",
@@ -129,7 +137,8 @@
     },
     "pretty-instant-brand": {
         "slug": "pretty-instant-brand",
-        "meta": "Jackie Keffas is a designer and photographer based in NYC",
+        "metaTitle": "Brand book ⬩ Pretty Instant",
+        "metaDescription": "Jackie Keffas is a designer and photographer based in NYC",
         "company": "Pretty Instant",
         "companyDescription": "Pretty Instant was a national photography company that provided professional photographers on-demand.",
         "title": "Brand book",
@@ -145,7 +154,8 @@
     },
     "pretty-instant-brochures": {
         "slug": "pretty-instant-brochures",
-        "meta": "Jackie Keffas is a designer and photographer based in NYC",
+        "metaTitle": "Services brochures ⬩ Pretty Instant",
+        "metaDescription": "Jackie Keffas is a designer and photographer based in NYC",
         "company": "Pretty Instant",
         "companyDescription": "Pretty Instant was a national photography company that provided professional photographers on-demand.",
         "title": "Services brochures",
@@ -161,7 +171,8 @@
     },
     "various-icons": {
         "slug": "various-icons",
-        "meta": "Jackie Keffas is a designer and photographer based in NYC",
+        "metaTitle": "Icons & illustrations ⬩ Various",
+        "metaDescription": "Jackie Keffas is a designer and photographer based in NYC",
         "company": "Various",      
         "title": "Icons <span class='orpheus-1'>&</span> illustrations",
         "description": "A selection of assets made for various jobs across the years.",

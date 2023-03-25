@@ -1,9 +1,9 @@
-{% macro head(projectData, title=projectData.title, description="Jackie Keffas", meta=projectData.meta) %}
+{% macro head(projectData, title=projectData.metaTitle, description="Jackie Keffas", meta=projectData.metaDescription) %}
   <head>
 		<!-- BASIC -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>{{ title }} * {{ description }}</title>
+		<title>{{ title }} ⬩ {{ description }}</title>
 		<meta name="description" content="{{ meta }}">
 
 		<!-- FAVICON-->

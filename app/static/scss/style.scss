@@ -60,15 +60,11 @@ h4, .h4 {
 	}
 
 	hr {
-		margin-left: $spacer * .75;
-		margin-right: $spacer * .75;
+		margin-left: $spacer * .5;
+		margin-right: $spacer * .2;
 
-		@include media-breakpoint-up(md) {
-			margin-right: $spacer * 1.5;
-		}
 		@include media-breakpoint-up(xl) {
-			margin-left: $spacer;
-			margin-right: $spacer;
+			margin-right: $spacer * .25;
 		}
 	}
 }
@@ -573,7 +569,7 @@ footer {
 				height: 5px;
 			}
 			@include media-breakpoint-up(xxl) {
-				width: 80%;
+				max-width: 1144px;
 			}
 			.horizontal-progress-bar {
 				display: none;

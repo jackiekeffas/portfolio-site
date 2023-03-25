@@ -16,67 +16,48 @@
     <main>
       {{ projectHero(projectData) }}
 
-      {{ projectOverviewAlt(projectData) }}
+      {{ projectOverviewAlt(projectData, hideTeam="hidden") }}
 
-        <div class="row mb-6 justify-content-md-center">
-          <div class="col col-lg-8 col-xxl-6">
-            <h2>Page formats</h2>
-            <p>As a result of using components and variables, every page is based off one main format, designed to feature a photograph as the first thing your eye sees. This main format is utilized as is across the home and standard service pages.</p>
-            <p>The photo is replaced with a gradient or pattern background on pages that require additional functionality. This creates space for things such as explainer videos, a sidebar for easy navigation on pages with a lot of information, or simply a larger header box for pages with more copy up top.</p>
-          </div>
+      <div class="container">
+        <div class="row">
+          <div class="project-text">
+            <h2>Process</h2>
+            <p>As a young company, standardized colors and logos were used, but proper brand guidelines were never written up. During a period where multiple new hires joined the team, I decided to create a brand book to keep Pretty Instant's visual language consistent across departments. The book includes the company mission statements, fonts, colors, gradients, and instructions on how to use Pretty Instant's logos and icons.</p>          </div>
         </div>
+      </div>
 
-        <div class="row mb-6 justify-content-md-center">
-          <div class="col col-lg-12 col-xxl-10">
-            <div class="row">
-              <div class="col-sm">
-                <img src="../static/images/work/prettyinstant/website/interactive.png" class="figure-img img-fluid" alt="Interactive services page">
-              </div>
-              <div class="col-sm">
-                <img src="../static/images/work/prettyinstant/website/portraits.png" class="figure-img img-fluid" alt="Portrait services page">
-              </div>
-              <div class="col-sm">
-                <img src="../static/images/work/prettyinstant/website/services.png" class="figure-img img-fluid" alt="List of services page">
-              </div>
-            </div>
-            <figcaption class="figu">
-              An example of the main format and video and sidebar variations
-            </figcaption>
-          </div>
-        </div>
-
-        <div class="row mb-6 justify-content-md-center">
-          <div class="col col-lg-12 col-xxl-10">
+      <div class="container-xxl">
+        <div class="row ">
+          <div class="col">
             <figure class="figure">
-              <img src="../static/images/work/prettyinstant/website/process.gif" class="figure-img img-fluid" alt="Animation of the steps of Pretty Instant's interactive service">
-              <figcaption class="figure-caption">
-                Close up of custom SVG animation
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-
-        <div class="row mb-6 justify-content-md-center">
-          <div class="col col-lg-8 col-xxl-6">
-            <h2>Home page</h2>
-            <p>Features a slideshow header to highlight specific shoot types, an animated process bar to show the stages of booking, and a full list of services so clients know everything Pretty Instant offers immediately.</p>
-          </div>
-        </div>
-        
-        <div class="row justify-content-sm-center">
-          <div class="col col-sm-8 col-lg-6">
-            <figure class="figure">
-              <img src="../static/images/work/prettyinstant/website/home.png" class="figure-img img-fluid" alt="Home page">
-              <figcaption class="figure-caption">
-                Full view of the home page
-              </figcaption>
+              <img src="../static/images/work/khealth/landingpages/primarycare.png" class="figure-img img-fluid" alt="Intro of the Pretty Instant brand book">
             </figure>
           </div>
         </div>
       </div>
-      
+
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col">
+            <figure class="figure">
+              <img src="../static/images/work/khealth/landingpages/weightmanagement.png" class="figure-img img-fluid" alt="Logo pages of the Pretty Instant brand book">
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-xxl">
+        <div class="row mb-0">
+          <div class="col">
+            <figure class="figure">
+              <img src="../static/images/work/khealth/landingpages/home.png" class="figure-img img-fluid" alt="Color pages of the Pretty Instant brand book">
+            </figure>
+          </div>
+        </div>
+      </div>
+
       {{ projectPagination(projectData, previousSlug="k-health-brand", previousTitle="Brand book", previousCompany="K Health", nextSlug="k-health-emails", nextTitle="Emails", nextCompany="K Health") }}
-      
+
     </main>
 
     {{ footer() }}
