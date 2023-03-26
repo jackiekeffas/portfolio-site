@@ -12,22 +12,22 @@ data = json.load(
 
 @app.route("/")
 def get_home():
-    return render_template("home.Jinja", projectData=data)
+    return render_template("home.jinja", projectData=data)
 
 
 @app.route("/projects/<projectName>")
 def get_project(projectName: str):
-    return render_template(f"{projectName}.Jinja", projectData=data[projectName])
+    return render_template(f"{projectName}.jinja", projectData=data[projectName])
 
 
 @app.route("/about")
 def get_about():
-    return render_template("about.Jinja")
+    return render_template("about.jinja")
 
 
 @app.errorhandler(404)
 def get_error_page(error):
-    return render_template("404.Jinja"), 404
+    return render_template("404.jinja"), 404
 
 if __name__=="__main__":
     app.run(debug=False)
