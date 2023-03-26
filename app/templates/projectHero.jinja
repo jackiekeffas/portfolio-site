@@ -1,0 +1,19 @@
+{% from "pageTitle.jinja" import pageTitle %}
+
+{% macro projectHero(projectData) %}
+	<div class="project-hero bg-dark">
+		<div class="container">
+			<div class="row mb-0">
+				<div class="col mb-5 mb-lg-0">
+					<img class="img-fluid" src="{{ projectData.overviewImage }}" alt="{{ projectData.overviewImageAltText }}">
+				</div>
+				<div class="col-12 col-lg-4 order-lg-first align-self-center">
+					{{ pageTitle(pageHeader=projectData.title, pageSubheader=projectData.company) }}
+					<p class="lead pt-3">
+						{{ projectData.description }}
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endmacro %}

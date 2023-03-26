@@ -1,0 +1,80 @@
+{% from "head.jinja" import head %}
+{% from "scripts.jinja" import scripts %}
+{% from "navbar.jinja" import navbar %}
+{% from "footer.jinja" import footer %}
+{% from "projectHero.jinja" import projectHero %}
+{% from "projectOverview.jinja" import projectOverview %}
+{% from "projectPagination.jinja" import projectPagination %}
+
+<!DOCTYPE html>
+<html lang="en">
+	{{ head(projectData) }}
+
+  <body>
+    {{ navbar() }}
+
+    <main>
+      {{ projectHero(projectData) }}
+
+      <div class="container">
+        <div class="row justify-content-md-center">
+          {{ projectOverview(projectData) }}
+          <div class="project-overview-main">
+            <h2>Process</h2>
+            <p>To promote their services, I was tasked with creating informational brochures for eight of the company's main verticals. The goal was to explain to potential clients the benefits of working with Pretty Instant by showing how they helped existing clients. Each brochure was to have a featured client and showcase four or five different of the shoot types that Pretty Instant offers.</p>
+            <p>I handled all of the design for this project, working alongside one of Pretty Instant's account managers to accurately capture the company's relationships with the selected clients. Since the assets were text and image heavy, I decided to take a more editorial approach with the design. The quality of Pretty Instant's work needed to be the hightlight, so I kept the photographs as large as possible and based text placement off their shape.</p>
+            <p>The first brochure was for food, drink, and restaurant services, featuring &pizza. Once it was completed, I created a template from it to use for the other verticals. This streamlined production, allowing me to simply switched out copy and photographs and make only minor adjustments to some layouts in order to best showcase the images.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col">
+            <figure class="figure">
+              <img src="../static/images/work/prettyinstant/brochure/food-1.png" class="figure-img img-fluid" alt="Intro page of the food, drink, and restaurant brochure">
+            </figure>
+            <figure class="figure">
+              <img src="../static/images/work/prettyinstant/brochure/food-2.png" class="figure-img img-fluid" alt="Food and drink pages of the food, drink, and restaurant brochure">
+            </figure>
+            <figure class="figure">
+              <img src="../static/images/work/prettyinstant/brochure/food-3.png" class="figure-img img-fluid" alt="Openings and events pages of the food, drink, and restaurant brochure">
+            </figure>
+            <figure class="figure">
+              <img src="../static/images/work/prettyinstant/brochure/food-4.png" class="figure-img img-fluid" alt="Tech and convenience pages of the food, drink, and restaurant brochure">
+            </figure>
+            <figure class="figure">
+              <img src="../static/images/work/prettyinstant/brochure/food-5.png" class="figure-img img-fluid" alt="Team and training pages of the food, drink, and restaurant brochure">
+            </figure>
+            <figcaption class="figure-caption">
+              Pages from food, drink, and restaurant services
+            </figcaption>
+          </div>
+        </div>
+        
+        <div class="row mb-0">
+          <div class="col">
+            <div class="row mb-0">
+              <div class="col-12 col-md">
+                <img src="../static/images/work/prettyinstant/brochure/residential.png" class="figure-img img-fluid" alt="Intro page of the residential services brochure">
+              </div>
+              <div class="col-12 col-md">
+                <img src="../static/images/work/prettyinstant/brochure/event.png" class="figure-img img-fluid" alt="Company culture pages of the event services brochure">
+              </div>
+            </div>
+            <figcaption class="figure-caption">
+              A selected page from residential and event services
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      
+      {{ projectPagination(projectData, previousSlug="pretty-instant-brand", previousTitle="Brand book", previousCompany="Pretty Instant", nextSlug="various-icons", nextTitle="Icons & illustrations", nextCompany="Various") }}
+      
+    </main>
+
+    {{ footer() }}
+
+		{{ scripts() }}
+	</body>
+</html>

@@ -1,0 +1,114 @@
+{% from "head.jinja" import head %}
+{% from "scripts.jinja" import scripts %}
+{% from "navbar.jinja" import navbar %}
+{% from "footer.jinja" import footer %}
+{% from "projectHero.jinja" import projectHero %}
+{% from "projectOverview.jinja" import projectOverview %}
+{% from "projectPagination.jinja" import projectPagination %}
+
+<!DOCTYPE html>
+<html lang="en">
+	{{ head(projectData) }}
+
+	<body>
+    {{ navbar() }}
+
+    <main>
+      {{ projectHero(projectData) }}
+
+      <div class="container">
+        <div class="row justify-content-md-center">
+          {{ projectOverview(projectData) }}
+          <div class="project-overview-main">
+            <h2>Process</h2>
+            <p>All booking takes place through a web-based user dashboard, which also allows clients to easily keep track of their shoot details and photo galleries. Following Pretty Instant's <a href="/projects/pretty-instant-website">website redesign</a>, the user dashboard needed to be updated to keep branding consistent across both sites. This also provided an opportunity to revise the booking flow and create a streamlined process that would alleviate stress for Pretty Instant's account managers.</p>
+            <p>My main responsiblities for this project were the UI/UX and design. To begin, I created a rough version of the dashboard's home, since many of its assets would be reused on other pages. From there, I wireframed out the rest of the site and created a prototype.</p>
+            <p>I worked closely with both the CTO and Director of Operations throughout, and once we all decided the site would meet the needs of both clients and the Pretty Instant team, I turned the wireframe into a high-fidelity design. The final designs were passed off to Pretty Instant's developers for production and I provided supplemental coding when needed.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col">
+            <div class="row mb-0 justify-content-center">
+              <div class="project-images-3">
+                <img src="../static/images/work/prettyinstant/dashboard/home-rough.png" class="figure-img img-fluid" alt="Rough layout of the dashboard home page">
+              </div>
+              <div class="project-images-3">
+                <img src="../static/images/work/prettyinstant/dashboard/home-wireframe.png" class="figure-img img-fluid" alt="Wireframe of the dashboard home page">
+              </div>
+              <div class="project-images-3">
+                <img src="../static/images/work/prettyinstant/dashboard/home-final.png" class="figure-img img-fluid" alt="Final design of the dashboard home page">
+              </div>
+            </div>
+            <figcaption class="figure-caption">
+              From wireframe to final design
+            </figcaption>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="project-text">
+            <h2>Booking form</h2>
+            <p>Previously, the forms were standardized across shoot types, so the questions were basic, leaving Pretty Instant's account managers to follow up with clients to track down additional information. The new booking form has a standard format across shoots, but specific questions depending on the shoot type. For example, a real estate shoot will ask clients about property size, but an event shoot will ask clients about how many guests there will be. The new form also has a sidebar that updates with the information entered as a user moves through the process so they can easily double check their details.</p>
+            <p>Another big issue the new form solves is user drop off. On the old form, a user would be prompted to sign up from the start, causing many potential clients to abandon the booking. With the new form, sign up is at the end and only required if a user wants to follow through on the shoot and confirm payment.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col">
+            <figure class="figure">
+              <img src="../static/images/work/prettyinstant/dashboard/flow.png" class="figure-img img-fluid" alt="Booking flow">
+              <figcaption class="figure-caption">
+                Sample booking flow for new users
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="project-text">
+            <h2>Shoot overview</h2>
+            <p>From talking to Pretty Instant's clients, many of which are busy event planners and entrepreneurs, it was clear how important the shoot overview page is. They often relied on it during shoots and since these are people that often juggle multiple things at once, a clear outline of the information was key. The new shoot overview page lays everything out in one place and provides a navigation bar at the top to easily access sections.</p>
+            <p>Another new feature is the ability for clients to confirm information with a few clicks of a button. This reassures clients that Pretty Instant has all the relevant information, while also helping Pretty Instant's account managers. By allowing clients to initiate the process, account managers can confirm a shoot quicker, freeing them up to handle more business and help Pretty Instant grow.</p>
+         </div>
+        </div>
+      </div>
+
+      <div class="container-xxl">
+        <div class="row mb-0">
+          <div class="col">
+            <div class="row mb-0 justify-content-center">
+              <div class="project-images-3">
+                <img src="../static/images/work/prettyinstant/dashboard/shoot-submitted.png" class="figure-img img-fluid" alt="Shoot overview page in the submitted state">
+              </div>
+              <div class="project-images-3">
+                <img src="../static/images/work/prettyinstant/dashboard/shoot-confirmed.png" class="figure-img img-fluid" alt="Shoot overview page in the confirmed state">
+              </div>
+              <div class="project-images-3">
+                <img src="../static/images/work/prettyinstant/dashboard/shoot-completed.png" class="figure-img img-fluid" alt="Shoot overview page in the completed state">
+              </div>
+            </div>
+            <figcaption class="figure-caption">
+              Shoot overview pages during three stages of the process and a preview of information confirmation
+            </figcaption>
+          </div>
+        </div>
+      </div>
+
+      {{ projectPagination(projectData, previousSlug="pretty-instant-website", previousTitle="Website redesign", previousCompany="Pretty Instant", nextSlug="pretty-instant-brand", nextTitle="Brand book", nextCompany="Pretty Instant") }}
+
+    </main>
+
+    {{ footer() }}
+
+		{{ scripts() }}
+	</body>
+</html>

@@ -1,0 +1,59 @@
+{% from "head.jinja" import head %}
+{% from "scripts.jinja" import scripts %}
+{% from "navbar.jinja" import navbar %}
+{% from "footer.jinja" import footer %}
+{% from "projectHero.jinja" import projectHero %}
+{% from "projectOverviewAlt.jinja" import projectOverviewAlt %}
+{% from "projectPagination.jinja" import projectPagination %}
+
+<!DOCTYPE html>
+<html lang="en">
+	{{ head(projectData) }}
+
+  <body>
+    {{ navbar() }}
+
+    <main>
+      {{ projectHero(projectData) }}
+
+      {{ projectOverviewAlt(projectData, hideTeam="hidden") }}
+
+      <div class="container">
+        <div class="row">
+          <div class="project-text">
+            <h2>Process</h2>
+            <p>As a young company, standardized colors and logos were used, but proper brand guidelines were never written up. During a period where multiple new hires joined the team, I decided to create a brand book to keep Pretty Instant's visual language consistent across departments. The book includes the company mission statements, fonts, colors, gradients, and instructions on how to use Pretty Instant's logos and icons.</p>          </div>
+        </div>
+      </div>
+
+      <div class="container-xxl">
+        <div class="row mb-0">
+          <div class="col">
+            <figure class="figure">
+              <img src="../static/images/work/prettyinstant/brand/introduction.png" class="figure-img img-fluid" alt="Intro of the Pretty Instant brand book">
+            </figure>
+            <figure class="figure">
+              <img src="../static/images/work/prettyinstant/brand/logo.png" class="figure-img img-fluid" alt="Logo pages of the Pretty Instant brand book">
+            </figure>
+            <figure class="figure">
+              <img src="../static/images/work/prettyinstant/brand/colors.png" class="figure-img img-fluid" alt="Color pages of the Pretty Instant brand book">
+            </figure>
+            <figure class="figure">
+              <img src="../static/images/work/prettyinstant/brand/gradients.png" class="figure-img img-fluid" alt="Gradient pages of the Pretty Instant brand book">
+            </figure>
+            <figcaption class="figure-caption">
+              Excerpts from the brand book
+            </figcaption>
+          </div>
+        </div>
+      </div>
+
+      {{ projectPagination(projectData, previousSlug="pretty-instant-user", previousTitle="User account & booking form", previousCompany="Pretty Instant", nextSlug="pretty-instant-brochures", nextTitle="Services brochures", nextCompany="Pretty Instant") }}
+
+    </main>
+
+    {{ footer() }}
+
+		{{ scripts() }}
+	</body>
+</html>
