@@ -84,22 +84,22 @@
         "overviewImage": "../static/images/hero/khealth/social.jpg",
         "overviewImageAltText": "K Health social"
     },
-    "k-health-video": {
-        "slug": "k-health-video",
-        "metaTitle": "Video titles ⬩ K Health",
+    "k-health-ads": {
+        "slug": "k-health-ads",
+        "metaTitle": "Paid ads ⬩ K Health",
         "metaDescription": "Jackie Keffas is a designer and photographer based in NYC",
         "company": "K Health",
         "companyDescription": "K Health is a healthcare platform that offers an AI-powered symptom checker and 24/7 access to doctors.",
-        "title": "Video titles",
+        "title": "Paid ads",
         "description": "",
         "role": "Lead designer and assistant art director",
         "stakeholders": "Director of Brand Design",
         "tools": "Figma, Photoshop",
         "skills": "Design, art directing",
-        "cardImage": "../static/images/home/khealth/videos.jpg",
-        "cardImageAltText": "K Health videos",
-        "overviewImage": "../static/images/hero/khealth/videos.jpg",
-        "overviewImageAltText": "K Health videos"
+        "cardImage": "../static/images/home/khealth/ads.jpg",
+        "cardImageAltText": "K Health ads",
+        "overviewImage": "../static/images/hero/khealth/ads.jpg",
+        "overviewImageAltText": "K Health ads"
     },
     "pretty-instant-website": {
         "slug": "pretty-instant-website",
