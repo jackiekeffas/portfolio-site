@@ -8552,7 +8552,7 @@ p:last-child {
 }
 
 .min-vh-100 {
-  min-height: calc(100vh - 141px) !important;
+  min-height: calc(100vh - 160px) !important;
 }
 
 .row {
@@ -8618,7 +8618,7 @@ body {
 }
 
 body.bg-dark main, body.bg-eggplant main {
-  margin-top: 5.5rem;
+  margin-top: 7rem;
 }
 
 .bg-eggplant {
@@ -8705,7 +8705,7 @@ body.bg-dark main, body.bg-eggplant main {
 }
 
 .project-hero {
-  padding-top: 5.5rem;
+  padding-top: 7rem;
   padding-bottom: 2rem;
   margin-bottom: 5rem;
 }
