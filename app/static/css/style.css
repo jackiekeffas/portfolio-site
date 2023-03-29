@@ -8562,6 +8562,13 @@ p:last-child {
 .navbar {
   backdrop-filter: blur(16px);
   background-color: rgba(41, 70, 65, 0.8);
+  padding: 0.5rem 0;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    padding: 0.75rem 0;
+  }
 }
 
 .navbar .nav-link {
@@ -8609,6 +8616,50 @@ a {
   }
 }
 
+a.inline {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+
+a.inline:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: 0px;
+  height: 1px;
+  background-color: #A75D76;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  a.inline:after {
+    transition: none;
+  }
+}
+
+a.inline:hover {
+  color: #A26422;
+}
+
+a.inline:hover:after {
+  left: 50%;
+  width: 0;
+}
+
+a.inline.light {
+  color: #D6AAB9;
+}
+
+a.inline.light:after {
+  background-color: #D6AAB9;
+}
+
+a.inline.light:hover {
+  color: #EEB475;
+}
+
 body {
   background-color: #FDFAF7;
 }
@@ -8617,8 +8668,16 @@ body {
   color: #FAFAFA;
 }
 
-body.bg-dark main, body.bg-eggplant main {
-  margin-top: 7rem;
+body.bg-dark main,
+body.bg-eggplant main {
+  margin-top: 6rem;
+}
+
+@media (min-width: 768px) {
+  body.bg-dark main,
+  body.bg-eggplant main {
+    margin-top: 7rem;
+  }
 }
 
 .bg-eggplant {
@@ -8628,10 +8687,6 @@ body.bg-dark main, body.bg-eggplant main {
 .bg-eggplant .navbar {
   backdrop-filter: blur(16px);
   background-color: rgba(83, 41, 62, 0.8);
-}
-
-.bg-eggplant a {
-  color: #D6AAB9;
 }
 
 .card {
@@ -8658,14 +8713,21 @@ body.bg-dark main, body.bg-eggplant main {
 
 .card i {
   font-size: 1.5rem;
-  opacity: 0;
-  padding-right: 1rem;
+  opacity: 1;
+  padding-right: 0;
   transition: all 0.5s ease-in-out;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .card i {
     transition: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .card i {
+    opacity: 0;
+    padding-right: 1rem;
   }
 }
 
@@ -8684,7 +8746,9 @@ body.bg-dark main, body.bg-eggplant main {
 
 .card .card-line {
   height: 1px;
-  width: 0;
+  position: relative;
+  left: 0;
+  width: 100%;
   background-color: #EEB475;
   transition: all 0.5s ease-in-out;
 }
@@ -8695,6 +8759,14 @@ body.bg-dark main, body.bg-eggplant main {
   }
 }
 
+@media (min-width: 768px) {
+  .card .card-line {
+    left: 50%;
+    width: 0;
+    background-color: transparent;
+  }
+}
+
 .card:hover i {
   opacity: 1;
   padding-right: 0;
@@ -8702,12 +8774,20 @@ body.bg-dark main, body.bg-eggplant main {
 
 .card:hover .card-line {
   width: 100%;
+  left: 0;
+  background-color: #EEB475;
 }
 
 .project-hero {
-  padding-top: 7rem;
+  padding-top: 6rem;
   padding-bottom: 2rem;
   margin-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .project-hero {
+    padding-top: 7rem;
+  }
 }
 
 .project-overview-main {

@@ -124,6 +124,11 @@ p:last-child {
 .navbar {
 	backdrop-filter: blur(16px);
 	background-color: rgba($dark, .8);
+	padding: $spacer * .5 0;
+
+	@include media-breakpoint-up(md) {
+		padding: $navbar-padding-y 0;
+	}
 
 	.nav-link {
 		padding-left: 0;
@@ -164,6 +169,44 @@ a {
 	@include transition($transition-base);
 }
 
+a.inline {
+	text-decoration: none;
+	position: relative;
+	display: inline-block;
+
+	&:after {
+		content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0px;
+    height: 1px;
+    background-color: $link-color;
+		@include transition($transition-base);
+	}
+
+	&:hover {
+		color: $link-hover-color;
+
+		&:after {
+			left: 50%;
+			width: 0;
+		}
+	}
+}
+
+a.inline.light {
+	color: $link-light-color;
+
+	&:after {
+    background-color: $link-light-color;
+	}
+
+	&:hover {
+		color: $link-light-hover-color;
+	}
+}
+
 
 
 // Body
@@ -175,8 +218,13 @@ body {
 	color: $body-color-light;
 }
 
-body.bg-dark main, body.bg-eggplant main {
-	margin-top: $page-top-spacer;
+body.bg-dark main,
+body.bg-eggplant main {
+	margin-top: $page-top-spacer-sm;
+
+	@include media-breakpoint-up(md) {
+		margin-top: $page-top-spacer;
+	}
 }
 
 .bg-eggplant {
@@ -185,10 +233,6 @@ body.bg-dark main, body.bg-eggplant main {
 	.navbar {
 		backdrop-filter: blur(16px);
 		background-color: rgba($eggplant, .8);
-	}
-
-	a {
-		color: $mauve;
 	}
 }
 
@@ -209,9 +253,14 @@ body.bg-dark main, body.bg-eggplant main {
 
 	i {
 		font-size: $h2-font-size;
-		opacity: 0;
-		padding-right: $spacer;
+		opacity: 1;
+		padding-right: 0;
 		@include transition($transition-slow);
+
+		@include media-breakpoint-up(md) {
+			opacity: 0;
+			padding-right: $spacer;
+		}
 	}
 
 	.card-title {
@@ -229,9 +278,17 @@ body.bg-dark main, body.bg-eggplant main {
 
 	.card-line {
 		height: 1px;
-		width: 0;
+		position: relative;
+		left: 0;
+		width: 100%;
 		background-color: $ochre;
 		@include transition($transition-slow);
+
+		@include media-breakpoint-up(md) {
+			left: 50%;
+			width: 0;
+			background-color: transparent;
+		}
 	}
 
 	&:hover {
@@ -241,14 +298,20 @@ body.bg-dark main, body.bg-eggplant main {
 		}
 		.card-line {
 			width: 100%;
+			left: 0;
+			background-color: $ochre;
 		}
 	}
 }
 
 .project-hero {
-	padding-top: $page-top-spacer;
+	padding-top: $page-top-spacer-sm;
 	padding-bottom: $spacer * 2;
 	margin-bottom: $spacer * 5;
+
+	@include media-breakpoint-up(md) {
+		padding-top: $page-top-spacer;
+	}
 }
 
 .project-overview-main {

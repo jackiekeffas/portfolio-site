@@ -186,6 +186,7 @@ $spacers: (
   7: $spacer * 3
 );
 $container-padding-x: $spacer * 1.75;
+$page-top-spacer-sm: $spacer * 6;
 $page-top-spacer: $spacer * 7;
 
 // Type
@@ -234,8 +235,10 @@ $body-color:    							$eggplant;
 $body-color-light:            $white;
 $body-subtle-color:           $ochre-dark;
 $link-color:                  $mauve-dark;
+$link-light-color:            $mauve;
 $link-decoration:             underline;
 $link-hover-color:            $ochre-dark;
+$link-light-hover-color:      $ochre;
 $link-hover-decoration:       null;
 $figure-caption-color:        $body-subtle-color;
 
@@ -264,14 +267,14 @@ $navbar-brand-padding-y:    	$spacer * .5;
 $navbar-brand-margin-end:			0;
 
 $navbar-light-color:                $white;
-$navbar-light-hover-color:          $ochre;
-$navbar-light-active-color:         $ochre;
+$navbar-light-hover-color:          $link-light-hover-color;
+$navbar-light-active-color:         $link-light-hover-color;
 $navbar-light-disabled-color:       rgba($black, .3) !default;
 $navbar-light-toggler-border-color: rgba($primary, .2);
 $navbar-light-brand-color:          $navbar-light-active-color !default;
 $navbar-light-brand-hover-color:    $navbar-light-active-color !default;
-$navbar-dark-hover-color:           $ochre-dark;
-$navbar-dark-active-color:          $ochre-dark;
+$navbar-dark-hover-color:           $link-hover-color;
+$navbar-dark-active-color:          $link-hover-color;
 
 // Badges
 $badge-font-size:             .75em;

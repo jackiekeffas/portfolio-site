@@ -2,20 +2,21 @@
 {% from "scripts.jinja" import scripts %}
 {% from "navbar.jinja" import navbar %}
 {% from "footer.jinja" import footer %}
+{% from "pageTitle.jinja" import pageTitle %}
 
 <!DOCTYPE html>
 <html lang="en">
-	{{ head(title="404", meta="Jackie Keffas is a designer and photographer based in NYC") }}
+	{{ head(title="About", meta="Jackie Keffas is a designer and photographer based in NYC") }}
 
-	<body>
+	<body class="bg-dark">
     {{ navbar() }}
         
 		<main class="min-vh-100">
 			<div class="container">
 				<div class="row mb-0">
-					<div class="project-text">
-						<h1>Oops! We can't find that page. <i class="fa-solid fa-heart-crack fa-xs fa-rotate-by" style="--fa-rotate-angle: 20deg;"></i></h1>
-						<a href="/">Go home</a>
+					<div class="col">
+						{{ pageTitle(pageHeader="We can't find that page", pageSubheader="Oops", margin="mb-3") }}
+						<p><a class="inline light" href="/">Go home</a></p>
 					</div>
 				</div>
 			</div>
