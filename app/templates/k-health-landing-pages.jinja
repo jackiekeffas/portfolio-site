@@ -16,22 +16,32 @@
     <main>
       {{ projectHero(projectData) }}
 
-      {{ projectOverviewAlt(projectData, hideTeam="hidden") }}
+      {{ projectOverviewAlt(projectData) }}
 
       <div class="container">
-        <div class="row">
+        <div class="row mb-5">
           <div class="project-text">
-            <h2>Process</h2>
-            <p>As a young company, standardized colors and logos were used, but proper brand guidelines were never written up. During a period where multiple new hires joined the team, I decided to create a brand book to keep Pretty Instant's visual language consistent across departments. The book includes the company mission statements, fonts, colors, gradients, and instructions on how to use Pretty Instant's logos and icons.</p>          </div>
+            <h2>Primary Care page</h2>
+          </div>
         </div>
       </div>
 
       <div class="container-xxl">
-        <div class="row ">
+        <div class="row">
           <div class="col">
             <figure class="figure">
               <img src="../static/images/work/khealth/landingpages/primarycare.png" class="figure-img img-fluid" alt="Intro of the Pretty Instant brand book">
             </figure>
+            <!-- <figcaption class="figure-caption">
+            </figcaption> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row mb-5">
+          <div class="project-text">
+            <h2>Medical Weight Management page</h2>
           </div>
         </div>
       </div>
@@ -42,6 +52,16 @@
             <figure class="figure">
               <img src="../static/images/work/khealth/landingpages/weightmanagement.png" class="figure-img img-fluid" alt="Logo pages of the Pretty Instant brand book">
             </figure>
+            <!-- <figcaption class="figure-caption">
+            </figcaption> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="container">
+        <div class="row mb-5">
+          <div class="project-text">
+            <h2>Home page</h2>
           </div>
         </div>
       </div>
@@ -52,9 +72,11 @@
             <figure class="figure">
               <img src="../static/images/work/khealth/landingpages/home.png" class="figure-img img-fluid" alt="Color pages of the Pretty Instant brand book">
             </figure>
+            <figcaption class="figure-caption">
+            </figcaption>
           </div>
         </div>
-      </div>
+      </div> -->
 
       {{ projectPagination(projectData, previousSlug="k-health-brand", previousTitle="Brand book", previousCompany="K Health", nextSlug="k-health-emails", nextTitle="Emails", nextCompany="K Health") }}
 
