@@ -8560,9 +8560,16 @@ p:last-child {
 }
 
 .navbar {
+  transition: all 0.3s ease-in-out;
   backdrop-filter: blur(16px);
   background-color: rgba(41, 70, 65, 0.8);
   padding: 0.5rem 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .navbar {
+    transition: none;
+  }
 }
 
 @media (min-width: 768px) {
@@ -8579,10 +8586,6 @@ p:last-child {
 
 .navbar .nav-link:hover {
   color: #EEB475;
-}
-
-.navbar .navbar-collapse {
-  flex-grow: 0;
 }
 
 .navbar img.nav-item {
@@ -8604,6 +8607,26 @@ p:last-child {
 
 .navbar a.navbar-brand:hover .logo {
   fill: #EEB475;
+}
+
+.navbar.scrolled {
+  background-color: rgba(253, 250, 247, 0.8);
+}
+
+.navbar.scrolled .nav-link {
+  color: #53293E;
+}
+
+.navbar.scrolled .nav-link:hover {
+  color: #A26422;
+}
+
+.navbar.scrolled .logo {
+  fill: #53293E;
+}
+
+.navbar.scrolled a.navbar-brand:hover .logo {
+  fill: #A26422;
 }
 
 a {

@@ -1,5 +1,5 @@
-{% macro navbar(home="", about="") %}
-	<nav class="navbar navbar-expand fixed-top">
+{% macro navbar(home="", about="", page="project-page") %}
+	<nav class="navbar navbar-expand fixed-top {{ page }}">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="/">
 				<svg class="logo" width="38" height="40">
