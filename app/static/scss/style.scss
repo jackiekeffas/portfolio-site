@@ -91,6 +91,24 @@ p:last-child {
 	margin-bottom: 0;
 }
 
+.full-height {
+  display: flex;
+	flex-direction: column;
+	height: 100%;
+
+	.img-wrapper {
+    height: 100%;
+    align-items: center;
+    display: flex;
+
+		@include media-breakpoint-up(lg) {
+			.figure-img {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
 
 
 // Grid
@@ -325,7 +343,7 @@ body.bg-eggplant main {
 
 .project-hero {
 	padding-top: $page-top-spacer-sm;
-	padding-bottom: $spacer * 2;
+	padding-bottom: $spacer * 3;
 	margin-bottom: $spacer * 5;
 
 	@include media-breakpoint-up(md) {
