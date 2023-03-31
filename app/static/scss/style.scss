@@ -101,7 +101,7 @@ p:last-child {
     align-items: center;
     display: flex;
 
-		@include media-breakpoint-up(lg) {
+		@include media-breakpoint-up(md) {
 			.figure-img {
 				margin-bottom: 0;
 			}
