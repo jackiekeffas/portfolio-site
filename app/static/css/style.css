@@ -8938,7 +8938,6 @@ p:last-child {
 
 .navbar {
   transition: all 0.3s ease-in-out;
-  backdrop-filter: blur(16px);
   background-color: rgba(41, 70, 65, 0.8);
   padding: 0.5rem 0;
 }
@@ -9085,7 +9084,6 @@ body.bg-eggplant main {
 }
 
 .bg-eggplant .navbar {
-  backdrop-filter: blur(16px);
   background-color: rgba(83, 41, 62, 0.8);
 }
 

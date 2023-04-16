@@ -141,7 +141,6 @@ p:last-child {
 // Nav
 .navbar {
 	@include transition($transition-base);
-	backdrop-filter: blur(16px);
 	background-color: rgba($dark, .8);
 	padding: $spacer * .5 0;
 
@@ -268,7 +267,6 @@ body.bg-eggplant main {
 	background-color: $eggplant;
 
 	.navbar {
-		backdrop-filter: blur(16px);
 		background-color: rgba($eggplant, .8);
 	}
 }
