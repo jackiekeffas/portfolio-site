@@ -1,15 +1,11 @@
-{% macro projectOverview(projectData) %}
+{% macro projectOverview(projectData, hideTeam="") %}
   <div class="project-overview-sidebar">
     <div class="row">
       <div class="sidebar-item">
         <h4>Role</h4>
         <p class="small">{{ projectData.role }}</p>
       </div>
-      <div class="sidebar-item">
-        <h4>Stakeholders</h4>
-        <p class="small">{{ projectData.stakeholders }}</p>
-      </div>
-      <div class="sidebar-item">
+      <div class="sidebar-item {{ hideTeam }}">
         <h4>Team</h4>
         <p class="small">{{ projectData.team }}</p>
       </div>

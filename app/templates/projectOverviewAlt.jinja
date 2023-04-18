@@ -1,4 +1,4 @@
-{% macro projectOverviewAlt(projectData, hideStakeholders="", hideTeam="") %}
+{% macro projectOverviewAlt(projectData, hideTeam="") %}
   <div class="container">
     <div class="row justify-content-md-center">
       <div class="project-overview-alt">
@@ -6,10 +6,6 @@
           <div class="sidebar-item">
             <h4>Role</h4>
             <p class="small">{{ projectData.role }}</p>
-          </div>
-          <div class="sidebar-item {{ hideStakeholders }}">
-            <h4>Stakeholders</h4>
-            <p class="small">{{ projectData.stakeholders }}</p>
           </div>
           <div class="sidebar-item {{ hideTeam }}">
             <h4>Team</h4>
