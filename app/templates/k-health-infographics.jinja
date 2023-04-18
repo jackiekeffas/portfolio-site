@@ -3,7 +3,7 @@
 {% from "navbar.jinja" import navbar %}
 {% from "footer.jinja" import footer %}
 {% from "projectHero.jinja" import projectHero %}
-{% from "projectOverviewAlt.jinja" import projectOverviewAlt %}
+{% from "projectOverview.jinja" import projectOverview %}
 {% from "projectPagination.jinja" import projectPagination %}
 
 <!DOCTYPE html>
@@ -16,13 +16,47 @@
     <main>
       {{ projectHero(projectData) }}
 
-      {{ projectOverviewAlt(projectData) }}
+      <div class="container">
+        <div class="row mb-md-0 justify-content-md-center">
+          {{ projectOverview(projectData) }}
+          <div class="project-overview-main">
+            <h2>Overview</h2>
+            <p>Data is a core element of the K Health brand. The AI-powered symptom checker is built off of millions of anonymized medical records, which provides doctors and users with information about the diagnoses and treatments of others with similar symptoms and conditions. With this in mind, and access to all this information, there’s an effort from the content team to focus on data-driven storytelling.</p>
+            <h2>Newsletter</h2>
+            <p>One method used to tell these stories is K Health’s bi-weekly newsletter, The Second Opinion.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col">
+            <div class="row mb-0 justify-content-center">
+              <div class="col-12 col-sm-6 col-lg">
+                <img src="../static/images/work/khealth/infographics/newsletter-insomnia.png" class="figure-img img-fluid" alt="Desktop version of a newsletter that featured an article about user-reported insomnia">
+              </div>
+              <div class="col-12 col-sm-6 col-lg">
+                <img src="../static/images/work/khealth/infographics/blog-insomnia-heatmap.png" class="figure-img img-fluid rounded" alt="Heatmap of the U.S. showing where users reported having insomnia">
+              </div>
+              <div class="col-12 col-sm-6 col-lg">
+                <img src="../static/images/work/khealth/infographics/blog-insomnia-timeline.png" class="figure-img img-fluid rounded" alt="Line chart showing a decline in sleeplessness in women and men">
+              </div>
+              <div class="col-12 col-sm-6 col-lg">
+                <img src="../static/images/work/khealth/infographics/blog-insomnia-conditions.png" class="figure-img img-fluid rounded" alt="Sunburst chart of conditions associated with insomnia">
+              </div>
+            </div>
+            <figcaption class="figure-caption">
+              Insomnia newsletter and article versions of the infographics
+            </figcaption>
+          </div>
+        </div>
+      </div>
 
       <div class="container">
         <div class="row mb-7">
           <div class="project-text">
-            <h2>Newsletter</h2>
-            <p>Sent out bi-weekly emails, sometimes polling users and used the data for articles, social posts, and the following newsletter.</p>
+            <p>Building off of the clinical insights, we decided to poll our users. We sent out multiple surveys during COVID, evaluating people’s opinions on topics like vaccination and return to office, but the most engaged with topic was the Valentine’s Day-themed survey about sex.</p>
+            <p>For all sends, I designed and built the newsletters, themed the Typeform to match the K Health brand, assisted with calculating all the data, and created infographics for use within the emails, articles, and on social media.</p>
           </div>
         </div>
       </div>
@@ -41,8 +75,9 @@
                 <img src="../static/images/work/khealth/infographics/newsletter-sex-results.png" class="figure-img img-fluid" alt="Desktop version of a newsletter that featured an article with results from the survey">
               </div>
             </div>
-            <!-- <figcaption class="figure-caption">
-            </figcaption> -->
+            <figcaption class="figure-caption">
+              Initial survey newsletter, typeform, and results newsletter
+            </figcaption>
           </div>
         </div>
       </div>
@@ -73,32 +108,10 @@
             <figure class="figure">
               <img src="../static/images/work/khealth/infographics/social-sex-survey-5.png" class="figure-img img-fluid" alt="Fifth slide of an Instagram carousel post with a bar chart of how COVID has affected people's sex lives">
             </figure>
-            <!-- <figcaption class="figure-caption">
-            </figcaption> -->
           </div>
-        </div>
-      </div>
-
-      <div class="container-xxl">
-        <div class="row">
-          <div class="col">
-            <div class="row mb-0 justify-content-center">
-              <div class="col-12 col-sm-6 col-lg">
-                <img src="../static/images/work/khealth/infographics/newsletter-insomnia.png" class="figure-img img-fluid" alt="Desktop version of a newsletter that featured an article about user-reported insomnia">
-              </div>
-              <div class="col-12 col-sm-6 col-lg">
-                <img src="../static/images/work/khealth/infographics/blog-insomnia-heatmap.png" class="figure-img img-fluid rounded" alt="Heatmap of the U.S. showing where users reported having insomnia">
-              </div>
-              <div class="col-12 col-sm-6 col-lg">
-                <img src="../static/images/work/khealth/infographics/blog-insomnia-timeline.png" class="figure-img img-fluid rounded" alt="Line chart showing a decline in sleeplessness in women and men">
-              </div>
-              <div class="col-12 col-sm-6 col-lg">
-                <img src="../static/images/work/khealth/infographics/blog-insomnia-conditions.png" class="figure-img img-fluid rounded" alt="Sunburst chart of conditions associated with insomnia">
-              </div>
-            </div>
-            <!-- <figcaption class="figure-caption">
-            </figcaption> -->
-          </div>
+          <figcaption class="figure-caption">
+            Instagram versions of the infographics
+          </figcaption>
         </div>
       </div>
 
@@ -106,6 +119,7 @@
         <div class="row mb-5">
           <div class="project-text">
             <h2>Social media posts</h2>
+            <p>Another method used</p>
           </div>
         </div>
       </div>
