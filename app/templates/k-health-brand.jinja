@@ -3,7 +3,7 @@
 {% from "navbar.jinja" import navbar %}
 {% from "footer.jinja" import footer %}
 {% from "projectHero.jinja" import projectHero %}
-{% from "projectOverviewAlt.jinja" import projectOverviewAlt %}
+{% from "projectOverview.jinja" import projectOverview %}
 {% from "projectPagination.jinja" import projectPagination %}
 
 <!DOCTYPE html>
@@ -16,16 +16,15 @@
     <main>
       {{ projectHero(projectData) }}
 
-      {{ projectOverviewAlt(projectData) }}
-
-      <!-- <div class="container">
-        <div class="row">
-          <div class="project-text">
-            <h2>Process</h2>
-            <p></p>
+      <div class="container">
+        <div class="row mb-md-0 justify-content-md-center">
+          {{ projectOverview(projectData) }}
+          <div class="project-overview-main">
+            <h2>Overview</h2>
+            <p>With guidance from the Director of Brand Design, I was tasked with evolving the K Health brand. I designed the following guidelines and all projects showcased within it.</p>
           </div>
         </div>
-      </div> -->
+      </div>
 
       <div class="container-xxl">
         <div class="row">
@@ -49,6 +48,13 @@
           </div>
         </div>
 
+        <div class="container">
+          <div class="row mb-5">
+            <div class="project-text">
+              <p>As a defining feature of the K Health brand, the logo didn’t change, but I chose to narrow down the variants and limit the color options to create consistency.</p>
+            </div>
+          </div>
+        </div>
 
         <!-- Logo -->
         <div class="row">
@@ -132,6 +138,14 @@
             </figcaption> -->
         </div>
 
+        <div class="container">
+          <div class="row mb-5">
+            <div class="project-text">
+              <p>I also developed a new type system in partnership with the Head of Product Design in order to create a system that works across web and app.</p>
+            </div>
+          </div>
+        </div>
+
         <!-- Typography -->
         <div class="row">
           <div class="offset-md-3 offset-xl-0 col-12 col-md-6 col-xl">
@@ -207,6 +221,14 @@
           </div>
           <!-- <figcaption class="figure-caption">
             </figcaption> -->
+        </div>
+
+        <div class="container">
+          <div class="row mb-5">
+            <div class="project-text">
+              <p>I used the new palette to distinguish K’s services, and created unique dot motifs to echo the use case, like using all downward dots for the Medical Weight Management service.</p>
+            </div>
+          </div>
         </div>
 
         <!-- Services -->
