@@ -8874,6 +8874,7 @@ p:last-child {
 
 .figure-caption {
   text-align: center;
+  margin-top: 0.5rem;
 }
 
 .figure {
@@ -9334,6 +9335,7 @@ body.bg-eggplant main {
   margin-top: var(--bs-gutter-y);
   flex: 1 1 0;
   max-width: 100%;
+  margin-bottom: 2.5rem;
 }
 
 @media (min-width: 768px) {
