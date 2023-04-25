@@ -17,23 +17,23 @@
         "overviewImage": "../static/images/hero/khealth/brand.jpg",
         "overviewImageAltText": "9 pages from K Health's brand book"
     },
-    "k-health-landing-pages": {
-        "slug": "k-health-landing-pages",
-        "metaTitle": "Landing pages ⬩ K Health",
-        "metaDescription": "Advertising core services through paid search",
+    "k-health-website": {
+        "slug": "k-health-website",
+        "metaTitle": "Website ⬩ K Health",
+        "metaDescription": "Advertising core services through organic and paid search",
         "company": "K Health",
         "companyDescription": "K Health is a telehealth platform, powered by clinical AI, that uses billions of data insights to help doctors make decisions and provide people with access to affordable, quality care, 24/7",
-        "title": "Landing pages",
-        "description": "Advertising core services through paid search",
+        "title": "Website",
+        "description": "Advertising core services through organic and paid search",
         "role": "Designer and web producer",
         "stakeholders": "CEO, CTO, VP of Product, Director of Brand Design, Product Marketing team",
         "team": "Copywriter, Wordpress developer",
         "tools": "Figma, Photoshop, Wordpress",
         "skills": "Web design, web production",
-        "cardImage": "../static/images/home/khealth/landingpages.jpg",
-        "cardImageAltText": "Computer and phone mockups featuring 2 landing pages - Primary Care on desktop and Weight Management on mobile",
-        "overviewImage": "../static/images/hero/khealth/landingpages.jpg",
-        "overviewImageAltText": "Computer and phone mockups featuring 2 landing pages - Primary Care on desktop and Weight Management on mobile"
+        "cardImage": "../static/images/home/khealth/website.jpg",
+        "cardImageAltText": "Computer and phone mockups featuring the K Health home page on desktop and a Weight Management landing page on mobile",
+        "overviewImage": "../static/images/hero/khealth/website.jpg",
+        "overviewImageAltText": "Computer and phone mockups featuring the K Health home page on desktop and a Weight Management landing page on mobile"
     },
     "k-health-emails": {
         "slug": "k-health-emails",
@@ -145,11 +145,11 @@
     },
     "pretty-instant-brand": {
         "slug": "pretty-instant-brand",
-        "metaTitle": "Brand book ⬩ Pretty Instant",
+        "metaTitle": "Brand guidelines ⬩ Pretty Instant",
         "metaDescription": "Documenting guidelines for onboarding and scaling a team",
         "company": "Pretty Instant",
         "companyDescription": "Pretty Instant was an end-to-end managed photography platform that handled logistics, staffing, editing, and delivery of photos for clients, and offered experiential, roaming photo booth activations",
-        "title": "Brand book",
+        "title": "Brand guidelines",
         "description": "Documenting guidelines for onboarding and scaling a team",
         "role": "Designer",
         "stakeholders": "CEO, CTO, COO",
