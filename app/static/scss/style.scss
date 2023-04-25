@@ -15,6 +15,10 @@ h1, .h1 {
 	}
 }
 
+h1.mb, .h1.mb {
+	margin-bottom: $spacer;
+}
+
 h2, .h2 {
 	font-size: $h2-font-size * .83;
 

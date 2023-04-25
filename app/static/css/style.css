@@ -8798,6 +8798,10 @@ h1, .h1, .h1 {
   }
 }
 
+h1.mb, .mb.h1, .h1.mb {
+  margin-bottom: 1rem;
+}
+
 h2, .h2, .h2 {
   font-size: 1.245rem;
 }
