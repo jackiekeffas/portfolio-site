@@ -3,7 +3,7 @@
 {% from "navbar.jinja" import navbar %}
 {% from "footer.jinja" import footer %}
 {% from "projectHero.jinja" import projectHero %}
-{% from "projectOverviewAlt.jinja" import projectOverviewAlt %}
+{% from "projectOverview.jinja" import projectOverview %}
 {% from "projectPagination.jinja" import projectPagination %}
 
 <!DOCTYPE html>
@@ -16,21 +16,31 @@
     <main>
       {{ projectHero(projectData) }}
 
-      {{ projectOverviewAlt(projectData) }}
+      <div class="container">
+        <div class="row justify-content-md-center">
+          {{ projectOverview(projectData) }}
+          <div class="project-overview-main">
+            <h2>Overview</h2>
+            <p>To advertise K Health's Mental Health program, we created a paid social campaign consisting of six 12 second ads and three 30 second ads. The 12 second ads featured the six most popular medications prescribed by K Health. The three 30 second ads featured K's VP of Medical and each spoke to a different core benefit of the program: affordability, ease of use, and an all inclusive platform.</p>
+            <p>We worked with external production partners to produce the videos. I assisted with pre-production for the shoots, which included mocking up what the ads would look like and helping choose actors. While on set, I was mainly responsible for providing direction on the lighting and framing of each shot, but also provided feedback on talent direction.</p>
+            <p>In post, I provided the files for all graphics and gave direction on how they should be animated, which was exectued by our external partners.</p>
+          </div>
+        </div>
+      </div>
 
       <div class="container">
         <div class="row mb-0">
           <div class="project-text">
             <h2>12 second ads</h2>
-            <p>Showcasing the 6 most popular medications available through K Health</p>
           </div>
         </div>
       </div>
 
       <div class="container-xxl">
-        <div class="row">
+        <div class="row justify-content-center">
           <div class="col-12 col-md-6 col-xl-4 mb-4">
-            <img src="../static/images/work/khealth/ads/mh-bupropion.png" class="img-fluid" alt="Ad for bupropion featuring a hand holding a pill, the medication name, and the K Health logo">
+            <div style="padding:112% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/821110339?h=7c31fdb47f&autoplay=1&loop=1&badge=0&autopause=0&player_id=0&app_id=58479&muted=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Bupropion"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+            <!-- <img src="../static/images/work/khealth/ads/mh-bupropion.png" class="img-fluid" alt="Ad for bupropion featuring a hand holding a pill, the medication name, and the K Health logo"> -->
           </div>
           <div class="col-12 col-md-6 col-xl-4 mb-4">
             <img src="../static/images/work/khealth/ads/mh-buspirone.png" class="img-fluid" alt="Ad for buspirone featuring a hand holding a pill, the medication name, and the K Health logo">
