@@ -1,0 +1,110 @@
+{% from "head.jinja" import head %}
+{% from "scripts.jinja" import scripts %}
+{% from "navbar.jinja" import navbar %}
+{% from "footer.jinja" import footer %}
+{% from "pageTitle.jinja" import pageTitle %}
+
+<!DOCTYPE html>
+<html lang="en">
+	{{ head(title="Roommates", meta="Jackie Keffas is a designer and photographer based in NYC") }}
+
+  <body class="photo">
+    {{ navbar(page="navbar-light") }}
+
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-3 offset-lg-1">
+            {{ pageTitle(pageHeader="Roommates", pageSubheader="Series") }}
+          </div>
+          <div class="col-12 col-lg-7">
+            <p>This series was created by capturing a pair of roommates individually and printing each photograph. The photographs were then cut into 1" strips and weaved together. Forming one image from two allows viewers to explore the visual similarities and differences between roommates, creating an analysis of the people we choose to surround ourselves with.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col">
+            <a class="image-popup" href="../static/images/photo/roommates/roommates01.jpg">
+              <img src="../static/images/photo/roommates/roommates01.jpg" class="img-fluid rounded" alt="">
+            </a>
+            <p class="figure-caption">
+              Alec and Jake
+            </p>
+          </div>
+          <div class="col">
+              <a class="image-popup" href="../static/images/photo/roommates/roommates02.jpg">
+                <img src="../static/images/photo/roommates/roommates02.jpg" class="img-fluid rounded" alt="">
+              </a>
+              <p class="figure-caption">
+              John and Matt
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <a class="image-popup" href="../static/images/photo/roommates/roommates03.jpg">
+              <img src="../static/images/photo/roommates/roommates03.jpg" class="img-fluid rounded" alt="">
+            </a>
+            <p class="figure-caption">
+              Jake and Katie
+            </p>
+          </div>
+          <div class="col">
+            <a class="image-popup" href="../static/images/photo/roommates/roommates04.jpg">
+              <img src="../static/images/photo/roommates/roommates04.jpg" class="img-fluid rounded" alt="">
+            </a>
+            <p class="figure-caption">
+              Erin and Lizze
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <a class="image-popup" href="../static/images/photo/roommates/roommates05.jpg">
+              <img src="../static/images/photo/roommates/roommates05.jpg" class="img-fluid rounded" alt="">
+            </a>
+            <p class="figure-caption">
+              Nolan and Zak
+            </p>
+          </div>
+          <div class="col">
+            <a class="image-popup" href="../static/images/photo/roommates/roommates06.jpg">
+              <img src="../static/images/photo/roommates/roommates06.jpg" class="img-fluid rounded" alt="">
+            </a>
+            <p class="figure-caption">
+              Connor and Cole
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <a class="image-popup" href="../static/images/photo/roommates/roommates07.jpg">
+              <img src="../static/images/photo/roommates/roommates07.jpg" class="img-fluid rounded" alt="">
+            </a>
+            <p class="figure-caption">
+              Cara and Chelsea
+            </p>
+          </div>
+          <div class="col">
+            <a class="image-popup" href="../static/images/photo/roommates/roommates08.jpg">
+              <img src="../static/images/photo/roommates/roommates08.jpg" class="img-fluid rounded" alt="">
+            </a>
+            <p class="figure-caption">
+              Michael and Jake
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    {{ footer() }}
+
+		{{ scripts() }}
+	</body>
+</html>

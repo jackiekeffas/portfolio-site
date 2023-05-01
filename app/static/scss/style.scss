@@ -181,7 +181,8 @@ p:last-child {
 	}
 }
 
-.navbar.scrolled {
+.navbar.scrolled,
+.navbar-light {
 	background-color: rgba($light, .8);
 
 	.nav-link {
@@ -260,7 +261,8 @@ body {
 }
 
 body.bg-dark main,
-body.bg-eggplant main {
+body.bg-eggplant main,
+body.photo main {
 	margin-top: $page-top-spacer-sm;
 
 	@include media-breakpoint-up(md) {
@@ -314,6 +316,32 @@ body.bg-eggplant main {
 
 	.card-img {
 		border-radius: $border-radius;
+	}
+
+	.card-photo-img {
+		border-radius: $border-radius;
+		width: 100%;
+		height: 100%;
+		display: block;
+		background-repeat: no-repeat;
+    background-position: center center;
+		background-size: cover;
+	}
+
+	.card-photo-mythology {
+		background-image: url("../images/photo/mythology.jpg");
+	}
+
+	.card-photo-roommates {
+		background-image: url("../images/photo/roommates.jpg");
+	}
+
+	.card-photo-cemeteries {
+		background-image: url("../images/photo/cemeteries.jpg");
+	}
+
+	.card-photo-fruit {
+		background-image: url("../images/photo/fruit.jpg");
 	}
 
 	.card-line {
@@ -719,4 +747,46 @@ footer {
 		width: 100px;
 		height: 100px;
   }
+}
+
+
+.mfp-move-horizontal {
+  
+  /* start state */
+  .mfp-with-anim {
+    opacity: 0;
+    transition: all 0.3s;
+    
+    transform: translateX(-50px);
+  }
+  
+  &.mfp-bg {
+    opacity: 0;
+	  transition: all 0.3s;
+  }
+  
+  /* animate in */
+  &.mfp-ready {
+    .mfp-with-anim {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    &.mfp-bg {
+      opacity: 0.8;
+    }
+  }
+  
+  /* animate out */
+  &.mfp-removing {
+    
+    .mfp-with-anim {
+      transform: translateX(50px);
+      opacity: 0;
+    }
+    &.mfp-bg {
+      opacity: 0;
+    }
+    
+  }
+  
 }

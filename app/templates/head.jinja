@@ -15,15 +15,46 @@
 
 		<!-- CSS -->
 		<link rel="stylesheet" href="../static/css/style.css">
+		<link rel="stylesheet" href="../static/css/magnific-popup.css">
 
 		<!-- JS -->
 		<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script>
 			$(document).scroll(function () {
 				var $nav = $(".project-page");
 				var $hero = $(".project-hero");
 				$nav.toggleClass('scrolled', $(this).scrollTop() > ($hero.height() + $nav.height()));
+			});
+		</script>
+
+		<script type="text/javascript" src="../static/js/magnific-popup.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('.image-popup').magnificPopup({
+					type: 'image',
+					tLoading: 'Loading image #%curr%...',
+					closeOnContentClick: true,
+					closeBtnInside: false,
+					fixedContentPos: true,
+					mainClass: 'mfp-with-zoom', // class to remove default margin from left and right side,
+					gallery: {
+						enabled: true,
+						navigateByImgClick: true,
+						preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+					},
+					image: {
+						verticalFit: true,
+						tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+						titleSrc: function(item) {
+							return item.el.attr('title');
+						}
+					},
+					zoom: {
+						enabled: true,
+						duration: 300 // don't foget to change the duration also in CSS
+					}
+				});
 			});
 		</script>
 	</head>

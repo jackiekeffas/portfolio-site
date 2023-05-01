@@ -1,0 +1,73 @@
+{% from "head.jinja" import head %}
+{% from "scripts.jinja" import scripts %}
+{% from "navbar.jinja" import navbar %}
+{% from "footer.jinja" import footer %}
+{% from "pageTitle.jinja" import pageTitle %}
+
+<!DOCTYPE html>
+<html lang="en">
+	{{ head(title="Cemeteries", meta="Jackie Keffas is a designer and photographer based in NYC") }}
+
+  <body class="photo">
+    {{ navbar(page="navbar-light") }}
+
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-3 offset-lg-1">
+            {{ pageTitle(pageHeader="Cemeteries", pageSubheader="Series") }}
+          </div>
+          <div class="col-12 col-lg-7">
+            <p>Though generally seen as scary or creepy, cemeteries are necessary parts of any culture. They allow people to mourn and immortalize those they hold dear. A medium format Holga was used to produce soft images that reflect and enforce the emotional part of cemeteries. Half were taken at St. Louis Cemetery #1 in Louisiana and half at Mount Auburn Cemetery in Massachusetts. Looking at these two places side by side allows the viewer to reflect upon the cultural motivation of their design and development.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col">
+            <a class="image-popup" href="../static/images/photo/cemeteries/cemeteries01.jpg">
+              <img src="../static/images/photo/cemeteries/cemeteries01.jpg" class="img-fluid rounded" alt="">
+            </a>
+          </div>
+          <div class="col">
+            <a class="image-popup" href="../static/images/photo/cemeteries/cemeteries02.jpg">
+              <img src="../static/images/photo/cemeteries/cemeteries02.jpg" class="img-fluid rounded" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <a class="image-popup" href="../static/images/photo/cemeteries/cemeteries03.jpg">
+              <img src="../static/images/photo/cemeteries/cemeteries03.jpg" class="img-fluid rounded" alt="">
+            </a>
+          </div>
+          <div class="col">
+            <a class="image-popup" href="../static/images/photo/cemeteries/cemeteries04.jpg">
+              <img src="../static/images/photo/cemeteries/cemeteries04.jpg" class="img-fluid rounded" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <a class="image-popup" href="../static/images/photo/cemeteries/cemeteries05.jpg">
+              <img src="../static/images/photo/cemeteries/cemeteries05.jpg" class="img-fluid rounded" alt="">
+            </a>
+          </div>
+          <div class="col">
+            <a class="image-popup" href="../static/images/photo/cemeteries/cemeteries06.jpg">
+              <img src="../static/images/photo/cemeteries/cemeteries06.jpg" class="img-fluid rounded" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    {{ footer() }}
+
+		{{ scripts() }}
+	</body>
+</html>

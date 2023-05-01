@@ -8990,23 +8990,28 @@ p:last-child {
   fill: #EEB475;
 }
 
-.navbar.scrolled {
+.navbar.scrolled,
+.navbar-light {
   background-color: rgba(253, 250, 247, 0.8);
 }
 
-.navbar.scrolled .nav-link {
+.navbar.scrolled .nav-link,
+.navbar-light .nav-link {
   color: #53293E;
 }
 
-.navbar.scrolled .nav-link:hover {
+.navbar.scrolled .nav-link:hover,
+.navbar-light .nav-link:hover {
   color: #A26422;
 }
 
-.navbar.scrolled .logo {
+.navbar.scrolled .logo,
+.navbar-light .logo {
   fill: #53293E;
 }
 
-.navbar.scrolled a.navbar-brand:hover .logo {
+.navbar.scrolled a.navbar-brand:hover .logo,
+.navbar-light a.navbar-brand:hover .logo {
   fill: #A26422;
 }
 
@@ -9073,13 +9078,15 @@ body {
 }
 
 body.bg-dark main,
-body.bg-eggplant main {
+body.bg-eggplant main,
+body.photo main {
   margin-top: 6rem;
 }
 
 @media (min-width: 768px) {
   body.bg-dark main,
-  body.bg-eggplant main {
+  body.bg-eggplant main,
+  body.photo main {
     margin-top: 7rem;
   }
 }
@@ -9145,6 +9152,32 @@ body.bg-eggplant main {
 
 .card .card-img {
   border-radius: 0.25rem;
+}
+
+.card .card-photo-img {
+  border-radius: 0.25rem;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.card .card-photo-mythology {
+  background-image: url("../images/photo/mythology.jpg");
+}
+
+.card .card-photo-roommates {
+  background-image: url("../images/photo/roommates.jpg");
+}
+
+.card .card-photo-cemeteries {
+  background-image: url("../images/photo/cemeteries.jpg");
+}
+
+.card .card-photo-fruit {
+  background-image: url("../images/photo/fruit.jpg");
 }
 
 .card .card-line {
@@ -9677,4 +9710,39 @@ footer a:hover {
   margin: 0 auto;
   width: 100px;
   height: 100px;
+}
+
+.mfp-move-horizontal {
+  /* start state */
+  /* animate in */
+  /* animate out */
+}
+
+.mfp-move-horizontal .mfp-with-anim {
+  opacity: 0;
+  transition: all 0.3s;
+  transform: translateX(-50px);
+}
+
+.mfp-move-horizontal.mfp-bg {
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.mfp-move-horizontal.mfp-ready .mfp-with-anim {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.mfp-move-horizontal.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+
+.mfp-move-horizontal.mfp-removing .mfp-with-anim {
+  transform: translateX(50px);
+  opacity: 0;
+}
+
+.mfp-move-horizontal.mfp-removing.mfp-bg {
+  opacity: 0;
 }

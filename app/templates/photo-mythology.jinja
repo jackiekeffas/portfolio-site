@@ -1,0 +1,94 @@
+{% from "head.jinja" import head %}
+{% from "scripts.jinja" import scripts %}
+{% from "navbar.jinja" import navbar %}
+{% from "footer.jinja" import footer %}
+{% from "pageTitle.jinja" import pageTitle %}
+
+<!DOCTYPE html>
+<html lang="en">
+	{{ head(title="Mythology", meta="Jackie Keffas is a designer and photographer based in NYC") }}
+
+  <body class="photo">
+    {{ navbar(page="navbar-light") }}
+
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-3 offset-lg-1">
+            {{ pageTitle(pageHeader="Mythology", pageSubheader="Series") }}
+          </div>
+          <div class="col-12 col-lg-7">
+            <p>The female characters featured in Greek and Roman mythology were often stereotyped or mistreated in ways that still occur today. These self-portraits aim to give power back to these women by confronting the viewer directly and presenting them with alternative interpretations of the stories. The strong lighting and composition draws from the chiaroscuro technique of the Baroque period, whose paintings frequently depicted these stories.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col">
+            <a class="image-popup" href="../static/images/photo/mythology/fates.png">
+              <img src="../static/images/photo/mythology/fates.png" class="img-fluid rounded" alt="">
+            </a>
+            <p class="figure-caption">
+              The Moirai
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <a class="image-popup" href="../static/images/photo/mythology/persephone.jpg">
+              <img src="../static/images/photo/mythology/persephone.jpg" class="img-fluid rounded" alt="">
+            </a>
+            <p class="figure-caption">
+              Persephone
+            </p>
+          </div>
+          <div class="col">
+            <a class="image-popup" href="../static/images/photo/mythology/pandora.jpg">
+              <img src="../static/images/photo/mythology/pandora.jpg" class="img-fluid rounded" alt="">
+            </a>
+            <p class="figure-caption">
+              Pandora
+            </p>
+          </div>
+          <div class="col">
+            <a class="image-popup" href="../static/images/photo/mythology/medusa.jpg">
+              <img src="../static/images/photo/mythology/medusa.jpg" class="img-fluid rounded" alt="">
+            </a>
+            <p class="figure-caption">
+              Medusa
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <a class="image-popup" href="../static/images/photo/mythology/justice.png">
+              <img src="../static/images/photo/mythology/justice.png" class="img-fluid rounded" alt="">
+            </a>
+            <p class="figure-caption">
+              Themis and Nemesis
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <a class="image-popup" href="../static/images/photo/mythology/capitoline.png">
+              <img src="../static/images/photo/mythology/capitoline.png" class="img-fluid rounded" alt="">
+            </a>
+            <p class="figure-caption">
+              Juventas, Juno, and Minerva
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    {{ footer() }}
+
+		{{ scripts() }}
+	</body>
+</html>

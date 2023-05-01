@@ -1,0 +1,91 @@
+{% from "head.jinja" import head %}
+{% from "scripts.jinja" import scripts %}
+{% from "navbar.jinja" import navbar %}
+{% from "footer.jinja" import footer %}
+{% from "pageTitle.jinja" import pageTitle %}
+
+<!DOCTYPE html>
+<html lang="en">
+	{{ head(title="Fruit", meta="Jackie Keffas is a designer and photographer based in NYC") }}
+
+  <body class="photo">
+    {{ navbar(page="navbar-light") }}
+
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-3 offset-lg-1">
+            {{ pageTitle(pageHeader="Fruit", pageSubheader="Series") }}
+          </div>
+          <div class="col-12 col-lg-7">
+            <p>To create these images, sliced fruit was arranged into patterns on top of plexiglass and colored paper and then photographed from above. The photo was then brought into Photoshop and repeated before being printed in a large-scale. This formed an optical illusion, with viewers from a distance seeing mere geometric shapes.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col">
+            <a class="image-popup" href="../static/images/photo/fruit/fruit01.jpg">
+              <img src="../static/images/photo/fruit/fruit01.jpg" class="img-fluid rounded" alt="">
+            </a>
+            <p class="figure-caption">
+              Blackberries
+            </p>
+          </div>
+          <div class="col">
+            <a class="image-popup" href="../static/images/photo/fruit/fruit02.jpg">
+              <img src="../static/images/photo/fruit/fruit02.jpg" class="img-fluid rounded" alt="">
+            </a>
+            <p class="figure-caption">
+              Strawberries
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <a class="image-popup" href="../static/images/photo/fruit/fruit03.jpg">
+              <img src="../static/images/photo/fruit/fruit03.jpg" class="img-fluid rounded" alt="">
+            </a>
+            <p class="figure-caption">
+              Kiwis
+            </p>
+          </div>
+          <div class="col">
+            <a class="image-popup" href="../static/images/photo/fruit/fruit04.jpg">
+              <img src="../static/images/photo/fruit/fruit04.jpg" class="img-fluid rounded" alt="">
+            </a>
+            <p class="figure-caption">
+              Oranges
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <a class="image-popup" href="../static/images/photo/fruit/fruit05.jpg">
+              <img src="../static/images/photo/fruit/fruit05.jpg" class="img-fluid rounded" alt="">
+            </a>
+            <p class="figure-caption">
+              Tomatoes
+            </p>
+          </div>
+          <div class="col">
+            <a class="image-popup" href="../static/images/photo/fruit/fruit06.jpg">
+              <img src="../static/images/photo/fruit/fruit06.jpg" class="img-fluid rounded" alt="">
+            </a>
+            <p class="figure-caption">
+              Blueberries
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    {{ footer() }}
+
+		{{ scripts() }}
+	</body>
+</html>
