@@ -321,11 +321,23 @@ body.photo main {
 	.card-photo-img {
 		border-radius: $border-radius;
 		width: 100%;
-		height: 100%;
+		height: 200px;
 		display: block;
 		background-repeat: no-repeat;
     background-position: center center;
 		background-size: cover;
+
+		@include media-breakpoint-up(sm) {
+			height: 345px;
+		}
+
+		@include media-breakpoint-up(md) {
+			height: 470px;
+		}
+
+		@include media-breakpoint-up(lg) {
+			height: 100%;
+		}
 	}
 
 	.card-photo-mythology {
@@ -506,6 +518,49 @@ body.photo main {
 	}
 
 	h4 {
+		margin-bottom: 0;
+	}
+
+	a {
+		text-decoration: none;
+		color: $body-color;
+	}
+
+	.pagination-left,
+	.pagination-right {
+		@include transition($transition-base);
+	}
+
+	.pagination-left {
+		i {
+			right: 0;
+		}
+	}
+
+	.pagination-right {
+		text-align: right;
+
+		i {
+			left: 0;
+		}
+	}
+}
+
+.breadcrumb {
+	margin-bottom: $spacer * 5;
+	font-size: $font-size-sm;
+
+	.row {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	i {
+		@include transition($transition-base);
+		position: relative;
+	}
+
+	p {
 		margin-bottom: 0;
 	}
 

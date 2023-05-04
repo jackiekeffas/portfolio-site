@@ -34,13 +34,16 @@ def get_photo():
 def get_photo_mythology():
     return render_template("photo-mythology.jinja")
 
+
 @app.route("/photo/cemeteries")
 def get_photo_cemetereis():
     return render_template("photo-cemeteries.jinja")
 
+
 @app.route("/photo/fruit")
 def get_photo_fruit():
     return render_template("photo-fruit.jinja")
+
 
 @app.route("/photo/roommates")
 def get_photo_roommates():

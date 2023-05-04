@@ -3,6 +3,7 @@
 {% from "navbar.jinja" import navbar %}
 {% from "footer.jinja" import footer %}
 {% from "pageTitle.jinja" import pageTitle %}
+{% from "photoBreadcrumb.jinja" import photoBreadcrumb %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,6 +13,8 @@
     {{ navbar(page="navbar-light") }}
 
     <main>
+      {{ photoBreadcrumb() }}
+      
       <div class="container">
         <div class="row">
           <div class="col-12 col-lg-3 offset-lg-1">

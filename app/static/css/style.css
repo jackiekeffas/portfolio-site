@@ -9157,11 +9157,29 @@ body.photo main {
 .card .card-photo-img {
   border-radius: 0.25rem;
   width: 100%;
-  height: 100%;
+  height: 200px;
   display: block;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+}
+
+@media (min-width: 576px) {
+  .card .card-photo-img {
+    height: 345px;
+  }
+}
+
+@media (min-width: 768px) {
+  .card .card-photo-img {
+    height: 470px;
+  }
+}
+
+@media (min-width: 992px) {
+  .card .card-photo-img {
+    height: 100%;
+  }
 }
 
 .card .card-photo-mythology {
@@ -9467,6 +9485,60 @@ body.photo main {
 }
 
 .pagination .pagination-right i {
+  left: 0;
+}
+
+.breadcrumb {
+  margin-bottom: 5rem;
+  font-size: 0.875rem;
+}
+
+.breadcrumb .row {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.breadcrumb i {
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .breadcrumb i {
+    transition: none;
+  }
+}
+
+.breadcrumb p {
+  margin-bottom: 0;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #53293E;
+}
+
+.breadcrumb .pagination-left,
+.breadcrumb .pagination-right {
+  transition: all 0.3s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .breadcrumb .pagination-left,
+  .breadcrumb .pagination-right {
+    transition: none;
+  }
+}
+
+.breadcrumb .pagination-left i {
+  right: 0;
+}
+
+.breadcrumb .pagination-right {
+  text-align: right;
+}
+
+.breadcrumb .pagination-right i {
   left: 0;
 }
 
