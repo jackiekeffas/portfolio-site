@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en" class="h-100" data-bs-theme="auto">
+  <head>
+    <!-- BASIC -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>The Figure 8 Group</title>
+
+    <!-- FAVICON-->
+    <link rel="icon" type="image/png" href="../static/figure8/images/favicon.png">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/figure8/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../static/figure8/css/style.css">
+
+    <!-- JS -->
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script>
+			$(document).scroll(function () {
+				var $nav = $(".navbar");
+				var $hero = $(".header-wrapper");
+				$nav.toggleClass('scrolled', $(this).scrollTop() > ($hero.height()));
+			});
+		</script>
+  </head>
+
+  <body class="h-100" data-bs-spy="scroll" data-bs-target="#navbar">
+    <nav id="navbar" class="navbar navbar-expand navbar-dark fixed-top">
+      <div class="container-fluid">
+        <div>
+          <a class="navbar-brand h4-display" href="#">The Figure 8 Group</a>
+        </div>
+        <div class="navbar-hide">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#packages">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="header-wrapper w-100 h-100 d-flex align-items-center text-center">  
+      <header class="container-fluid">
+        <h1 class="display">The Figure 8 Group</h1>
+        <video class="header-video" id="fireball" preload="true" muted loop>
+          <source src="../static/figure8/videos/fireball-animation.mp4" type="video/mp4">
+        </video>
+        <div>
+          <button id="audio-controls" class="btn btn-sm btn-icon"><i class="ri-volume-mute-line"></i></button>
+          <button id="video-controls" class="btn btn-sm btn-icon" onclick="playVideo()"><i class="ri-pause-line"></i></button>
+        </div>
+      </header>
+    </div>
+
+    <div class="dark-gradient">
+      <main class="container mb-auto">
+        <div class="section text-center" id="about">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus eget lacus in volutpat. Praesent sem neque, maximus ullamcorper erat in, sollicitudin lacinia libero. Nam tristique, nulla quis blandit interdum, elit sapien porttitor erat, et vehicula arcu nibh ac dui.</p>
+              <a href="form.html" class="btn btn-primary">Learn more</a>
+              <a href="#" class="btn btn-sm btn-icon"><i class="ri-pause-line"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="section" id="packages">
+          <div class="row">
+            <div class="col-12 col-md">
+              <img src="../static/figure8/images/placeholder.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-12 col-md">
+              <h2 class="display">Package One</h2>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus eget lacus in volutpat. Praesent sem neque, maximus ullamcorper erat in, sollicitudin lacinia libero. Nam tristique, nulla quis blandit interdum, elit sapien porttitor erat, et vehicula arcu nibh ac dui.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section" id="contact">
+          <div class="row">
+            <div class="col-12 col-md">
+              <h2 class="display">Contact</h2>
+            </div>
+            <div class="col-12 col-md">
+              <div class="formcarry-container">
+								<form action="form-process.php" method="POST" class="formcarry-form">
+									<label for="name">Your Name</label>
+									<input type="text" id="name" name="fullName" required />
+					
+									<label for="email">Your Email Address</label>
+									<input type="email" id="email" name="email" required />
+					
+									<label for="message">Your Message</label>
+									<textarea name="message" id="message" cols="30" rows="10"></textarea>
+					
+									<button type="submit">Send</button>
+								</form>
+							</div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <div class="row">
+          <div class="col-12 col-md">
+            <p class="h4-display">The<br>Figure 8 Group</p>
+          </div>
+          <div class="col-12 col-md copyright align-self-md-end">
+            <div class="social-buttons d-flex justify-content-center justify-content-md-end">
+              <a class="btn btn-sm btn-icon" href="https://www.linkedin.com/company/thefigure8group/" target="_blank"><i class="ri-linkedin-line"></i></a>
+              <a class="btn btn-sm btn-icon" href="https://www.facebook.com/TheFigure8GroupBos" target="_blank"><i class="ri-facebook-line"></i></a>
+              <a class="btn btn-sm btn-icon" href="https://twitter.com/fig8group" target="_blank"><i class="ri-twitter-line"></i></a>
+              <a class="btn btn-sm btn-icon" href="https://www.instagram.com/the.figure8group/" target="_blank"><i class="ri-instagram-line"></i></a>
+            </div>
+            <p class="smaller">&copy; 2023 The Figure 8 Group</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+  <script>
+    var video = document.getElementById("fireball");
+    var btn = document.getElementById("video-controls");
+    function playVideo() {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = '<i class="ri-pause-line"></i>';
+      } else {
+        video.pause();
+        btn.innerHTML = '<i class="ri-play-line"></i>';
+      }
+    }
+    </script>
+
+    <script>
+      var video = document.getElementById("fireball");
+      video.addEventListener("canplay", function() {
+        setTimeout(function() {
+          video.play();
+        }, 5000);
+      });
+    </script>
+
+    <script>
+      const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+        target: '#navbar'
+      })
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+  
+  </body>
+</html>

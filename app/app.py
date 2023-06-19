@@ -49,6 +49,10 @@ def get_photo_fruit():
 def get_photo_roommates():
     return render_template("photo-roommates.jinja")
 
+@app.route("/figure8")
+def get_figure8():
+    return render_template("figure8.jinja")
+
 
 @app.errorhandler(404)
 def get_error_page(error):
