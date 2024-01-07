@@ -1,0 +1,185 @@
+{% from "head.jinja" import head %}
+{% from "scripts.jinja" import scripts %}
+{% from "navbar.jinja" import navbar %}
+{% from "footer.jinja" import footer %}
+{% from "projectHero.jinja" import projectHero %}
+{% from "projectOverview.jinja" import projectOverview %}
+{% from "projectPagination.jinja" import projectPagination %}
+
+<!DOCTYPE html>
+<html lang="en">
+  {{ head(projectData) }}
+
+  <body>
+    {{ navbar() }}
+
+    <main>
+      {{ projectHero(projectData) }}
+
+      <div class="container">
+        <div class="row mb-md-0 justify-content-md-center">
+          {{ projectOverview(projectData) }}
+          <div class="project-overview-main">
+            <h2>Overview</h2>
+            <p>I was tasked with optimzing the K Health app onboarding flow in order to reduce the steps it took a user to create an account, as well as incorporate the K Health brand and create a friendlier introduction to our product. I also worked with our Lead Product Designer to update the member dashboard UI to continue carrying the brand into the product.</p>
+            <p>I was also responsible for creating custom loading animations for both K Health and our partnership with Cedars-Sinai.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col">
+            <img src="../static/images/work/khealth/app/flow.png" class="img-fluid" alt="Desktop and mobile version of the hero section of the high blood pressure page">
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row mb-0">
+          <div class="col-12 col-md-5 col-lg-4 mb-8 mb-md-0">
+            <h2>K Health</h2>
+            <p>To create a smooth transition from our website to our product, we added video to the app introduction and branded elements to the onboarding screens and member dashboard. The member dashboard also utilizes color and iconography present across marketing materials to help direct users where they need to go.</p>
+          </div>
+          <div class="col">
+            <div class="row">
+              <div class="col">
+                <img src="../static/images/work/khealth/app/carousel.png" class="img-fluid" alt="Desktop and mobile version of the hero section of the high blood pressure page">
+              </div>
+              <div class="col">
+                <img src="../static/images/work/khealth/app/dashboard.png" class="img-fluid" alt="Desktop and mobile version of the hero section of the high blood pressure page">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-xxl">
+        <div class="row mb-6">
+          <div class="col">
+            <div class="row mb-0 justify-content-center">
+              <div class="col mb-4 mb-md-0">
+                <img src="../static/images/work/khealth/app/signup-1.png" class="img-fluid" alt="Desktop version of a newsletter that asked users to participate in a survey">
+              </div>
+              <div class="col mb-4 mb-md-0">
+                <img src="../static/images/work/khealth/app/signup-2.png" class="img-fluid" alt="Desktop version of a newsletter that asked users to participate in a survey">
+              </div>
+              <div class="col mb-4 mb-md-0">
+                <img src="../static/images/work/khealth/app/signup-3.png" class="img-fluid" alt="Desktop version of a newsletter that asked users to participate in a survey">
+              </div>
+              <div class="col">
+                <img src="../static/images/work/khealth/app/signup-4.png" class="img-fluid" alt="Desktop version of a newsletter that asked users to participate in a survey">
+              </div>
+            </div>
+            <p class="figure-caption">
+              New user flow
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <div class="row mb-0 justify-content-center">
+              <div class="col mb-4 mb-md-0">
+                <img src="../static/images/work/khealth/app/signin-1.png" class="img-fluid" alt="Desktop version of a newsletter that asked users to participate in a survey">
+              </div>
+              <div class="col mb-4 mb-md-0">
+                <img src="../static/images/work/khealth/app/signin-2.png" class="img-fluid" alt="Desktop version of a newsletter that asked users to participate in a survey">
+              </div>
+              <div class="col mb-4 mb-md-0">
+                <img src="../static/images/work/khealth/app/signin-3.png" class="img-fluid" alt="Desktop version of a newsletter that asked users to participate in a survey">
+              </div>
+              <div class="col">
+                <img src="../static/images/work/khealth/app/signin-4.png" class="img-fluid" alt="Desktop version of a newsletter that asked users to participate in a survey">
+              </div>
+            </div>
+            <p class="figure-caption">
+              Returning user flow
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-xxl">
+        <div class="row mb-6 justify-content-center">
+          <div class="col-6">
+            <img src="../static/images/work/khealth/app/partnership-flow.png" class="img-fluid" alt="Desktop version of a newsletter that asked users to participate in a survey">
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row mb-0">
+          <div class="col-12 col-md-5 col-lg-4 mb-8 mb-md-0">
+            <h2>Cedars-Sinai Connect</h2>
+            <p>The K Health app was designer to be themable for use with current and future partnerships, such as for our work on Cedars-Sinai Connect, a new app that provides on demand care to Cedars-Sinai patients.</p>
+            <p>I worked with both our Lead Product Designer and the Head of Digital Design at Cedars-Sinai to create a theme for Cedars-Sinai Connect that utilized their brand guidelines.</p>
+          </div>
+          <div class="col">
+            <div class="row">
+              <div class="col">
+                <img src="../static/images/work/khealth/app/k2-carousel.png" class="img-fluid" alt="Desktop and mobile version of the hero section of the high blood pressure page">
+              </div>
+              <div class="col">
+                <img src="../static/images/work/khealth/app/k2-dashboard.png" class="img-fluid" alt="Desktop and mobile version of the hero section of the high blood pressure page">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-xxl">
+        <div class="row mb-6">
+          <div class="col">
+            <div class="row mb-0 justify-content-center">
+              <div class="col mb-4 mb-md-0">
+                <img src="../static/images/work/khealth/app/k2-signup-1.png" class="img-fluid" alt="Desktop version of a newsletter that asked users to participate in a survey">
+              </div>
+              <div class="col mb-4 mb-md-0">
+                <img src="../static/images/work/khealth/app/k2-signup-2.png" class="img-fluid" alt="Desktop version of a newsletter that asked users to participate in a survey">
+              </div>
+              <div class="col mb-4 mb-md-0">
+                <img src="../static/images/work/khealth/app/k2-signup-3.png" class="img-fluid" alt="Desktop version of a newsletter that asked users to participate in a survey">
+              </div>
+              <div class="col">
+                <img src="../static/images/work/khealth/app/k2-signup-4.png" class="img-fluid" alt="Desktop version of a newsletter that asked users to participate in a survey">
+              </div>
+            </div>
+            <p class="figure-caption">
+              New user flow
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <div class="row mb-0 justify-content-center">
+              <div class="col mb-4 mb-md-0">
+                <img src="../static/images/work/khealth/app/k2-signin-1.png" class="img-fluid" alt="Desktop version of a newsletter that asked users to participate in a survey">
+              </div>
+              <div class="col mb-4 mb-md-0">
+                <img src="../static/images/work/khealth/app/k2-signin-2.png" class="img-fluid" alt="Desktop version of a newsletter that asked users to participate in a survey">
+              </div>
+              <div class="col mb-4 mb-md-0">
+                <img src="../static/images/work/khealth/app/k2-signin-3.png" class="img-fluid" alt="Desktop version of a newsletter that asked users to participate in a survey">
+              </div>
+              <div class="col">
+                <img src="../static/images/work/khealth/app/k2-signin-4.png" class="img-fluid" alt="Desktop version of a newsletter that asked users to participate in a survey">
+              </div>
+            </div>
+            <p class="figure-caption">
+              Returning user flow
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {{ projectPagination(projectData, previousSlug="k-health-website", previousTitle="Website", previousCompany="K Health", nextSlug="k-health-brand", nextTitle="Brand guidelines", nextCompany="K Health") }}
+
+    </main>
+
+    {{ footer() }}
+
+    {{ scripts() }}
+  </body>
+</html>

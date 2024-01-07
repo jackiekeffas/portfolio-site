@@ -3,7 +3,7 @@
 {% from "navbar.jinja" import navbar %}
 {% from "footer.jinja" import footer %}
 {% from "projectHero.jinja" import projectHero %}
-{% from "projectOverviewAlt.jinja" import projectOverviewAlt %}
+{% from "projectOverview.jinja" import projectOverview %}
 {% from "projectPagination.jinja" import projectPagination %}
 
 <!DOCTYPE html>
@@ -16,13 +16,37 @@
     <main>
       {{ projectHero(projectData) }}
 
-      {{ projectOverviewAlt(projectData) }}
+      <div class="container">
+        <div class="row mb-md-0 justify-content-md-center">
+          {{ projectOverview(projectData) }}
+          <div class="project-overview-main">
+            <h2>Overview</h2>
+            <p>Throughout my time at K Health, improving our website was a top priority. With a wide range of services, the goal was not only to increase conversion rate, but also better route our users to the care they were looking for, all while also improving and optimizing the design alongside our evolving brand guidelines.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row mb-0">
+          <div class="project-text">
+            <h2>Paid landing pages</h2>
+            <p>Working closely with the Marketing Team and a Data Analyst, we created landing pages for both generic services and specific conditions to guide users that are searching for care. Routing users directly to a landing page instead of our home page streamlined the process for users that knew their condition and were seeking immediate care. We heavily tested copy and imagery to increase conversion rate, and also used paid search as a testing space for new page designs that we could incorporate back into the rest of the site.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col">
+            <img src="../static/images/work/khealth/website/lp-flow.png" class="img-fluid" alt="Desktop and mobile version of the hero section of the high blood pressure page">
+          </div>
+        </div>
+      </div>
 
       <div class="container">
         <div class="row mb-0">
           <div class="project-text mb-0">
-            <h2>Primary Care paid landing page</h2>
-            <p>A generic membership page with variants targeting specific conditions</p>
+            <h3 class="mb-0">Primary Care landing pages</h3>
           </div>
         </div>
       </div>
@@ -53,7 +77,7 @@
       <div class="container">
         <div class="row mb-0">
           <div class="project-text mb-0">
-            <h2>Medical Weight Management paid landing page</h2>
+            <h3 class="mb-0">Medical Weight Management landing page</h3>
           </div>
         </div>
       </div>
@@ -70,14 +94,15 @@
         <div class="row mb-0">
           <div class="project-text">
             <h2>Home page</h2>
-            <p>These paid landing pages were used to test into a new look for the main K Health website, an ongoing project that started with redesigning the home page. K Health's services and business direction have grown and shifted throughtout the years, and the home page no longer reflected what K Health has to offer to both its users and partners.</p>
-            <p>The Marketing Copywriter and I began by wireframing out potential sections and copy for the page so that we could quickly determine what elements were needed, taking into consideration feedback from the CEO and Director of Marketing. Once approved by all stakeholders, we moved into high fidelity design.</p>
+            <p>Seeing a decrease in drop off and an increase in click-through rate, we used our learnings to implementing similar changes on the main site, beginning with the home page. K Health's services and business direction had grown and shifted throughtout the years, and the home page no longer reflected what K Health had to offer to its users. With a wide array of services, how could we direct users that came to khealth.com organically, and maybe didn't know what specifically was ailing them, to the care they needed?</p>
+            <p>Additionally, we also needed to include sections on the home page that built trust in our technology and providers.</p>
+            <p>Using a mobile-first approach, the Copywriter and I began by wireframing out potential sections and copy for the page so that we could quickly determine what elements were needed, taking into consideration feedback from the CEO and Director of Marketing. Once approved by all stakeholders, we moved into hi-fidelity design.</p>
           </div>
         </div>
       </div>
 
       <div class="container-xxl">
-        <div class="row">
+        <div class="row mb-0">
           <div class="col">
             <img src="../static/images/work/khealth/website/home-wireframes.png" class="img-fluid" alt="Desktop and mobile version of the hero section of the high blood pressure page">
           </div>
@@ -89,7 +114,25 @@
         </div>
       </div>
 
-      {{ projectPagination(projectData, previousSlug="k-health-brand", previousTitle="Brand guidelines", previousCompany="K Health", nextSlug="pretty-instant-brand", nextTitle="Brand guidelines", nextCompany="Pretty Instant") }}
+      <div class="container">
+        <div class="row mb-0">
+          <div class="project-text">
+            <h2>Navigation</h2>
+            <p>With the home page updated, we moved on to completely restructuring our site navigation. Research the SEO team did identified that users were heavily interacting with our navigation, which only contained high level pages, such as "Primary Care" and "Urgent Care." These pages were how services were structured on the Product side, but knowing from Product Marketing that users don't identify with these terms, my task was to create a menu that kept these categories, while adding context and surfacing additional pages users would recognize instead, so that a user could better route themselves.</p>
+            <p>I worked closely with our SEO team to identify which conditions and medications were most searched for by users, as well as to ensure any changes made wouldn't affect our search rankings negatively.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col">
+            <img src="../static/images/work/khealth/website/navigation.png" class="img-fluid" alt="Desktop and mobile version of the hero section of the high blood pressure page">
+          </div>
+        </div>
+      </div>
+
+      {{ projectPagination(projectData, previousSlug="pretty-instant-brochures", previousTitle="Services brochures", previousCompany="Pretty Instant", nextSlug="k-health-app", nextTitle="App", nextCompany="K Health") }}
 
     </main>
 

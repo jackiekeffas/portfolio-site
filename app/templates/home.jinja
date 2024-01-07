@@ -14,23 +14,20 @@
 		<main class="container-fluid">
 			<div class="row mb-6">
 		    <div class="col col-sm-10 col-md col-lg-10 col-xxl-8">
-					<h1 class="mb">Hi, I’m <span class="orpheus-8">Jackie Keffas</span>, a brand <span class="orpheus-1">&</span> UI designer based in NYC</h1>
-					<p>Starting my career as the first designer for various early stage startups, I've led rebrands and been responsible for every part of the user journey, including product design and front-end development. I take a wholistic, big picture approach to design, ensuring a consistent customer experience from start to finish.</p>
+					<h1 class="mb">Hi, I’m <span class="orpheus-8">Jackie Keffas</span>, a brand <span class="orpheus-1">&</span> UX/UI designer based in NYC</h1>
+					<p>Starting my career as the first designer for various early stage startups, I've led rebrands and been responsible for every part of the user journey, from marketing to product design to front-end development. I take a wholistic, big picture approach to design, ensuring a consistent customer experience from start to finish.</p>
 				</div>
 		  </div>
 
-		  <div class="row mb-0">
-		    <div class="col-md mb-4">
-          {{ card(projectData["k-health-brand"]) }}
-		    </div>
-		    <div class="col-md mb-4">
-          {{ card(projectData["k-health-website"]) }}
-		    </div>
-		  </div>
-			
 		  <div class="row mb-0 row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-md-center">
 		    <div class="col mb-4">
-          {{ card(projectData["pretty-instant-brand"]) }}
+          {{ card(projectData["k-health-website"]) }}
+		    </div>
+				<div class="col mb-4">
+          {{ card(projectData["k-health-app"]) }}
+		    </div>
+				<div class="col mb-4">
+          {{ card(projectData["k-health-brand"]) }}
 		    </div>
 		    <div class="col mb-4">
           {{ card(projectData["pretty-instant-website"]) }}
@@ -39,10 +36,16 @@
           {{ card(projectData["pretty-instant-user"]) }}
 		    </div>
 				<div class="col mb-4">
-          {{ card(projectData["k-health-emails"]) }}
+          {{ card(projectData["pretty-instant-brand"]) }}
 		    </div>
 		    <div class="col mb-4">
           {{ card(projectData["k-health-infographics"]) }}
+		    </div>
+		    <div class="col">
+          {{ card(projectData["various-icons"]) }}
+		    </div>
+				<div class="col mb-4">
+          {{ card(projectData["k-health-emails"]) }}
 		    </div>
 		    <div class="col mb-4">
           {{ card(projectData["k-health-social"]) }}
@@ -52,9 +55,6 @@
 		    </div>
 		    <div class="col mb-4 mb-lg-0">
           {{ card(projectData["pretty-instant-brochures"]) }}
-		    </div>
-		    <div class="col">
-          {{ card(projectData["various-icons"]) }}
 		    </div>
 		  </div>
 		</main>
