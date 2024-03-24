@@ -1,2 +1,4 @@
 __pycache__/app.cpython-310.pyc
 .DS_store
+*/node_modules
+node_modules
